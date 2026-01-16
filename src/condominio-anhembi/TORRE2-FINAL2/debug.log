@@ -1,0 +1,5 @@
+[1016/195719:ERROR:resource_bundle.cc(691)] Failed to load C:\Program Files (x86)\Kolor\Panotour Viewer 1.1\qtwebengine_resources_100p.pak
+Some features may not be available.
+[1016/195719:ERROR:resource_bundle.cc(691)] Failed to load C:\Program Files (x86)\Kolor\Panotour Viewer 1.1\qtwebengine_resources_200p.pak
+Some features may not be available.
+[1016/195719:WARNING:resource_bundle.cc(304)] locale_file_path.empty()

@@ -1,0 +1,1329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano version="1.19-pr16">
+
+  <!-- unsupported kind of display : PointMap -->
+
+
+  
+  <!-- Spot Style - Esgoto _ Verde -->
+  <style name="PolygonEsgoto-Verde"
+           visible="false"
+           bordercolor="0xa8a8a8"
+           fillcolor="0x02ff17"
+           borderwidth="1"
+           borderalpha="0.089997711146715495"
+           fillalpha="0.20000000000000001"
+           capture="false"
+           onhover="onhoverPolygonEsgoto-Verde"
+           onover="onoverPolygonEsgoto-Verde"
+           onout="onoutPolygonEsgoto-Verde"
+           />
+  <action name="onhoverPolygonEsgoto-Verde">
+    showTooltip('hotspot');
+  </action>
+
+  <action name="onoverPolygonEsgoto-Verde">
+    set(bordercolor, 0xffffff);
+    set(fillcolor, 0x02ff17);
+    set(borderalpha, 0);
+    set(fillalpha, 0.59999999999999998);
+    set(borderwidth, 1);
+  </action>
+
+  <action name="onoutPolygonEsgoto-Verde">
+
+    set(bordercolor, 0xa8a8a8);
+    set(fillcolor, 0x02ff17);
+    set(borderalpha, 0.089997711146715495);
+    set(fillalpha, 0.20000000000000001);
+
+    set(borderwidth, 1);
+    hideTooltip();
+  </action>
+
+
+
+  
+  <!-- Spot Style - Gás _ Amarelo -->
+  <style name="PolygonGás-Amarelo"
+           visible="false"
+           bordercolor="0xffffff"
+           fillcolor="0xffe136"
+           borderwidth="1"
+           borderalpha="0.080003051804379333"
+           fillalpha="0.20000000000000001"
+           capture="false"
+           onhover="onhoverPolygonGás-Amarelo"
+           onover="onoverPolygonGás-Amarelo"
+           onout="onoutPolygonGás-Amarelo"
+           />
+  <action name="onhoverPolygonGás-Amarelo">
+    showTooltip('hotspot');
+  </action>
+
+  <action name="onoverPolygonGás-Amarelo">
+    set(bordercolor, 0xffffff);
+    set(fillcolor, 0xffe136);
+    set(borderalpha, 0);
+    set(fillalpha, 0.59999999999999998);
+    set(borderwidth, 1);
+  </action>
+
+  <action name="onoutPolygonGás-Amarelo">
+
+    set(bordercolor, 0xffffff);
+    set(fillcolor, 0xffe136);
+    set(borderalpha, 0.080003051804379333);
+    set(fillalpha, 0.20000000000000001);
+
+    set(borderwidth, 1);
+    hideTooltip();
+  </action>
+
+
+
+  
+  <!-- Spot Style - Enchimento hidro_sanitário _ Verde -->
+  <style name="PolygonEnchimentohidro-sanitário-Verde"
+           visible="false"
+           bordercolor="0xffffff"
+           fillcolor="0x166818"
+           borderwidth="1"
+           borderalpha="0.080003051804379333"
+           fillalpha="0.20000000000000001"
+           capture="false"
+           onhover="onhoverPolygonEnchimentohidro-sanitário-Verde"
+           onover="onoverPolygonEnchimentohidro-sanitário-Verde"
+           onout="onoutPolygonEnchimentohidro-sanitário-Verde"
+           />
+  <action name="onhoverPolygonEnchimentohidro-sanitário-Verde">
+    showTooltip('hotspot');
+  </action>
+
+  <action name="onoverPolygonEnchimentohidro-sanitário-Verde">
+    set(bordercolor, 0x3b8dff);
+    set(fillcolor, 0x166818);
+    set(borderalpha, 0);
+    set(fillalpha, 0.59999999999999998);
+    set(borderwidth, 1);
+  </action>
+
+  <action name="onoutPolygonEnchimentohidro-sanitário-Verde">
+
+    set(bordercolor, 0xffffff);
+    set(fillcolor, 0x166818);
+    set(borderalpha, 0.080003051804379333);
+    set(fillalpha, 0.20000000000000001);
+
+    set(borderwidth, 1);
+    hideTooltip();
+  </action>
+
+
+
+  
+  <!-- Spot Style - Viga _ Rosa -->
+  <style name="PolygonViga-Rosa"
+           visible="false"
+           bordercolor="0xffffff"
+           fillcolor="0xfb71ff"
+           borderwidth="1"
+           borderalpha="0.080003051804379333"
+           fillalpha="0.20000000000000001"
+           capture="false"
+           onhover="onhoverPolygonViga-Rosa"
+           onover="onoverPolygonViga-Rosa"
+           onout="onoutPolygonViga-Rosa"
+           />
+  <action name="onhoverPolygonViga-Rosa">
+    showTooltip('hotspot');
+  </action>
+
+  <action name="onoverPolygonViga-Rosa">
+    set(bordercolor, 0xffffff);
+    set(fillcolor, 0xfb71ff);
+    set(borderalpha, 0.080003051804379333);
+    set(fillalpha, 0.59999999999999998);
+    set(borderwidth, 1);
+  </action>
+
+  <action name="onoutPolygonViga-Rosa">
+
+    set(bordercolor, 0xffffff);
+    set(fillcolor, 0xfb71ff);
+    set(borderalpha, 0.080003051804379333);
+    set(fillalpha, 0.20000000000000001);
+
+    set(borderwidth, 1);
+    hideTooltip();
+  </action>
+
+
+
+  
+  <!-- Spot Style - Água fria _ Azul -->
+  <style name="PolygonÁguafria-Azul"
+           visible="false"
+           bordercolor="0xffffff"
+           fillcolor="0x3b8dff"
+           borderwidth="1"
+           borderalpha="0.080003051804379333"
+           fillalpha="0.20000000000000001"
+           capture="false"
+           onhover="onhoverPolygonÁguafria-Azul"
+           onover="onoverPolygonÁguafria-Azul"
+           onout="onoutPolygonÁguafria-Azul"
+           />
+  <action name="onhoverPolygonÁguafria-Azul">
+    showTooltip('hotspot');
+  </action>
+
+  <action name="onoverPolygonÁguafria-Azul">
+    set(bordercolor, 0xffffff);
+    set(fillcolor, 0x3b8dff);
+    set(borderalpha, 0.10000762951094835);
+    set(fillalpha, 0.50000762951094835);
+    set(borderwidth, 1);
+  </action>
+
+  <action name="onoutPolygonÁguafria-Azul">
+
+    set(bordercolor, 0xffffff);
+    set(fillcolor, 0x3b8dff);
+    set(borderalpha, 0.080003051804379333);
+    set(fillalpha, 0.20000000000000001);
+
+    set(borderwidth, 1);
+    hideTooltip();
+  </action>
+
+
+
+    
+  <!-- Spot Style - Gas 5_10 -->
+
+
+  <style name="IconGas5-10"
+         url="%FIRSTXML%/spots/hotspot_information_sequence_user_defaultpoint3.png"
+         visible="false"
+         frame="0"
+         lastframe="19"
+         framewidth="27"
+         frameheight="54"
+         stopspotsequence="false"
+         crop="0|0|27|54"
+         edge="center"
+         onloaded="startspotanimation(0.1);showPermanentTooltip(all);"
+         onhover="onhoverIconGas5-10"
+         onout="onoutIconGas5-10"
+
+         height="20"
+         width="15"
+         />
+  <action name="onhoverIconGas5-10">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoutIconGas5-10">
+    hideTooltip();
+
+
+
+  </action>
+
+
+
+  
+  <!-- Spot Style - Quadro Elétrico _ Vermelho -->
+  <style name="PolygonQuadroElétrico-Vermelho"
+           visible="false"
+           bordercolor="0xffffff"
+           fillcolor="0xff0000"
+           borderwidth="1"
+           borderalpha="0.080003051804379333"
+           fillalpha="0.20000000000000001"
+           capture="false"
+           onhover="onhoverPolygonQuadroElétrico-Vermelho"
+           onover="onoverPolygonQuadroElétrico-Vermelho"
+           onout="onoutPolygonQuadroElétrico-Vermelho"
+           />
+  <action name="onhoverPolygonQuadroElétrico-Vermelho">
+    showTooltip('hotspot');
+  </action>
+
+  <action name="onoverPolygonQuadroElétrico-Vermelho">
+    set(bordercolor, 0xffffff);
+    set(fillcolor, 0xff0000);
+    set(borderalpha, 0);
+    set(fillalpha, 0.50000762951094835);
+    set(borderwidth, 1);
+  </action>
+
+  <action name="onoutPolygonQuadroElétrico-Vermelho">
+
+    set(bordercolor, 0xffffff);
+    set(fillcolor, 0xff0000);
+    set(borderalpha, 0.080003051804379333);
+    set(fillalpha, 0.20000000000000001);
+
+    set(borderwidth, 1);
+    hideTooltip();
+  </action>
+
+
+
+    
+  <!-- Spot Style - Luminária de sobrepor -->
+
+
+  <style name="IconLumináriadesobrepor"
+         url="%FIRSTXML%/spots/hotspot_information_sequence_user_defaultpoint5.png"
+         visible="false"
+         frame="0"
+         lastframe="13"
+         framewidth="40"
+         frameheight="60"
+         stopspotsequence="false"
+         crop="0|0|40|60"
+         edge="center"
+         onloaded="startspotanimation(0.1);"
+         onhover="onhoverIconLumináriadesobrepor"
+         onover="onoverIconLumináriadesobrepor"
+         onout="onoutIconLumináriadesobrepor"
+
+         height="35"
+         width="28"
+         />
+  <action name="onhoverIconLumináriadesobrepor">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoverIconLumináriadesobrepor">
+tween(scale, 1.2);
+
+
+  </action>
+  <action name="onoutIconLumináriadesobrepor">
+    hideTooltip();
+    tween(scale, 1);
+
+
+  </action>
+
+
+
+  
+  <!-- Spot Style - Exaustao _ Roxo -->
+  <style name="PolygonExaustao-Roxo"
+           visible="false"
+           bordercolor="0xffffff"
+           fillcolor="0x771cff"
+           borderwidth="1"
+           borderalpha="0.089997711146715495"
+           fillalpha="0.20000000000000001"
+           capture="false"
+           onhover="onhoverPolygonExaustao-Roxo"
+           onover="onoverPolygonExaustao-Roxo"
+           onout="onoutPolygonExaustao-Roxo"
+           />
+  <action name="onhoverPolygonExaustao-Roxo">
+    showTooltip('hotspot');
+  </action>
+
+  <action name="onoverPolygonExaustao-Roxo">
+    set(bordercolor, 0xffffff);
+    set(fillcolor, 0x771cff);
+    set(borderalpha, 0);
+    set(fillalpha, 0.50000762951094835);
+    set(borderwidth, 1);
+  </action>
+
+  <action name="onoutPolygonExaustao-Roxo">
+
+    set(bordercolor, 0xffffff);
+    set(fillcolor, 0x771cff);
+    set(borderalpha, 0.089997711146715495);
+    set(fillalpha, 0.20000000000000001);
+
+    set(borderwidth, 1);
+    hideTooltip();
+  </action>
+
+
+
+    
+  <!-- Spot Style - Gesso corrido na laje -->
+
+
+  <style name="IconGessocorridonalaje"
+         url="%FIRSTXML%/spots/hotspot_information_sequence_user_defaultpoint6.png"
+         visible="false"
+         frame="0"
+         lastframe="11"
+         framewidth="54"
+         frameheight="54"
+         stopspotsequence="false"
+         crop="0|0|54|54"
+         edge="center"
+         onloaded="startspotanimation(0.1);"
+         onhover="onhoverIconGessocorridonalaje"
+         onover="onoverIconGessocorridonalaje"
+         onout="onoutIconGessocorridonalaje"
+
+         height="35"
+         width="35"
+         />
+  <action name="onhoverIconGessocorridonalaje">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoverIconGessocorridonalaje">
+tween(scale, 1.2);
+
+
+  </action>
+  <action name="onoutIconGessocorridonalaje">
+    hideTooltip();
+    tween(scale, 1);
+
+
+  </action>
+
+
+
+  
+  <!-- Spot Style - Pilar _ Rosa -->
+  <style name="PolygonPilar-Rosa"
+           visible="false"
+           bordercolor="0xffffff"
+           fillcolor="0xfb71ff"
+           borderwidth="1"
+           borderalpha="0.10000762951094835"
+           fillalpha="0.20000000000000001"
+           capture="false"
+           onhover="onhoverPolygonPilar-Rosa"
+           onover="onoverPolygonPilar-Rosa"
+           onout="onoutPolygonPilar-Rosa"
+           />
+  <action name="onhoverPolygonPilar-Rosa">
+    showTooltip('hotspot');
+  </action>
+
+  <action name="onoverPolygonPilar-Rosa">
+    set(bordercolor, 0xffffff);
+    set(fillcolor, 0xfb71ff);
+    set(borderalpha, 0);
+    set(fillalpha, 0.59999999999999998);
+    set(borderwidth, 1);
+  </action>
+
+  <action name="onoutPolygonPilar-Rosa">
+
+    set(bordercolor, 0xffffff);
+    set(fillcolor, 0xfb71ff);
+    set(borderalpha, 0.10000762951094835);
+    set(fillalpha, 0.20000000000000001);
+
+    set(borderwidth, 1);
+    hideTooltip();
+  </action>
+
+
+
+    
+  <!-- Spot Style - Seta para cima -->
+
+
+  <style name="IconSetaparacima"
+         url="%FIRSTXML%/spots/hotspot_direction_sequence_user_defaultpoint7.png"
+         visible="false"
+         frame="0"
+         lastframe="15"
+         framewidth="98"
+         frameheight="43"
+         stopspotsequence="false"
+         crop="0|0|98|43"
+         edge="center"
+         rotate="270"
+         onloaded="startspotanimation(0.1);"
+         onhover="onhoverIconSetaparacima"
+         onout="onoutIconSetaparacima"
+
+
+         height="30"
+         width="prop"
+         />
+  <action name="onhoverIconSetaparacima">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoutIconSetaparacima">
+    hideTooltip();
+
+
+
+  </action>
+
+
+
+    
+  <!-- Spot Style - Gás -->
+
+
+  <style name="IconGás"
+         url="%FIRSTXML%/spots/hotspot_image_sequence_user_defaultpoint8.png"
+         visible="false"
+         frame="0"
+         lastframe="12"
+         framewidth="85"
+         frameheight="85"
+         stopspotsequence="false"
+         crop="0|0|85|85"
+         edge="center"
+         onloaded="startspotanimation(0.1);"
+         onhover="onhoverIconGás"
+         onout="onoutIconGás"
+
+         height="45"
+         width="45"
+         />
+  <action name="onhoverIconGás">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoutIconGás">
+    hideTooltip();
+
+
+
+  </action>
+
+
+
+    
+  <!-- Spot Style - Ducha Higiênica -->
+
+
+  <style name="IconDuchaHigiênica"
+         url="%FIRSTXML%/spots/hotspot_neutral_sequence_user_defaultpoint9.png"
+         visible="false"
+         frame="0"
+         lastframe="26"
+         framewidth="66"
+         frameheight="66"
+         stopspotsequence="false"
+         crop="0|0|66|66"
+         edge="center"
+         onloaded="startspotanimation(0.1);"
+         onhover="onhoverIconDuchaHigiênica"
+         onout="onoutIconDuchaHigiênica"
+
+         height="35"
+         width="35"
+         />
+  <action name="onhoverIconDuchaHigiênica">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoutIconDuchaHigiênica">
+    hideTooltip();
+
+
+
+  </action>
+
+
+
+    
+  <!-- Spot Style - Forro de gesso -->
+
+
+  <style name="IconForrodegesso"
+         url="%FIRSTXML%/spots/hotspot_information_sequence_user_defaultpoint10.png"
+         visible="false"
+         frame="0"
+         lastframe="11"
+         framewidth="54"
+         frameheight="54"
+         stopspotsequence="false"
+         crop="0|0|54|54"
+         edge="center"
+         onloaded="startspotanimation(0.1);"
+         onhover="onhoverIconForrodegesso"
+         onout="onoutIconForrodegesso"
+
+         height="35"
+         width="35"
+         />
+  <action name="onhoverIconForrodegesso">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoutIconForrodegesso">
+    hideTooltip();
+
+
+
+  </action>
+
+
+
+    
+  <!-- Spot Style - Chuveiro -->
+
+
+  <style name="IconChuveiro"
+         url="%FIRSTXML%/spots/hotspot_information_sequence_user_defaultpoint11.png"
+         visible="false"
+         frame="0"
+         lastframe="11"
+         framewidth="54"
+         frameheight="54"
+         stopspotsequence="false"
+         crop="0|0|54|54"
+         edge="center"
+         onloaded="startspotanimation(0.1);"
+         onhover="onhoverIconChuveiro"
+         onout="onoutIconChuveiro"
+
+         height="35"
+         width="35"
+         />
+  <action name="onhoverIconChuveiro">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoutIconChuveiro">
+    hideTooltip();
+
+
+
+  </action>
+
+
+
+  
+  <!-- Spot Style - Tubulação _ Rede Frigorígena -->
+  <style name="PolygonTubulação-RedeFrigorígena"
+           visible="false"
+           bordercolor="0xffffff"
+           fillcolor="0xff0000"
+           borderwidth="1"
+           borderalpha="0.080003051804379333"
+           fillalpha="0.20000000000000001"
+           capture="false"
+           onhover="onhoverPolygonTubulação-RedeFrigorígena"
+           onover="onoverPolygonTubulação-RedeFrigorígena"
+           onout="onoutPolygonTubulação-RedeFrigorígena"
+           />
+  <action name="onhoverPolygonTubulação-RedeFrigorígena">
+    showTooltip('hotspot');
+  </action>
+
+  <action name="onoverPolygonTubulação-RedeFrigorígena">
+    set(bordercolor, 0xffffff);
+    set(fillcolor, 0xff0000);
+    set(borderalpha, 0.10000762951094835);
+    set(fillalpha, 0.50000762951094835);
+    set(borderwidth, 1);
+  </action>
+
+  <action name="onoutPolygonTubulação-RedeFrigorígena">
+
+    set(bordercolor, 0xffffff);
+    set(fillcolor, 0xff0000);
+    set(borderalpha, 0.080003051804379333);
+    set(fillalpha, 0.20000000000000001);
+
+    set(borderwidth, 1);
+    hideTooltip();
+  </action>
+
+
+
+  
+  <!-- Spot Style - Ar Condicionado AZUL -->
+  <style name="PolygonArCondicionadoAZUL"
+           visible="false"
+           bordercolor="0xffffff"
+           fillcolor="0x333f7a"
+           borderwidth="1"
+           borderalpha="0.10000762951094835"
+           fillalpha="0.20000000000000001"
+           capture="false"
+           onhover="onhoverPolygonArCondicionadoAZUL"
+           onover="onoverPolygonArCondicionadoAZUL"
+           onout="onoutPolygonArCondicionadoAZUL"
+           />
+  <action name="onhoverPolygonArCondicionadoAZUL">
+    showTooltip('hotspot');
+  </action>
+
+  <action name="onoverPolygonArCondicionadoAZUL">
+    set(bordercolor, 0xffffff);
+    set(fillcolor, 0x333f7a);
+    set(borderalpha, 0);
+    set(fillalpha, 0.7000076295109483);
+    set(borderwidth, 1);
+  </action>
+
+  <action name="onoutPolygonArCondicionadoAZUL">
+
+    set(bordercolor, 0xffffff);
+    set(fillcolor, 0x333f7a);
+    set(borderalpha, 0.10000762951094835);
+    set(fillalpha, 0.20000000000000001);
+
+    set(borderwidth, 1);
+    hideTooltip();
+  </action>
+
+
+
+    
+  <!-- Spot Style - Luminária de embutir -->
+
+
+  <style name="IconLumináriadeembutir"
+         url="%FIRSTXML%/spots/hotspot_information_sequence_user_defaultpoint13.png"
+         visible="false"
+         frame="0"
+         lastframe="13"
+         framewidth="40"
+         frameheight="60"
+         stopspotsequence="false"
+         crop="0|0|40|60"
+         edge="center"
+         onloaded="startspotanimation(0.1);"
+         onhover="onhoverIconLumináriadeembutir"
+         onover="onoverIconLumináriadeembutir"
+         onout="onoutIconLumináriadeembutir"
+
+         height="35"
+         width="28"
+         />
+  <action name="onhoverIconLumináriadeembutir">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoverIconLumináriadeembutir">
+tween(scale, 1.2);
+
+
+  </action>
+  <action name="onoutIconLumináriadeembutir">
+    hideTooltip();
+    tween(scale, 1);
+
+
+  </action>
+
+
+
+    
+  <!-- Spot Style - Detalhamento de Ambiente -->
+
+
+  <style name="IconDetalhamentodeAmbiente"
+         url="%FIRSTXML%/spots/hotspot_image_sequence_user_defaultpoint14.png"
+         visible="false"
+         frame="0"
+         lastframe="19"
+         framewidth="50"
+         frameheight="50"
+         stopspotsequence="false"
+         crop="0|0|50|50"
+         edge="center"
+         onloaded="startspotanimation(0.1);"
+         onhover="onhoverIconDetalhamentodeAmbiente"
+         onout="onoutIconDetalhamentodeAmbiente"
+
+         height="30"
+         width="30"
+         />
+  <action name="onhoverIconDetalhamentodeAmbiente">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoutIconDetalhamentodeAmbiente">
+    hideTooltip();
+
+
+
+  </action>
+
+
+
+    
+  <!-- Spot Style - Registro _ Agua Fria -->
+
+
+  <style name="IconRegistro-AguaFria"
+         url="%FIRSTXML%/spots/hotspot_image_sequence_user_defaultpoint15.png"
+         visible="false"
+         frame="0"
+         lastframe="12"
+         framewidth="85"
+         frameheight="85"
+         stopspotsequence="false"
+         crop="0|0|85|85"
+         edge="center"
+         onloaded="startspotanimation(0.1);"
+         onhover="onhoverIconRegistro-AguaFria"
+         onout="onoutIconRegistro-AguaFria"
+
+         height="45"
+         width="45"
+         />
+  <action name="onhoverIconRegistro-AguaFria">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoutIconRegistro-AguaFria">
+    hideTooltip();
+
+
+
+  </action>
+
+
+
+  
+  <!-- Spot Style - Forro de Gesso no Teto -->
+  <style name="PolygonForrodeGessonoTeto"
+           visible="false"
+           bordercolor="0xffffff"
+           fillcolor="0x774b39"
+           borderwidth="1"
+           borderalpha="0.10000762951094835"
+           fillalpha="0.20000000000000001"
+           capture="false"
+           onhover="onhoverPolygonForrodeGessonoTeto"
+           onover="onoverPolygonForrodeGessonoTeto"
+           onout="onoutPolygonForrodeGessonoTeto"
+           />
+  <action name="onhoverPolygonForrodeGessonoTeto">
+    showTooltip('hotspot');
+  </action>
+
+  <action name="onoverPolygonForrodeGessonoTeto">
+    set(bordercolor, 0xffffff);
+    set(fillcolor, 0x774b39);
+    set(borderalpha, 0);
+    set(fillalpha, 0.7000076295109483);
+    set(borderwidth, 1);
+  </action>
+
+  <action name="onoutPolygonForrodeGessonoTeto">
+
+    set(bordercolor, 0xffffff);
+    set(fillcolor, 0x774b39);
+    set(borderalpha, 0.10000762951094835);
+    set(fillalpha, 0.20000000000000001);
+
+    set(borderwidth, 1);
+    hideTooltip();
+  </action>
+
+
+
+    
+  <!-- Spot Style - Dreno Ar Condicionado -->
+
+
+  <style name="IconDrenoArCondicionado"
+         url="%FIRSTXML%/spots/dreno-circulo_user_defaultpoint19.png"
+         visible="false"
+         edge="center"
+         onhover="onhoverIconDrenoArCondicionado"
+         onout="onoutIconDrenoArCondicionado"
+
+         height="25"
+         width="25"
+         />
+  <action name="onhoverIconDrenoArCondicionado">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoutIconDrenoArCondicionado">
+    hideTooltip();
+
+
+
+  </action>
+
+
+
+    
+  <!-- Spot Style - Gas 11 -->
+
+
+  <style name="IconGas11"
+         url="%FIRSTXML%/spots/hotspot_information_sequence_user_defaultpoint21.png"
+         visible="false"
+         frame="0"
+         lastframe="19"
+         framewidth="27"
+         frameheight="54"
+         stopspotsequence="false"
+         crop="0|0|27|54"
+         edge="center"
+         onloaded="startspotanimation(0.1);showPermanentTooltip(all);"
+         onhover="onhoverIconGas11"
+         onout="onoutIconGas11"
+
+         height="20"
+         width="15"
+         />
+  <action name="onhoverIconGas11">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoutIconGas11">
+    hideTooltip();
+
+
+
+  </action>
+
+
+
+<!-- ********** -->
+<!-- Logo CMO -->
+<!-- id : logo -->
+<!-- ********** -->
+
+
+
+
+
+<!-- ********** -->
+<!-- Logo Cidade360 -->
+<!-- id : logo1 -->
+<!-- ********** -->
+
+
+
+
+
+<!-- ********** -->
+<!-- Logo Chao -->
+<!-- id : HomeLogo -->
+<!-- ********** -->
+
+  <hotspot ath="0" atv="90"
+         zorder="0"
+         name="HomeLogo"
+         keep="true"
+           vr="true"
+           distorted="true"
+           depth="1000"
+         visible="false"
+         capture="false"
+         enable="true"
+
+         url="%FIRSTXML%/graphics/vr-homelogo/chao-lago.png" 
+         onclick="mainloadscene();"
+
+         height="20%"
+         width="20%"
+
+         />
+
+  <events name="HomeLogoevents" 
+    onTourStart="showHomeLogo();"
+    keep="true" />
+
+  <action name="hideHomeLogo">
+    set(hotspot[HomeLogo].visible, false);
+  </action>
+  <action name="showHomeLogo">
+      set(hotspot[HomeLogo].visible, true);
+  </action>
+
+
+
+  <events name="HomeLogoshowevents" onremovepano="hideHomeLogo" onPanoStart="showHomeLogo" keep="true"/>
+
+
+  <!-- Tour Information -->
+  <action name="hideTourInfo">set(tour_displayinfo, false);events.dispatch(onhidetourinfo);</action>
+  <action name="showTourInfo">set(tour_displayinfo, true); events.dispatch(onshowtourinfo);</action>
+
+
+  <!-- Fullscreen Management -->
+  <action name="exitFullScreen" devices="fullscreensupport">set(tour_fullscreen,false);js(setFullscreen(false));</action>
+  <action name="enterFullScreen" devices="fullscreensupport">set(tour_fullscreen,true);js(setFullscreen(true));</action>
+  <action name="switchFullScreen">if(tour_fullscreen,exitFullScreen();,enterFullScreen(););</action>
+
+  
+  <events name="krpanoExitFullscreenEvent"
+    onexitfullscreen="if(tour_fullscreen,exitFullScreenChangeEvent(););"
+    keep="true" />
+
+  <action name="exitFullScreenChangeEvent" devices="fullscreensupport">set(tour_fullscreen,false);events.dispatch(onexitfullscreen);</action>
+  <action name="enterFullScreenChangeEvent" devices="fullscreensupport">set(tour_fullscreen,true);events.dispatch(onenterfullscreen);</action>
+  <action name="exitFullScreenFallback">set(fullscreen,false);</action>
+  <action name="enterFullScreenFallback">set(fullscreen,true);</action>
+  
+  <action name="resizeFullScreenEvent">delayedcall(0,updatescreen(););</action>
+
+  <!-- Hide / Show Controls -->
+  <action name="hideTourControls">set(tour_displaycontrols, false);events.dispatch(hidetourcontrols);</action>
+  <action name="showTourControls">set(tour_displaycontrols, true); events.dispatch(showtourcontrols);</action>
+
+
+  <action name="displayImage">
+    if (layer[displayedStandardImage],
+      if(layer[displayedStandardImage].doNotDeleteMe,
+        set(layer[displayedStandardImage].currentCall, false);
+        set(layer[displayedStandardImage].doNotDeleteMe, false);
+        
+        if (%1 == layer[displayedStandardImage].url,
+          applyDisplayedImageObjectAnimation(%8);
+        ,
+          setDisplayedImageObjectParameters(%1, %2, %3, %4, %5, %6, %7, %8, %9, %10);
+        );
+      ,
+        set(layer[displayedStandardImage].currentCall, false);
+        set(layer[displayedStandardImage].doNotDeleteMe, true);
+        events.dispatch(onremovedisplayedobject);
+        delayedcall(0.2,displayImage(%1, %2, %3, %4, %5, %6, %7, %8, %9, %10, %11, %12););
+      );
+    ,
+      if(%10,
+        addlayer(displayedStandardImageOverlay);
+        set(layer[displayedStandardImageOverlay].keep, false);
+        set(layer[displayedStandardImageOverlay].width, 100%);
+        set(layer[displayedStandardImageOverlay].height, 100%);
+        set(layer[displayedStandardImageOverlay].type, container);
+        set(layer[displayedStandardImageOverlay].zorder, 98);
+        set(layer[displayedStandardImageOverlay].visible, false);
+        set(layer[displayedStandardImageOverlay].onclick, applyDisplayedImageObjectAnimation(%8););
+        set(layer[displayedStandardImageOverlay].bgcolor, "0x%11");
+        set(layer[displayedStandardImageOverlay].bgalpha, %12);
+        set(layer[displayedStandardImageOverlay].bgcapture, true);
+      );
+      addlayer(displayedStandardImage);
+      set(layer[displayedStandardImage].keep, false);
+      set(layer[displayedStandardImage].onclick, applyDisplayedImageObjectAnimation(%8););
+      set(layer[displayedStandardImage].zorder , 99);
+      set(layer[displayedStandardImage].currentCall, true);
+      set(layer[displayedStandardImage].doNotDeleteMe, true);
+      set(layer[displayedStandardImage].onloaded, resizeDisplayedImageObject());
+      events.dispatch(onremovedisplayedobject);
+      delayedcall(0.2,displayImage(%1, %2, %3, %4, %5, %6, %7, %8, %9, %10, %11, %12););
+      set(layer[displayedStandardImage].visible, false);
+    );
+  </action>
+  <action name="applyDisplayedImageObjectAnimation">resumeautorotation(forcehotspot);
+
+    if (%1,
+      stoptween(layer[displayedStandardImage].width, layer[displayedStandardImage].height);
+      tween(layer[displayedStandardImage].width|layer[displayedStandardImage].height, 1|1, 1, easeOutQuad, WAIT);
+      if(layer[displayedStandardImage].overlay,removelayer(displayedStandardImageOverlay););removelayer(displayedStandardImage);
+    ,
+      if(layer[displayedStandardImage].overlay,removelayer(displayedStandardImageOverlay););removelayer(displayedStandardImage);
+    );
+  </action>
+  <action name="setDisplayedImageObjectParameters">
+    set(layer[displayedStandardImage].url       , %1);
+    set(layer[displayedStandardImage].align     , %2);
+    set(layer[displayedStandardImage].x         , %3);
+    set(layer[displayedStandardImage].y         , %4);
+    set(layer[displayedStandardImage].imgwidth  , %5);
+    set(layer[displayedStandardImage].imgheight , %6);
+    set(layer[displayedStandardImage].animated  , %8);
+    set(layer[displayedStandardImage].applyratio, %9);
+    set(layer[displayedStandardImage].overlay   , %10);
+    if (%7,pauseautorotation(forcehotspot);
+);
+  </action>
+  <action name="resizeDisplayedImageObject">
+    if(layer[displayedStandardImage].url,
+    set(layer[displayedStandardImage].fullwidth, get(layer[displayedStandardImage].width));
+    set(layer[displayedStandardImage].fullheight, get(layer[displayedStandardImage].height));
+    if(layer[displayedStandardImage].animated,
+      set(layer[displayedStandardImage].width , 1);
+      set(layer[displayedStandardImage].height, 1);
+    );
+    if(layer[displayedStandardImage].imgwidth != "" AND layer[displayedStandardImage].imgheight != "",
+      if(layer[displayedStandardImage].imgwidth == "prop",
+        set(tempDisplayedImageObjectHeight, get(layer[displayedStandardImage].imgheight));
+        indexoftxt(tempDisplayedImageObjectHeightPercent, get(tempDisplayedImageObjectHeight), "%");
+        if(tempDisplayedImageObjectHeightPercent GT 0,
+          txtreplace(tempDisplayedImageObjectHeight, '%', '');
+          mul(tempDisplayedImageObjectHeight, get(stageheight));
+          div(tempDisplayedImageObjectHeight, 100);
+          Math.round(tempDisplayedImageObjectHeight);
+        );
+        mul(flyingImgWidth,get(layer[displayedStandardImage].fullwidth),get(tempDisplayedImageObjectHeight));
+        div(flyingImgWidth,get(layer[displayedStandardImage].fullheight));
+        Math.round(flyingImgWidth);
+        set(layer[displayedStandardImage].imgwidth , get(flyingImgWidth));
+        set(layer[displayedStandardImage].imgheight, get(tempDisplayedImageObjectHeight));
+      ,
+        if(layer[displayedStandardImage].imgheight == "prop",
+          set(tempDisplayedImageObjectWidth, get(layer[displayedStandardImage].imgwidth));
+          indexoftxt(tempDisplayedImageObjectWidthPercent, get(tempDisplayedImageObjectWidth), "%");
+          if(tempDisplayedImageObjectWidthPercent GT 0,
+            txtreplace(tempDisplayedImageObjectWidth, '%', '');
+            mul(tempDisplayedImageObjectWidth, get(stagewidth));
+            div(tempDisplayedImageObjectWidth, 100);
+            Math.round(tempDisplayedImageObjectWidth);
+          );
+          mul(flyingImgHeight,get(layer[displayedStandardImage].fullheight),get(tempDisplayedImageObjectWidth));
+          div(flyingImgHeight,get(layer[displayedStandardImage].fullwidth));
+          Math.round(flyingImgHeight);
+          set(layer[displayedStandardImage].imgwidth , get(tempDisplayedImageObjectWidth));
+          set(layer[displayedStandardImage].imgheight , get(flyingImgHeight));
+        ,
+          set(tempDisplayedImageObjectWidth, get(layer[displayedStandardImage].imgwidth));
+          set(tempDisplayedImageObjectHeight, get(layer[displayedStandardImage].imgheight));
+          indexoftxt(tempDisplayedImageObjectWidthPercent, get(tempDisplayedImageObjectWidth), "%");
+          indexoftxt(tempDisplayedImageObjectHeightPercent, get(tempDisplayedImageObjectHeight), "%");
+          if(tempDisplayedImageObjectWidthPercent GT 0,
+            txtreplace(tempDisplayedImageObjectWidth, '%', '');
+            mul(tempDisplayedImageObjectWidth, get(stagewidth));
+            div(tempDisplayedImageObjectWidth, 100);
+            Math.round(tempDisplayedImageObjectWidth);
+          );
+          if(tempDisplayedImageObjectHeightPercent GT 0,
+            txtreplace(tempDisplayedImageObjectHeight, '%', '');
+            mul(tempDisplayedImageObjectHeight, get(stageheight));
+            div(tempDisplayedImageObjectHeight, 100);
+            Math.round(tempDisplayedImageObjectHeight);
+          );
+          set(layer[displayedStandardImage].imgwidth , get(tempDisplayedImageObjectWidth));
+          set(layer[displayedStandardImage].imgheight, get(tempDisplayedImageObjectHeight));
+        );
+      );
+    ,
+      set(layer[displayedStandardImage].imgwidth , get(layer[displayedStandardImage].fullwidth));
+      set(layer[displayedStandardImage].imgheight, get(layer[displayedStandardImage].fullheight));
+    );
+    
+    set(resizedwidth, get(layer[displayedStandardImage].imgwidth));
+    set(resizedheight, get(layer[displayedStandardImage].imgheight));
+    if(layer[displayedStandardImage].applyratio,
+      sub(resizedstagewidth, get(stagewidth), get(layer[displayedStandardImage].x));
+      sub(resizedstageheight, get(stageheight), get(layer[displayedStandardImage].y));
+      Math.abs(resizedstagewidth);
+      Math.abs(resizedstageheight);
+      if(resizedwidth GT resizedstagewidth,
+        mul(tempresizedheight, get(resizedheight), get(resizedstagewidth));
+        div(tempresizedheight, get(resizedwidth));
+        Math.round(tempresizedheight);
+        set(resizedwidth, get(resizedstagewidth));
+        set(resizedheight, get(tempresizedheight));
+      );
+      if(resizedheight GT resizedstageheight,
+        mul(tempresizedwidth, get(resizedwidth), get(resizedstageheight));
+        div(tempresizedwidth, get(resizedheight));
+        Math.round(tempresizedwidth);
+        set(resizedheight, get(resizedstageheight));
+        set(resizedwidth, get(tempresizedwidth));
+      );
+    );
+    
+    if(layer[displayedStandardImage].animated,
+      set(layer[displayedStandardImage].animated, false);
+      tween(layer[displayedStandardImage].width , get(resizedwidth), 1, easeOutQuad);
+      tween(layer[displayedStandardImage].height, get(resizedheight), 1, easeOutQuad);
+    ,
+      set(layer[displayedStandardImage].width , get(resizedwidth));
+      set(layer[displayedStandardImage].height, get(resizedheight));
+    );
+    if(layer[displayedStandardImage].overlay,set(layer[displayedStandardImageOverlay].visible, true););
+    set(layer[displayedStandardImage].visible, true);
+    ,
+      delayedcall(0.2,resizeDisplayedImageObject(););
+    );
+  </action>
+  <events name="displayedImageObjectEvents" keep="true" onremovedisplayedobject="displayedImageObjectOnRemoveDisplayedObject" onresize="if(layer[displayedStandardImage],resizeDisplayedImageObject());" />
+  <action name="displayedImageObjectOnRemoveDisplayedObject">
+    ifnot(layer[displayedStandardImage].currentCall,if(layer[displayedStandardImage].visible,resumeautorotation(forcehotspot);
+
+      if(layer[displayedStandardImage].overlay,removelayer(displayedStandardImageOverlay););
+      removelayer(displayedStandardImage);
+    ););
+  </action>
+
+
+<action name="viewControlZoomIn">
+	if(%1,
+		if(%2,
+			if(%2 LT view.fovmin,
+				zoomto(get(view.fovmin));
+			,
+				if(%2 LT view.fov,
+					zoomto(%2);
+				);
+			);
+		,
+			set(fov_moveforce, -1);
+			delayedcall(0.1, viewControlZoomStop());
+		);
+	,
+		set(fov_moveforce, -1);
+	);
+</action>
+<action name="viewControlZoomOut">
+	if(%1,
+		if(%2,
+			if(%2 GT view.fovmax,
+				zoomto(get(view.fovmax));
+			,
+				if(%2 GT view.fov,
+					zoomto(%2);
+				);
+			);
+		,
+			set(fov_moveforce, +1);
+			delayedcall(0.1, viewControlZoomStop());
+		);
+	,
+		set(fov_moveforce, +1);
+	);
+</action>
+<action name="viewControlZoomStop">
+	set(fov_moveforce, 0);
+</action>
+
+  <!-- FLOORPLAN -->
+  <action name="hideFloorplan">set(tour_displayfloorplan, false);events.dispatch(onhidetourfloorplan);</action>
+  <action name="showFloorplan">set(tour_displayfloorplan, true); events.dispatch(onshowtourfloorplan);</action>
+
+
+  <!-- Sounds Management -->
+
+  <action name="play3DLocalSounds">
+    if (xml.scene, if (scene[get(xml.scene)].haslocalsounds, playpanolocalsounds();););
+  </action>
+  <action name="stop3DLocalSounds">
+    if (xml.scene, if (scene[get(xml.scene)].haslocalsounds, stoppanolocalsounds();););
+  </action>
+  <action name="resume3DLocalSounds">
+    if (xml.scene, if (scene[get(xml.scene)].haslocalsounds, 
+      set(kill3dSoundOnResume, true);
+      if(layer[displayedStandardVideo],
+      if(layer[displayedStandardVideo].pausebgsound,
+      if(tour_current_played_video,
+        set(kill3dSoundOnResume, false);
+      );););
+      if(layer[webvideodisplay_player],
+      if(layer[webvideodisplay_player].pausebgsound,
+      if(tour_current_played_web_video,
+        set(kill3dSoundOnResume, false);
+      );););
+      if(tour_current_played_sound_pausesound,
+      if(tour_current_played_sound,
+        set(kill3dSoundOnResume, false);
+      ););
+      if(kill3dSoundOnResume,
+        resumepanolocalsounds();
+      );
+    ););
+  </action>
+  <action name="pause3DLocalSounds">
+    if (xml.scene, if (scene[get(xml.scene)].haslocalsounds, pausepanolocalsounds();););
+  </action>
+  <action name="set3DLocalSoundsVolume">
+    if (xml.scene, if (scene[get(xml.scene)].haslocalsounds, setpanolocalsoundsvolume();););
+  </action>
+  <action name="playTourSounds">
+    set(tour_soundson, true);events.dispatch(playtoursoundsevent);
+    resumeTourSoundsActions(true,true,true,true,true);
+  </action>
+  <action name="stopTourSounds">
+    set(tour_soundson, false);events.dispatch(stoptoursoundsevent);
+    pauseTourSoundsActions(true,true,true,true,true);
+  </action>
+  <action name="setTourSoundsVolume">
+    set(tour_soundsvolume, %1);events.dispatch(changetoursoundsevent);
+    set3DLocalSoundsVolume();
+  </action>
+  <action name="playTourSoundsActions">
+    if(%1,
+        play3DLocalSounds();
+    );
+  </action>
+  <action name="stopTourSoundsActions">
+    if(%1,
+      stop3DLocalSounds();
+    );
+    if(%3,
+      stopVideoActionsSounds();
+    );
+  </action>
+  <action name="resumeTourSoundsActions">
+    if(%1,
+        resume3DLocalSounds();
+    );
+    if(%3,
+      resumeVideoActionsSounds();
+    );
+  </action>
+  <action name="pauseTourSoundsActions">
+    if(%1,
+      pause3DLocalSounds();
+    );
+    if(%3,
+      pauseVideoActionsSounds();
+    );
+  </action>
+  <action name="stopVideoActionsSounds">
+    if(tour_current_played_video,
+      if(layer[displayedStandardVideo],
+        layer[displayedStandardVideo].stop();
+        removelayer(displayedStandardVideo);
+        if(layer[displayedStandardVideoOverlayButton], removelayer(displayedStandardVideoOverlayButton); );
+        if(layer[displayedStandardVideoOverlay], removelayer(displayedStandardVideoOverlay); );
+        delete(tour_current_played_video);
+        set(tour_current_played_video_state, 0);
+      );
+    );
+    if(tour_current_played_web_video,
+      displayWebVideoObjectClose();
+    );
+  </action>
+  <action name="resumeVideoActionsSounds">
+    if(tour_current_played_video,
+      set(resumeVideoActionsVerification, true);
+      if(tour_current_played_sound,
+        if(tour_current_played_video_state LT tour_current_played_sound_state,
+          set(resumeVideoActionsVerification, false);
+        );
+      );
+      if(resumeVideoActionsVerification,
+        if (tour_soundson,
+          if(device.flash OR (device.webgl AND !device.ios),
+            div(volume, tour_soundsvolume, 100);
+            set(layer[displayedStandardVideo].volume, get(volume));
+          ,
+            ifnot(device.ios,
+              js(kpanotour.Sounds.startVideosSounds(get(volume)));
+            ,
+              if(tour_soundsvolume GT 0,
+                set(layer[displayedStandardVideo].muted, false);
+              ,
+                set(layer[displayedStandardVideo].muted, true);
+              );
+            );
+          );
+        ,
+          if(device.flash OR (device.webgl AND !device.ios),
+            set(layer[displayedStandardVideo].volume, 0);
+          ,
+            ifnot(device.ios,
+              js(kpanotour.Sounds.stopVideosSounds());
+            ,
+              set(layer[displayedStandardVideo].muted, true);
+            );
+          );
+        );
+      );
+    );
+  </action>
+  <action name="pauseVideoActionsSounds">
+    if(tour_current_played_video,
+      if(device.flash OR (device.webgl AND !device.ios),
+        set(layer[displayedStandardVideo].volume, 0);
+      ,
+        ifnot(device.ios,
+          js(kpanotour.Sounds.stopVideosSounds());
+        ,
+          set(layer[displayedStandardVideo].muted, true);
+        );
+      );
+    );
+  </action>
+
+</krpano>

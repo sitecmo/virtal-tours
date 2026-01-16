@@ -1,0 +1,4526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano version="1.19-pr16">
+
+  <!-- unsupported kind of display : PointMap -->
+
+
+  
+  <!-- Spot Style - Esgoto _ Verde -->
+  <style name="PolygonEsgoto-Verde"
+           visible="false"
+           bordercolor="0xa8a8a8"
+           fillcolor="0x02ff17"
+           borderwidth="1"
+           borderalpha="0.089997711146715495"
+           fillalpha="0.20000000000000001"
+           capture="false"
+           onhover="onhoverPolygonEsgoto-Verde"
+           onover="onoverPolygonEsgoto-Verde"
+           onout="onoutPolygonEsgoto-Verde"
+           />
+  <action name="onhoverPolygonEsgoto-Verde">
+    showTooltip('hotspot');
+  </action>
+
+  <action name="onoverPolygonEsgoto-Verde">
+    set(bordercolor, 0xffffff);
+    set(fillcolor, 0x02ff17);
+    set(borderalpha, 0);
+    set(fillalpha, 0.59999999999999998);
+    set(borderwidth, 1);
+  </action>
+
+  <action name="onoutPolygonEsgoto-Verde">
+
+    set(bordercolor, 0xa8a8a8);
+    set(fillcolor, 0x02ff17);
+    set(borderalpha, 0.089997711146715495);
+    set(fillalpha, 0.20000000000000001);
+
+    set(borderwidth, 1);
+    hideTooltip();
+  </action>
+
+
+
+  
+  <!-- Spot Style - Gás _ Amarelo -->
+  <style name="PolygonGás-Amarelo"
+           visible="false"
+           bordercolor="0xffffff"
+           fillcolor="0xffe136"
+           borderwidth="1"
+           borderalpha="0.080003051804379333"
+           fillalpha="0.20000000000000001"
+           capture="false"
+           onhover="onhoverPolygonGás-Amarelo"
+           onover="onoverPolygonGás-Amarelo"
+           onout="onoutPolygonGás-Amarelo"
+           />
+  <action name="onhoverPolygonGás-Amarelo">
+    showTooltip('hotspot');
+  </action>
+
+  <action name="onoverPolygonGás-Amarelo">
+    set(bordercolor, 0xffffff);
+    set(fillcolor, 0xffe136);
+    set(borderalpha, 0);
+    set(fillalpha, 0.59999999999999998);
+    set(borderwidth, 1);
+  </action>
+
+  <action name="onoutPolygonGás-Amarelo">
+
+    set(bordercolor, 0xffffff);
+    set(fillcolor, 0xffe136);
+    set(borderalpha, 0.080003051804379333);
+    set(fillalpha, 0.20000000000000001);
+
+    set(borderwidth, 1);
+    hideTooltip();
+  </action>
+
+
+
+  
+  <!-- Spot Style - Enchimento hidro_sanitário _ Verde -->
+  <style name="PolygonEnchimentohidro-sanitário-Verde"
+           visible="false"
+           bordercolor="0xffffff"
+           fillcolor="0x166818"
+           borderwidth="1"
+           borderalpha="0.080003051804379333"
+           fillalpha="0.20000000000000001"
+           capture="false"
+           onhover="onhoverPolygonEnchimentohidro-sanitário-Verde"
+           onover="onoverPolygonEnchimentohidro-sanitário-Verde"
+           onout="onoutPolygonEnchimentohidro-sanitário-Verde"
+           />
+  <action name="onhoverPolygonEnchimentohidro-sanitário-Verde">
+    showTooltip('hotspot');
+  </action>
+
+  <action name="onoverPolygonEnchimentohidro-sanitário-Verde">
+    set(bordercolor, 0x3b8dff);
+    set(fillcolor, 0x166818);
+    set(borderalpha, 0);
+    set(fillalpha, 0.59999999999999998);
+    set(borderwidth, 1);
+  </action>
+
+  <action name="onoutPolygonEnchimentohidro-sanitário-Verde">
+
+    set(bordercolor, 0xffffff);
+    set(fillcolor, 0x166818);
+    set(borderalpha, 0.080003051804379333);
+    set(fillalpha, 0.20000000000000001);
+
+    set(borderwidth, 1);
+    hideTooltip();
+  </action>
+
+
+
+  
+  <!-- Spot Style - Viga _ Rosa -->
+  <style name="PolygonViga-Rosa"
+           visible="false"
+           bordercolor="0xffffff"
+           fillcolor="0xfb71ff"
+           borderwidth="1"
+           borderalpha="0.080003051804379333"
+           fillalpha="0.20000000000000001"
+           capture="false"
+           onhover="onhoverPolygonViga-Rosa"
+           onover="onoverPolygonViga-Rosa"
+           onout="onoutPolygonViga-Rosa"
+           />
+  <action name="onhoverPolygonViga-Rosa">
+    showTooltip('hotspot');
+  </action>
+
+  <action name="onoverPolygonViga-Rosa">
+    set(bordercolor, 0xffffff);
+    set(fillcolor, 0xfb71ff);
+    set(borderalpha, 0.080003051804379333);
+    set(fillalpha, 0.59999999999999998);
+    set(borderwidth, 1);
+  </action>
+
+  <action name="onoutPolygonViga-Rosa">
+
+    set(bordercolor, 0xffffff);
+    set(fillcolor, 0xfb71ff);
+    set(borderalpha, 0.080003051804379333);
+    set(fillalpha, 0.20000000000000001);
+
+    set(borderwidth, 1);
+    hideTooltip();
+  </action>
+
+
+
+  
+  <!-- Spot Style - Água fria _ Azul -->
+  <style name="PolygonÁguafria-Azul"
+           visible="false"
+           bordercolor="0xffffff"
+           fillcolor="0x3b8dff"
+           borderwidth="1"
+           borderalpha="0.080003051804379333"
+           fillalpha="0.20000000000000001"
+           capture="false"
+           onhover="onhoverPolygonÁguafria-Azul"
+           onover="onoverPolygonÁguafria-Azul"
+           onout="onoutPolygonÁguafria-Azul"
+           />
+  <action name="onhoverPolygonÁguafria-Azul">
+    showTooltip('hotspot');
+  </action>
+
+  <action name="onoverPolygonÁguafria-Azul">
+    set(bordercolor, 0xffffff);
+    set(fillcolor, 0x3b8dff);
+    set(borderalpha, 0.10000762951094835);
+    set(fillalpha, 0.50000762951094835);
+    set(borderwidth, 1);
+  </action>
+
+  <action name="onoutPolygonÁguafria-Azul">
+
+    set(bordercolor, 0xffffff);
+    set(fillcolor, 0x3b8dff);
+    set(borderalpha, 0.080003051804379333);
+    set(fillalpha, 0.20000000000000001);
+
+    set(borderwidth, 1);
+    hideTooltip();
+  </action>
+
+
+
+  
+  <!-- Spot Style - Quadro Elétrico _ Vermelho -->
+  <style name="PolygonQuadroElétrico-Vermelho"
+           visible="false"
+           bordercolor="0xffffff"
+           fillcolor="0xff0000"
+           borderwidth="1"
+           borderalpha="0.080003051804379333"
+           fillalpha="0.20000000000000001"
+           capture="false"
+           onhover="onhoverPolygonQuadroElétrico-Vermelho"
+           onover="onoverPolygonQuadroElétrico-Vermelho"
+           onout="onoutPolygonQuadroElétrico-Vermelho"
+           />
+  <action name="onhoverPolygonQuadroElétrico-Vermelho">
+    showTooltip('hotspot');
+  </action>
+
+  <action name="onoverPolygonQuadroElétrico-Vermelho">
+    set(bordercolor, 0xffffff);
+    set(fillcolor, 0xff0000);
+    set(borderalpha, 0);
+    set(fillalpha, 0.50000762951094835);
+    set(borderwidth, 1);
+  </action>
+
+  <action name="onoutPolygonQuadroElétrico-Vermelho">
+
+    set(bordercolor, 0xffffff);
+    set(fillcolor, 0xff0000);
+    set(borderalpha, 0.080003051804379333);
+    set(fillalpha, 0.20000000000000001);
+
+    set(borderwidth, 1);
+    hideTooltip();
+  </action>
+
+
+
+    
+  <!-- Spot Style - Luminária de sobrepor -->
+
+
+  <style name="IconLumináriadesobrepor"
+         url="%FIRSTXML%/spots/hotspot_information_sequence_user_defaultpoint5.png"
+         visible="false"
+         frame="0"
+         lastframe="13"
+         framewidth="40"
+         frameheight="60"
+         stopspotsequence="false"
+         crop="0|0|40|60"
+         edge="center"
+         onloaded="startspotanimation(0.1);"
+         onhover="onhoverIconLumináriadesobrepor"
+         onover="onoverIconLumináriadesobrepor"
+         onout="onoutIconLumináriadesobrepor"
+
+         height="35"
+         width="28"
+         />
+  <action name="onhoverIconLumináriadesobrepor">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoverIconLumináriadesobrepor">
+tween(scale, 1.2);
+
+
+  </action>
+  <action name="onoutIconLumináriadesobrepor">
+    hideTooltip();
+    tween(scale, 1);
+
+
+  </action>
+
+
+
+    
+  <!-- Spot Style - Gesso corrido na laje -->
+
+
+  <style name="IconGessocorridonalaje"
+         url="%FIRSTXML%/spots/hotspot_information_sequence_user_defaultpoint6.png"
+         visible="false"
+         frame="0"
+         lastframe="11"
+         framewidth="54"
+         frameheight="54"
+         stopspotsequence="false"
+         crop="0|0|54|54"
+         edge="center"
+         onloaded="startspotanimation(0.1);"
+         onhover="onhoverIconGessocorridonalaje"
+         onover="onoverIconGessocorridonalaje"
+         onout="onoutIconGessocorridonalaje"
+
+         height="35"
+         width="35"
+         />
+  <action name="onhoverIconGessocorridonalaje">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoverIconGessocorridonalaje">
+tween(scale, 1.2);
+
+
+  </action>
+  <action name="onoutIconGessocorridonalaje">
+    hideTooltip();
+    tween(scale, 1);
+
+
+  </action>
+
+
+
+  
+  <!-- Spot Style - Pilar _ Rosa -->
+  <style name="PolygonPilar-Rosa"
+           visible="false"
+           bordercolor="0xffffff"
+           fillcolor="0xfb71ff"
+           borderwidth="1"
+           borderalpha="0.10000762951094835"
+           fillalpha="0.20000000000000001"
+           capture="false"
+           onhover="onhoverPolygonPilar-Rosa"
+           onover="onoverPolygonPilar-Rosa"
+           onout="onoutPolygonPilar-Rosa"
+           />
+  <action name="onhoverPolygonPilar-Rosa">
+    showTooltip('hotspot');
+  </action>
+
+  <action name="onoverPolygonPilar-Rosa">
+    set(bordercolor, 0xffffff);
+    set(fillcolor, 0xfb71ff);
+    set(borderalpha, 0);
+    set(fillalpha, 0.59999999999999998);
+    set(borderwidth, 1);
+  </action>
+
+  <action name="onoutPolygonPilar-Rosa">
+
+    set(bordercolor, 0xffffff);
+    set(fillcolor, 0xfb71ff);
+    set(borderalpha, 0.10000762951094835);
+    set(fillalpha, 0.20000000000000001);
+
+    set(borderwidth, 1);
+    hideTooltip();
+  </action>
+
+
+
+    
+  <!-- Spot Style - Seta para cima -->
+
+
+  <style name="IconSetaparacima"
+         url="%FIRSTXML%/spots/hotspot_direction_sequence_user_defaultpoint7.png"
+         visible="false"
+         frame="0"
+         lastframe="15"
+         framewidth="98"
+         frameheight="43"
+         stopspotsequence="false"
+         crop="0|0|98|43"
+         edge="center"
+         rotate="270"
+         onloaded="startspotanimation(0.1);"
+         onhover="onhoverIconSetaparacima"
+         onout="onoutIconSetaparacima"
+
+
+         height="30"
+         width="prop"
+         />
+  <action name="onhoverIconSetaparacima">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoutIconSetaparacima">
+    hideTooltip();
+
+
+
+  </action>
+
+
+
+    
+  <!-- Spot Style - Gás -->
+
+
+  <style name="IconGás"
+         url="%FIRSTXML%/spots/hotspot_image_sequence_user_defaultpoint8.png"
+         visible="false"
+         frame="0"
+         lastframe="12"
+         framewidth="85"
+         frameheight="85"
+         stopspotsequence="false"
+         crop="0|0|85|85"
+         edge="center"
+         onloaded="startspotanimation(0.1);"
+         onhover="onhoverIconGás"
+         onout="onoutIconGás"
+
+         height="45"
+         width="45"
+         />
+  <action name="onhoverIconGás">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoutIconGás">
+    hideTooltip();
+
+
+
+  </action>
+
+
+
+    
+  <!-- Spot Style - Forro de gesso -->
+
+
+  <style name="IconForrodegesso"
+         url="%FIRSTXML%/spots/hotspot_information_sequence_user_defaultpoint10.png"
+         visible="false"
+         frame="0"
+         lastframe="11"
+         framewidth="54"
+         frameheight="54"
+         stopspotsequence="false"
+         crop="0|0|54|54"
+         edge="center"
+         onloaded="startspotanimation(0.1);"
+         onhover="onhoverIconForrodegesso"
+         onout="onoutIconForrodegesso"
+
+         height="35"
+         width="35"
+         />
+  <action name="onhoverIconForrodegesso">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoutIconForrodegesso">
+    hideTooltip();
+
+
+
+  </action>
+
+
+
+    
+  <!-- Spot Style - Chuveiro -->
+
+
+  <style name="IconChuveiro"
+         url="%FIRSTXML%/spots/hotspot_information_sequence_user_defaultpoint11.png"
+         visible="false"
+         frame="0"
+         lastframe="11"
+         framewidth="54"
+         frameheight="54"
+         stopspotsequence="false"
+         crop="0|0|54|54"
+         edge="center"
+         onloaded="startspotanimation(0.1);"
+         onhover="onhoverIconChuveiro"
+         onout="onoutIconChuveiro"
+
+         height="35"
+         width="35"
+         />
+  <action name="onhoverIconChuveiro">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoutIconChuveiro">
+    hideTooltip();
+
+
+
+  </action>
+
+
+
+  
+  <!-- Spot Style - Tubulação _ Rede Frigorígena -->
+  <style name="PolygonTubulação-RedeFrigorígena"
+           visible="false"
+           bordercolor="0xffffff"
+           fillcolor="0xff0000"
+           borderwidth="1"
+           borderalpha="0.080003051804379333"
+           fillalpha="0.20000000000000001"
+           capture="false"
+           onhover="onhoverPolygonTubulação-RedeFrigorígena"
+           onover="onoverPolygonTubulação-RedeFrigorígena"
+           onout="onoutPolygonTubulação-RedeFrigorígena"
+           />
+  <action name="onhoverPolygonTubulação-RedeFrigorígena">
+    showTooltip('hotspot');
+  </action>
+
+  <action name="onoverPolygonTubulação-RedeFrigorígena">
+    set(bordercolor, 0xffffff);
+    set(fillcolor, 0xff0000);
+    set(borderalpha, 0.10000762951094835);
+    set(fillalpha, 0.50000762951094835);
+    set(borderwidth, 1);
+  </action>
+
+  <action name="onoutPolygonTubulação-RedeFrigorígena">
+
+    set(bordercolor, 0xffffff);
+    set(fillcolor, 0xff0000);
+    set(borderalpha, 0.080003051804379333);
+    set(fillalpha, 0.20000000000000001);
+
+    set(borderwidth, 1);
+    hideTooltip();
+  </action>
+
+
+
+  
+  <!-- Spot Style - Ar Condicionado AZUL -->
+  <style name="PolygonArCondicionadoAZUL"
+           visible="false"
+           bordercolor="0xffffff"
+           fillcolor="0x333f7a"
+           borderwidth="1"
+           borderalpha="0.10000762951094835"
+           fillalpha="0.20000000000000001"
+           capture="false"
+           onhover="onhoverPolygonArCondicionadoAZUL"
+           onover="onoverPolygonArCondicionadoAZUL"
+           onout="onoutPolygonArCondicionadoAZUL"
+           />
+  <action name="onhoverPolygonArCondicionadoAZUL">
+    showTooltip('hotspot');
+  </action>
+
+  <action name="onoverPolygonArCondicionadoAZUL">
+    set(bordercolor, 0xffffff);
+    set(fillcolor, 0x333f7a);
+    set(borderalpha, 0);
+    set(fillalpha, 0.7000076295109483);
+    set(borderwidth, 1);
+  </action>
+
+  <action name="onoutPolygonArCondicionadoAZUL">
+
+    set(bordercolor, 0xffffff);
+    set(fillcolor, 0x333f7a);
+    set(borderalpha, 0.10000762951094835);
+    set(fillalpha, 0.20000000000000001);
+
+    set(borderwidth, 1);
+    hideTooltip();
+  </action>
+
+
+
+    
+  <!-- Spot Style - Luminária de embutir -->
+
+
+  <style name="IconLumináriadeembutir"
+         url="%FIRSTXML%/spots/hotspot_information_sequence_user_defaultpoint13.png"
+         visible="false"
+         frame="0"
+         lastframe="13"
+         framewidth="40"
+         frameheight="60"
+         stopspotsequence="false"
+         crop="0|0|40|60"
+         edge="center"
+         onloaded="startspotanimation(0.1);"
+         onhover="onhoverIconLumináriadeembutir"
+         onover="onoverIconLumináriadeembutir"
+         onout="onoutIconLumináriadeembutir"
+
+         height="35"
+         width="28"
+         />
+  <action name="onhoverIconLumináriadeembutir">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoverIconLumináriadeembutir">
+tween(scale, 1.2);
+
+
+  </action>
+  <action name="onoutIconLumináriadeembutir">
+    hideTooltip();
+    tween(scale, 1);
+
+
+  </action>
+
+
+
+    
+  <!-- Spot Style - Detalhamento de Ambiente -->
+
+
+  <style name="IconDetalhamentodeAmbiente"
+         url="%FIRSTXML%/spots/hotspot_image_sequence_user_defaultpoint14.png"
+         visible="false"
+         frame="0"
+         lastframe="19"
+         framewidth="50"
+         frameheight="50"
+         stopspotsequence="false"
+         crop="0|0|50|50"
+         edge="center"
+         onloaded="startspotanimation(0.1);"
+         onhover="onhoverIconDetalhamentodeAmbiente"
+         onout="onoutIconDetalhamentodeAmbiente"
+
+         height="30"
+         width="30"
+         />
+  <action name="onhoverIconDetalhamentodeAmbiente">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoutIconDetalhamentodeAmbiente">
+    hideTooltip();
+
+
+
+  </action>
+
+
+
+    
+  <!-- Spot Style - Registro _ Agua Fria -->
+
+
+  <style name="IconRegistro-AguaFria"
+         url="%FIRSTXML%/spots/hotspot_image_sequence_user_defaultpoint15.png"
+         visible="false"
+         frame="0"
+         lastframe="12"
+         framewidth="85"
+         frameheight="85"
+         stopspotsequence="false"
+         crop="0|0|85|85"
+         edge="center"
+         onloaded="startspotanimation(0.1);"
+         onhover="onhoverIconRegistro-AguaFria"
+         onout="onoutIconRegistro-AguaFria"
+
+         height="45"
+         width="45"
+         />
+  <action name="onhoverIconRegistro-AguaFria">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoutIconRegistro-AguaFria">
+    hideTooltip();
+
+
+
+  </action>
+
+
+
+  
+  <!-- Spot Style - Forro de Gesso no Teto -->
+  <style name="PolygonForrodeGessonoTeto"
+           visible="false"
+           bordercolor="0xffffff"
+           fillcolor="0x774b39"
+           borderwidth="1"
+           borderalpha="0.10000762951094835"
+           fillalpha="0.20000000000000001"
+           capture="false"
+           onhover="onhoverPolygonForrodeGessonoTeto"
+           onover="onoverPolygonForrodeGessonoTeto"
+           onout="onoutPolygonForrodeGessonoTeto"
+           />
+  <action name="onhoverPolygonForrodeGessonoTeto">
+    showTooltip('hotspot');
+  </action>
+
+  <action name="onoverPolygonForrodeGessonoTeto">
+    set(bordercolor, 0xffffff);
+    set(fillcolor, 0x774b39);
+    set(borderalpha, 0);
+    set(fillalpha, 0.7000076295109483);
+    set(borderwidth, 1);
+  </action>
+
+  <action name="onoutPolygonForrodeGessonoTeto">
+
+    set(bordercolor, 0xffffff);
+    set(fillcolor, 0x774b39);
+    set(borderalpha, 0.10000762951094835);
+    set(fillalpha, 0.20000000000000001);
+
+    set(borderwidth, 1);
+    hideTooltip();
+  </action>
+
+
+
+  
+  <!-- Spot Style - Água Pluvial/Esgoto -->
+  <style name="PolygonÁguaPluvial_Esgoto"
+           visible="false"
+           bordercolor="0xffffff"
+           fillcolor="0xff9819"
+           borderwidth="1"
+           borderalpha="0.080003051804379333"
+           fillalpha="0.20000000000000001"
+           capture="false"
+           onhover="onhoverPolygonÁguaPluvial_Esgoto"
+           onover="onoverPolygonÁguaPluvial_Esgoto"
+           onout="onoutPolygonÁguaPluvial_Esgoto"
+           />
+  <action name="onhoverPolygonÁguaPluvial_Esgoto">
+    showTooltip('hotspot');
+  </action>
+
+  <action name="onoverPolygonÁguaPluvial_Esgoto">
+    set(bordercolor, 0xffffff);
+    set(fillcolor, 0xff9819);
+    set(borderalpha, 0.10000762951094835);
+    set(fillalpha, 0.50000762951094835);
+    set(borderwidth, 1);
+  </action>
+
+  <action name="onoutPolygonÁguaPluvial_Esgoto">
+
+    set(bordercolor, 0xffffff);
+    set(fillcolor, 0xff9819);
+    set(borderalpha, 0.080003051804379333);
+    set(fillalpha, 0.20000000000000001);
+
+    set(borderwidth, 1);
+    hideTooltip();
+  </action>
+
+
+
+<!-- ********** -->
+<!-- Miniaturas Cortadas &amp; Barra de Controles -->
+<!-- id : controlBar_dockedThumbnails -->
+<!-- ********** -->
+
+<krpano controlBar_dockedThumbnailsbarbuilt="false" controlBar_dockedThumbnailsIsOpened="false" controlBar_dockedThumbnailsThumbnailsPos="0" />
+
+<events name="controlBar_dockedThumbnailsbarevents" 
+	onxmlcomplete="controlBar_dockedThumbnailsbuildMenuBar();"
+
+
+	onresize="controlBar_dockedThumbnailsOnResize();"
+	keep="true"/>
+
+
+
+<action name="controlBar_dockedThumbnailsbuildMenuBar">
+	ifnot (controlBar_dockedThumbnailsbarbuilt, controlBar_dockedThumbnailsbuildMenu(); set(controlBar_dockedThumbnailsbarbuilt, true););
+</action>
+
+
+<!-- ********** -->
+<!-- Thumbnails Bar part of -->
+<!-- Miniaturas Cortadas &amp; Barra de Controles -->
+<!-- id : controlBar_dockedThumbnails -->
+<!-- ********** -->
+
+
+
+
+
+
+<layer name="thumbnailsBar_controlBar_dockedThumbnails" 
+	keep="true" 
+	type="container" 
+	visible="false"
+	parent="controlBar_dockedThumbnails_bg" 
+	align="bottomleft"
+	
+	width="100%"
+	height="50" 
+	
+	x="0"
+	y="0"
+	zorder="1"
+/>
+
+
+<layer name="thumbnailBorderSource_controlBar_dockedThumbnails"
+	keep="true"
+	visible="false"
+	onloaded="loadedImages_controlBar_dockedThumbnails(border);"
+	url="%FIRSTXML%/graphics/dockedthumbscontrolbar/thumbnails_states.png" 
+	offsetX="5"
+	offsetY="5"
+	quarterHeight="0"
+/>
+
+
+	
+	<style name="scrollButtonsBgStyle_controlBar_dockedThumbnails"
+		keep="true"
+		parent="thumbnailsBar_controlBar_dockedThumbnails"
+		alpha="0.3"
+		zorder="1"
+	/>
+	<layer name="scrollPrevArrowBg_controlBar_dockedThumbnails" 
+		style="scrollButtonsBgStyle_controlBar_dockedThumbnails" 
+		url="%FIRSTXML%/graphics/dockedthumbscontrolbar/btn_scroll_left_bg.png" 
+		visible="false" 
+			align="left" 
+	/>
+	<layer name="scrollNextArrowBg_controlBar_dockedThumbnails" 
+		style="scrollButtonsBgStyle_controlBar_dockedThumbnails" 
+		url="%FIRSTXML%/graphics/dockedthumbscontrolbar/btn_scroll_right_bg.png" 
+		visible="false" 
+			align="right" 
+	/>
+
+
+	
+	<krpano arrow1Loaded_controlBar_dockedThumbnails="false" arrow2Loaded_controlBar_dockedThumbnails="false" borderLoaded_controlBar_dockedThumbnails="false" thumbnailsLoadedCounter_controlBar_dockedThumbnails="0" thumbsCount_controlBar_dockedThumbnails="0" thumbsCounter_controlBar_dockedThumbnails="0" firstInit_controlBar_dockedThumbnails="false" />
+	
+	
+	<events name="thumbnailsScrollEvents_controlBar_dockedThumbnails" 
+		keep="true" 
+		
+		onxmlcomplete="ifnot(startResize_controlBar_dockedThumbnails,set(isLoaded_controlBar_dockedThumbnails, true);if(isStarted_controlBar_dockedThumbnails,onLoadCompleteHandler_controlBar_dockedThumbnails();););"
+		onTourStart="set(isStarted_controlBar_dockedThumbnails, true);if(isLoaded_controlBar_dockedThumbnails,onLoadCompleteHandler_controlBar_dockedThumbnails(););"
+		onnewpano="if(startResize_controlBar_dockedThumbnails,if(firstInit_controlBar_dockedThumbnails,onLoadCompleteHandler_controlBar_dockedThumbnails();););"
+		onresize="onResizeHandler_controlBar_dockedThumbnails();"
+		onenterfullscreen="delayedcall(0.2,scrollToCurrentThumb_controlBar_dockedThumbnails(););"
+		onexitfullscreen="delayedcall(0.2,scrollToCurrentThumb_controlBar_dockedThumbnails(););"	
+	/>
+	
+	
+	<layer name="scrollAreaContainer_controlBar_dockedThumbnails" 
+         keep="true"
+         type="container" 
+         align="topleft" x="10" y="5"
+         marginX="10"
+         marginY="5"
+         width="0" height="0"
+         targetWidth="0"
+         targetHeight="0"
+         scrollSpeedInit="10"
+         scrollSpeed="10"
+         scrollSpeedMax="70"
+         scrollSpeedAcceleration="20"
+         parent="thumbnailsBar_controlBar_dockedThumbnails"
+         thumbWidth="0"
+         thumbHeight="0"
+         itemWidth="80"
+         itemHeight="40"
+         offsetX="0" offsetY="0"
+         thumbSpacer="10"
+         currentThumbsCount="0"
+         adjustToContent="0"
+         zorder="1"
+         visible="false"
+         ready="false">
+	
+		
+    <layer name="thumbsScrollArea_controlBar_dockedThumbnails"
+           url.flash="%FIRSTXML%/graphics/scrollarea.swf"
+           url.html5="%FIRSTXML%/graphics/scrollarea.js"
+           align="bottomleft" x="0" y="0"
+           onhover_autoscrolling="false"
+           direction="h"/>
+	
+	</layer>
+	
+	
+	<layer name="scrollPrevArrow_controlBar_dockedThumbnails" 
+         keep="true"
+         type="image"
+         visible="false"
+         parent="thumbnailsBar_controlBar_dockedThumbnails"
+         targetHeight="0"
+         targetWidth="0"
+         zorder="2"
+         onloaded="loadedImages_controlBar_dockedThumbnails(arrow1);"
+         url="%FIRSTXML%/graphics/dockedthumbscontrolbar/btn_scroll_left.png"
+         align="left"
+	/>
+	
+	
+	<layer name="scrollNextArrow_controlBar_dockedThumbnails" 
+         keep="true"
+         type="image"
+         visible="false"
+         parent="thumbnailsBar_controlBar_dockedThumbnails"
+         targetHeight="0"
+         targetWidth="0"
+         zorder="2"
+         onloaded="loadedImages_controlBar_dockedThumbnails(arrow2);"
+         url="%FIRSTXML%/graphics/dockedthumbscontrolbar/btn_scroll_right.png"
+         align="right"
+	/>
+	
+	<action name="loadedImages_controlBar_dockedThumbnails">
+		if(%1 == "arrow1",
+			set(arrow1Loaded_controlBar_dockedThumbnails, true);
+		);
+		if(%1 == "arrow2",
+			set(arrow2Loaded_controlBar_dockedThumbnails, true);
+		);
+		if(%1 == "border",
+			if(layer[thumbnailBorderSource_controlBar_dockedThumbnails].url,
+				set(borderLoaded_controlBar_dockedThumbnails, true);
+			);
+		);
+		if(%1 == "thumbnail",
+			inc(thumbnailsLoadedCounter_controlBar_dockedThumbnails);
+		);
+	</action>
+	
+	<action name="onLoadCompleteHandler_controlBar_dockedThumbnails">
+		
+		set(thumbsCount_controlBar_dockedThumbnails, 0);
+		
+		
+		
+		
+			ifnot(scene[get(xml.scene)].group == layer[scrollAreaContainer_controlBar_dockedThumbnails].currentGroup,
+				set(layer[scrollAreaContainer_controlBar_dockedThumbnails].ready, false);
+				set(layer[scrollAreaContainer_controlBar_dockedThumbnails].currentGroup, get(scene[get(xml.scene)].group));
+			);
+		
+		
+			for( set(i_controlBar_dockedThumbnails, 0), i_controlBar_dockedThumbnails LT scene.count, inc(i_controlBar_dockedThumbnails),
+				if(scene[get(i_controlBar_dockedThumbnails)].group == layer[scrollAreaContainer_controlBar_dockedThumbnails].currentGroup,
+					inc(thumbsCount_controlBar_dockedThumbnails);
+				);
+			);
+		
+		
+		
+		loadThumbs_controlBar_dockedThumbnails();
+		
+		if(firstInit_controlBar_dockedThumbnails,
+			onLoadCompleteHandlerPartThree_controlBar_dockedThumbnails();
+		,
+			onLoadCompleteHandlerPartTwo_controlBar_dockedThumbnails();
+		);
+	</action>
+	
+	<action name="onLoadCompleteHandlerPartTwo_controlBar_dockedThumbnails">
+		set(imgCounter_controlBar_dockedThumbnails, 3);
+		
+		if(arrow1Loaded_controlBar_dockedThumbnails,
+			dec(imgCounter_controlBar_dockedThumbnails);
+		);
+		if(arrow2Loaded_controlBar_dockedThumbnails,
+			dec(imgCounter_controlBar_dockedThumbnails);
+		);
+		if(thumbsCount_controlBar_dockedThumbnails == thumbnailsLoadedCounter_controlBar_dockedThumbnails,
+			dec(imgCounter_controlBar_dockedThumbnails);
+		);
+		
+		if(imgCounter_controlBar_dockedThumbnails LE 0,
+			stopdelayedcall(delayedCallOnLoadComplete_controlBar_dockedThumbnails);
+			onLoadCompleteHandlerPartThree_controlBar_dockedThumbnails();
+		,
+			delayedcall(delayedCallOnLoadComplete_controlBar_dockedThumbnails, 0.2, onLoadCompleteHandlerPartTwo_controlBar_dockedThumbnails());
+		);
+	</action>
+	
+	<action name="onLoadCompleteHandlerPartThree_controlBar_dockedThumbnails">
+		resetMouseBehavior_controlBar_dockedThumbnails();
+		highlightCurrentThumb_controlBar_dockedThumbnails();
+		
+		
+		if(layer[scrollAreaContainer_controlBar_dockedThumbnails].adjustToContent,
+			mul(adjustWidth_controlBar_dockedThumbnails, get(layer[scrollAreaContainer_controlBar_dockedThumbnails].marginX), 2);
+			add(adjustWidth_controlBar_dockedThumbnails, get(layer[thumbsScrollArea_controlBar_dockedThumbnails].width));
+			mul(adjustHeight_controlBar_dockedThumbnails, get(layer[scrollAreaContainer_controlBar_dockedThumbnails].marginY), 2);
+			add(adjustHeight_controlBar_dockedThumbnails, get(layer[thumbsScrollArea_controlBar_dockedThumbnails].height));
+			
+			
+			if(adjustWidth_controlBar_dockedThumbnails GT stagewidth,
+				set(adjustWidth_controlBar_dockedThumbnails, get(stagewidth));
+				set(layer[scrollAreaContainer_controlBar_dockedThumbnails].adjustToContent, false);
+			,
+				if(adjustHeight_controlBar_dockedThumbnails GT stageheight,
+					set(adjustHeight_controlBar_dockedThumbnails, get(stageheight));
+					set(layer[scrollAreaContainer_controlBar_dockedThumbnails].adjustToContent, false);
+				);
+			);
+			
+			setSize_controlBar_dockedThumbnails(get(adjustWidth_controlBar_dockedThumbnails), get(adjustHeight_controlBar_dockedThumbnails));
+		);
+		
+			initArrows_controlBar_dockedThumbnails();
+		setupArrows_controlBar_dockedThumbnails(true);
+		
+		
+		if (thumbsCounter_controlBar_dockedThumbnails LE 0,
+			set(layer[thumbnailsBar_controlBar_dockedThumbnails].visible, false);
+		);
+		
+		
+		set(startResize_controlBar_dockedThumbnails, true);
+		set(firstInit_controlBar_dockedThumbnails, true);
+	</action>
+	
+	
+	<action name="onResizeHandler_controlBar_dockedThumbnails">
+		
+		delayedcall(0.1, onResizeCallback_controlBar_dockedThumbnails(false); );
+	</action>
+	
+	
+	<action name="onResizeCallback_controlBar_dockedThumbnails">
+		if(startResize_controlBar_dockedThumbnails,
+			setSize_controlBar_dockedThumbnails(get(layer[scrollAreaContainer_controlBar_dockedThumbnails].targetWidth), get(layer[scrollAreaContainer_controlBar_dockedThumbnails].targetHeight));
+			setupArrows_controlBar_dockedThumbnails(%1);
+			
+			
+			if (thumbsCounter_controlBar_dockedThumbnails LE 0,
+				set(layer[thumbnailsBar_controlBar_dockedThumbnails].visible, false);
+			);
+		);
+	</action>
+	
+	
+	
+	
+	
+	
+	<action name="thumbnailBorderDrawInit_controlBar_dockedThumbnails">
+		
+		set(layer[scrollAreaContainer_controlBar_dockedThumbnails].offsetX, get(layer[thumbnailBorderSource_controlBar_dockedThumbnails].borderWidth));
+		set(layer[scrollAreaContainer_controlBar_dockedThumbnails].offsetY, get(layer[thumbnailBorderSource_controlBar_dockedThumbnails].borderWidth));
+		
+		
+		mul(totalOffsetX_controlBar_dockedThumbnails, get(layer[thumbnailBorderSource_controlBar_dockedThumbnails].borderWidth), 2);
+		mul(totalOffsetY_controlBar_dockedThumbnails, get(layer[thumbnailBorderSource_controlBar_dockedThumbnails].borderWidth), 2);
+		
+		
+		if(startResize_controlBar_dockedThumbnails,
+			sub(layer[scrollAreaContainer_controlBar_dockedThumbnails].itemWidth, get(totalOffsetX_controlBar_dockedThumbnails));
+			sub(layer[scrollAreaContainer_controlBar_dockedThumbnails].itemHeight, get(totalOffsetY_controlBar_dockedThumbnails));
+		);
+		
+		
+		set(layer[scrollAreaContainer_controlBar_dockedThumbnails].thumbWidth, get(layer[scrollAreaContainer_controlBar_dockedThumbnails].itemWidth));
+		set(layer[scrollAreaContainer_controlBar_dockedThumbnails].thumbHeight, get(layer[scrollAreaContainer_controlBar_dockedThumbnails].itemHeight));
+		
+		add(layer[scrollAreaContainer_controlBar_dockedThumbnails].itemWidth, get(totalOffsetX_controlBar_dockedThumbnails));
+		add(layer[scrollAreaContainer_controlBar_dockedThumbnails].itemHeight, get(totalOffsetY_controlBar_dockedThumbnails));
+	</action>
+		
+	
+	<action name="thumbnailBorderImageInit_controlBar_dockedThumbnails">
+		
+		set(layer[scrollAreaContainer_controlBar_dockedThumbnails].offsetX, get(layer[thumbnailBorderSource_controlBar_dockedThumbnails].offsetX));
+		set(layer[scrollAreaContainer_controlBar_dockedThumbnails].offsetY, get(layer[thumbnailBorderSource_controlBar_dockedThumbnails].offsetY));
+		
+		
+		mul(totalOffsetX_controlBar_dockedThumbnails, get(layer[thumbnailBorderSource_controlBar_dockedThumbnails].offsetX), 2);
+		mul(totalOffsetY_controlBar_dockedThumbnails, get(layer[thumbnailBorderSource_controlBar_dockedThumbnails].offsetY), 2);
+		
+		
+		if(startResize_controlBar_dockedThumbnails,
+			sub(layer[scrollAreaContainer_controlBar_dockedThumbnails].itemWidth, get(totalOffsetX_controlBar_dockedThumbnails));
+			sub(layer[scrollAreaContainer_controlBar_dockedThumbnails].itemHeight, get(totalOffsetY_controlBar_dockedThumbnails));
+		);
+		
+		
+		set(layer[scrollAreaContainer_controlBar_dockedThumbnails].thumbWidth, get(layer[scrollAreaContainer_controlBar_dockedThumbnails].itemWidth));
+		set(layer[scrollAreaContainer_controlBar_dockedThumbnails].thumbHeight, get(layer[scrollAreaContainer_controlBar_dockedThumbnails].itemHeight));
+		
+		add(layer[scrollAreaContainer_controlBar_dockedThumbnails].itemWidth, get(totalOffsetX_controlBar_dockedThumbnails));
+		add(layer[scrollAreaContainer_controlBar_dockedThumbnails].itemHeight, get(totalOffsetY_controlBar_dockedThumbnails));
+		
+		
+		div(layer[thumbnailBorderSource_controlBar_dockedThumbnails].quarterHeight, get(layer[thumbnailBorderSource_controlBar_dockedThumbnails].height), 4);
+		
+		
+		set(cropX_controlBar_dockedThumbnails, 0);
+		set(cropY_controlBar_dockedThumbnails, 0);
+		set(cropW_controlBar_dockedThumbnails, get(layer[thumbnailBorderSource_controlBar_dockedThumbnails].width));
+		set(cropH_controlBar_dockedThumbnails, get(layer[thumbnailBorderSource_controlBar_dockedThumbnails].quarterHeight));
+		txtadd(layer[thumbnailBorderSource_controlBar_dockedThumbnails].cropDefault, get(cropX_controlBar_dockedThumbnails), '|', get(cropY_controlBar_dockedThumbnails), '|', get(cropW_controlBar_dockedThumbnails), '|', get(cropH_controlBar_dockedThumbnails));
+
+		
+		add(cropY_controlBar_dockedThumbnails, get(layer[thumbnailBorderSource_controlBar_dockedThumbnails].quarterHeight));
+		txtadd(layer[thumbnailBorderSource_controlBar_dockedThumbnails].cropHover, get(cropX_controlBar_dockedThumbnails), '|', get(cropY_controlBar_dockedThumbnails), '|', get(cropW_controlBar_dockedThumbnails), '|', get(cropH_controlBar_dockedThumbnails));
+		
+		
+		add(cropY_controlBar_dockedThumbnails, get(layer[thumbnailBorderSource_controlBar_dockedThumbnails].quarterHeight));
+		txtadd(layer[thumbnailBorderSource_controlBar_dockedThumbnails].cropSelected, get(cropX_controlBar_dockedThumbnails), '|', get(cropY_controlBar_dockedThumbnails), '|', get(cropW_controlBar_dockedThumbnails), '|', get(cropH_controlBar_dockedThumbnails));
+		
+		
+		add(cropY_controlBar_dockedThumbnails, get(layer[thumbnailBorderSource_controlBar_dockedThumbnails].quarterHeight));
+		txtadd(layer[thumbnailBorderSource_controlBar_dockedThumbnails].cropVisited, get(cropX_controlBar_dockedThumbnails), '|', get(cropY_controlBar_dockedThumbnails), '|', get(cropW_controlBar_dockedThumbnails), '|', get(cropH_controlBar_dockedThumbnails));
+		
+		
+		set(scaleX_controlBar_dockedThumbnails, get(layer[thumbnailBorderSource_controlBar_dockedThumbnails].offsetX));
+		set(scaleY_controlBar_dockedThumbnails, get(layer[thumbnailBorderSource_controlBar_dockedThumbnails].offsetY));
+		sub(scaleW_controlBar_dockedThumbnails, get(layer[thumbnailBorderSource_controlBar_dockedThumbnails].width), get(totalOffsetX_controlBar_dockedThumbnails));
+		sub(scaleH_controlBar_dockedThumbnails, get(layer[thumbnailBorderSource_controlBar_dockedThumbnails].quarterHeight), get(totalOffsetY_controlBar_dockedThumbnails));
+		txtadd(layer[thumbnailBorderSource_controlBar_dockedThumbnails].scale9grid, get(scaleX_controlBar_dockedThumbnails), '|', get(scaleY_controlBar_dockedThumbnails), '|', get(scaleW_controlBar_dockedThumbnails), '|', get(scaleH_controlBar_dockedThumbnails));
+	</action>
+	
+	
+	<action name="loadThumbs_controlBar_dockedThumbnails">
+		if(layer[thumbnailBorderSource_controlBar_dockedThumbnails].url,
+			set(imgCounter_controlBar_dockedThumbnails, 1);
+		,
+			set(imgCounter_controlBar_dockedThumbnails, 0);
+		);
+		
+		if(layer[thumbnailBorderSource_controlBar_dockedThumbnails].url,
+			if(borderLoaded_controlBar_dockedThumbnails,
+				dec(imgCounter_controlBar_dockedThumbnails);
+			);
+		);
+		
+		if(imgCounter_controlBar_dockedThumbnails LE 0,
+			stopdelayedcall(delayedCallOnLoadCompleteBorder_controlBar_dockedThumbnails);
+			loadThumbsPartTwo_controlBar_dockedThumbnails();
+		,
+			delayedcall(delayedCallOnLoadCompleteBorder_controlBar_dockedThumbnails, 0.2, loadThumbs_controlBar_dockedThumbnails());
+		);
+	</action>
+	
+	<action name="loadThumbsPartTwo_controlBar_dockedThumbnails">
+		ifnot(layer[scrollAreaContainer_controlBar_dockedThumbnails].ready,
+			
+			
+			if(layer[thumbnailBorderSource_controlBar_dockedThumbnails].url,
+				thumbnailBorderImageInit_controlBar_dockedThumbnails();
+			,
+				thumbnailBorderDrawInit_controlBar_dockedThumbnails();
+			);
+			
+			
+			set(thumbsCounter_controlBar_dockedThumbnails, 0);
+			
+			
+			
+			
+				for( set(i_controlBar_dockedThumbnails, 0), i_controlBar_dockedThumbnails LT scene.count, inc(i_controlBar_dockedThumbnails),
+					if(scene[get(i_controlBar_dockedThumbnails)].group == layer[scrollAreaContainer_controlBar_dockedThumbnails].currentGroup,
+						createThumb_controlBar_dockedThumbnails(get(scene[get(i_controlBar_dockedThumbnails)].name), get(scene[get(i_controlBar_dockedThumbnails)].thumburl), get(thumbsCounter_controlBar_dockedThumbnails), get(scene[get(i_controlBar_dockedThumbnails)].titleid));
+						inc(thumbsCounter_controlBar_dockedThumbnails);
+					,
+						removeThumb_controlBar_dockedThumbnails(get(scene[get(i_controlBar_dockedThumbnails)].name));
+					);
+				);
+			
+			
+			
+			
+			set(layer[scrollAreaContainer_controlBar_dockedThumbnails].currentThumbsCount, get(thumbsCounter_controlBar_dockedThumbnails));
+			
+			
+			setSize_controlBar_dockedThumbnails(get(layer[get(layer[scrollAreaContainer_controlBar_dockedThumbnails].parent)].width), get(layer[get(layer[scrollAreaContainer_controlBar_dockedThumbnails].parent)].height));
+			
+			
+			set(layer[scrollAreaContainer_controlBar_dockedThumbnails].visible, true);
+			
+			
+					set(layer[thumbnailsBar_controlBar_dockedThumbnails].visible, true);
+			
+			
+			set(layer[scrollAreaContainer_controlBar_dockedThumbnails].ready, true);
+		);
+	</action>
+	
+	
+	<action name="setSize_controlBar_dockedThumbnails">
+		
+		
+		set(layer[scrollAreaContainer_controlBar_dockedThumbnails].targetWidth, %1);
+		set(layer[scrollAreaContainer_controlBar_dockedThumbnails].targetHeight, %2);
+		
+		
+		set(layer[get(layer[scrollAreaContainer_controlBar_dockedThumbnails].parent)].width, %1);
+		set(layer[get(layer[scrollAreaContainer_controlBar_dockedThumbnails].parent)].height, %2);
+		layer[get(layer[scrollAreaContainer_controlBar_dockedThumbnails].parent)].updatepos();
+		
+		
+		mul(totalMarginX_controlBar_dockedThumbnails, get(layer[scrollAreaContainer_controlBar_dockedThumbnails].marginX), 2);
+		mul(totalMarginY_controlBar_dockedThumbnails, get(layer[scrollAreaContainer_controlBar_dockedThumbnails].marginY), 2);
+		
+			add(totalPluginHeight_controlBar_dockedThumbnails, get(totalMarginY_controlBar_dockedThumbnails), get(layer[scrollAreaContainer_controlBar_dockedThumbnails].itemHeight));
+			
+			
+			
+			if(layer[get(layer[scrollAreaContainer_controlBar_dockedThumbnails].parent)].pixelheight LT totalPluginHeight_controlBar_dockedThumbnails,
+				set(layer[get(layer[scrollAreaContainer_controlBar_dockedThumbnails].parent)].height, get(totalPluginHeight_controlBar_dockedThumbnails));
+			);
+		
+		layer[get(layer[scrollAreaContainer_controlBar_dockedThumbnails].parent)].updatepos();
+		
+		
+		sub(containerWidth_controlBar_dockedThumbnails, get(layer[get(layer[scrollAreaContainer_controlBar_dockedThumbnails].parent)].pixelwidth), get(totalMarginX_controlBar_dockedThumbnails));
+		sub(containerHeight_controlBar_dockedThumbnails, get(layer[get(layer[scrollAreaContainer_controlBar_dockedThumbnails].parent)].pixelheight), get(totalMarginY_controlBar_dockedThumbnails));
+
+		
+		set(layer[scrollAreaContainer_controlBar_dockedThumbnails].width, get(containerWidth_controlBar_dockedThumbnails));
+		set(layer[scrollAreaContainer_controlBar_dockedThumbnails].height, get(containerHeight_controlBar_dockedThumbnails));
+		
+		set(scrollAreaSize_controlBar_dockedThumbnails, 0);
+		
+		
+		mul(totalThumbsSpacer_controlBar_dockedThumbnails, get(layer[scrollAreaContainer_controlBar_dockedThumbnails].currentThumbsCount), get(layer[scrollAreaContainer_controlBar_dockedThumbnails].thumbSpacer));
+		sub(totalThumbsSpacer_controlBar_dockedThumbnails, get(layer[scrollAreaContainer_controlBar_dockedThumbnails].thumbSpacer));
+		
+		set(layer[get(layer[scrollAreaContainer_controlBar_dockedThumbnails].parent)].visible, true);
+		
+
+			mul(scrollAreaSize_controlBar_dockedThumbnails, get(layer[scrollAreaContainer_controlBar_dockedThumbnails].itemWidth), get(layer[scrollAreaContainer_controlBar_dockedThumbnails].currentThumbsCount));
+			add(scrollAreaSize_controlBar_dockedThumbnails, get(totalThumbsSpacer_controlBar_dockedThumbnails));
+			
+			set(layer[thumbsScrollArea_controlBar_dockedThumbnails].width, get(scrollAreaSize_controlBar_dockedThumbnails));
+			set(layer[thumbsScrollArea_controlBar_dockedThumbnails].height, get(layer[scrollAreaContainer_controlBar_dockedThumbnails].itemHeight));
+			
+			
+			if(layer[scrollAreaContainer_controlBar_dockedThumbnails].width LT layer[scrollAreaContainer_controlBar_dockedThumbnails].itemWidth,
+				set(layer[get(layer[scrollAreaContainer_controlBar_dockedThumbnails].parent)].visible, false);
+			,
+				verifyThumbnailsBarVisibility_controlBar_dockedThumbnails();
+			);
+			
+		
+		
+		if(layer[get(layer[scrollAreaContainer_controlBar_dockedThumbnails].parent)].width LT 0,
+			set(layer[get(layer[scrollAreaContainer_controlBar_dockedThumbnails].parent)].visible, false);
+		);
+		
+	</action>
+	
+	
+	<action name="verifyThumbnailsBarVisibility_controlBar_dockedThumbnails">
+		if(layer[get(layer[scrollAreaContainer_controlBar_dockedThumbnails].parent)].visible,
+			set(boolValue_controlBar_dockedThumbnails, false);
+			
+					set(boolValue_controlBar_dockedThumbnails, true);
+			
+			set(layer[get(layer[scrollAreaContainer_controlBar_dockedThumbnails].parent)].visible, get(boolValue_controlBar_dockedThumbnails));
+		);
+	</action>
+	
+	
+	<action name="createThumb_controlBar_dockedThumbnails">
+
+			add(offsetFactor_controlBar_dockedThumbnails, get(layer[scrollAreaContainer_controlBar_dockedThumbnails].itemWidth), get(layer[scrollAreaContainer_controlBar_dockedThumbnails].thumbSpacer));
+	
+			mul(thumbIncPos_controlBar_dockedThumbnails, %3, get(offsetFactor_controlBar_dockedThumbnails));
+			
+			
+			if(layer[thumbnailBorderSource_controlBar_dockedThumbnails].url,
+				add(thumbIncPos_controlBar_dockedThumbnails, get(layer[scrollAreaContainer_controlBar_dockedThumbnails].offsetX));
+			);
+			
+		
+		mul(negativeOffsetX_controlBar_dockedThumbnails, get(layer[scrollAreaContainer_controlBar_dockedThumbnails].offsetX), -1);
+		mul(negativeOffsetY_controlBar_dockedThumbnails, get(layer[scrollAreaContainer_controlBar_dockedThumbnails].offsetY), -1);
+		
+		set(thumbName, 'thumb_');
+		txtadd(thumbName, %1);
+		txtadd(thumbName, '_controlBar_dockedThumbnails');
+		addlayer(get(thumbName));
+
+		
+
+		set(thumbBorderName, 'thumbBorder_');
+		txtadd(thumbBorderName, %1);
+		txtadd(thumbBorderName, '_controlBar_dockedThumbnails');
+		addlayer(get(thumbBorderName));
+		
+		
+		ifnot(layer[thumbnailBorderSource_controlBar_dockedThumbnails].url,
+			set(layer[get(thumbBorderName)].type, container);
+			set(layer[get(thumbBorderName)].parent, thumbsScrollArea_controlBar_dockedThumbnails);
+		);
+
+		
+		set(layer[get(thumbName)].onloaded, loadedImages_controlBar_dockedThumbnails("thumbnail"););
+		set(layer[get(thumbName)].url, %2);
+		set(layer[get(thumbName)].keep, true);
+		set(layer[get(thumbName)].width, get(layer[scrollAreaContainer_controlBar_dockedThumbnails].thumbWidth));
+		set(layer[get(thumbName)].height, get(layer[scrollAreaContainer_controlBar_dockedThumbnails].thumbHeight));
+		set(layer[get(thumbName)].align, topleft);
+		
+		
+			set(layer[get(thumbName)].y, get(layer[scrollAreaContainer_controlBar_dockedThumbnails].offsetY));
+		
+			if(layer[thumbnailBorderSource_controlBar_dockedThumbnails].url,
+				set(layer[get(thumbName)].parent, thumbsScrollArea_controlBar_dockedThumbnails);
+				set(layer[get(thumbName)].x, get(thumbIncPos_controlBar_dockedThumbnails));
+			,
+				set(layer[get(thumbName)].parent, get(thumbBorderName));
+				set(layer[get(thumbName)].x, get(layer[scrollAreaContainer_controlBar_dockedThumbnails].offsetX));
+				set(layer[get(thumbName)].onclick, resetMouseBehavior_controlBar_dockedThumbnails(); mainloadscene(%1); delayedcall(0.1,highlightThumb_controlBar_dockedThumbnails(%1)));
+			);	
+			
+		
+		
+		set(layer[get(thumbBorderName)].keep, true);
+		set(layer[get(thumbBorderName)].width, get(layer[scrollAreaContainer_controlBar_dockedThumbnails].itemWidth));
+		set(layer[get(thumbBorderName)].height, get(layer[scrollAreaContainer_controlBar_dockedThumbnails].itemHeight));
+		set(layer[get(thumbBorderName)].align, topleft);
+		
+		if(layer[thumbnailBorderSource_controlBar_dockedThumbnails].url,
+			set(layer[get(thumbBorderName)].url, get(layer[thumbnailBorderSource_controlBar_dockedThumbnails].url));
+			set(layer[get(thumbBorderName)].scale9grid, get(layer[thumbnailBorderSource_controlBar_dockedThumbnails].scale9grid));
+			set(layer[get(thumbBorderName)].parent, get(thumbName));
+			set(layer[get(thumbBorderName)].x, get(negativeOffsetX_controlBar_dockedThumbnails));
+			set(layer[get(thumbBorderName)].y, get(negativeOffsetY_controlBar_dockedThumbnails));
+			set(layer[get(thumbBorderName)].onclick, resetMouseBehavior_controlBar_dockedThumbnails(); mainloadscene(%1); delayedcall(0.1,highlightThumb_controlBar_dockedThumbnails(%1)));
+		,
+			
+				set(layer[get(thumbBorderName)].x, get(thumbIncPos_controlBar_dockedThumbnails)); 
+				
+		);
+
+
+		
+		setupMouseBehavior_controlBar_dockedThumbnails(%1, %4);
+		
+	</action>
+	
+	
+	
+	<action name="removeThumb_controlBar_dockedThumbnails">
+		set(thumbName, 'thumb_');
+		txtadd(thumbName, %1);
+		txtadd(thumbName, '_controlBar_dockedThumbnails');
+		removelayer(get(thumbName));
+		
+		set(thumbBorderName, 'thumbBorder_');
+		txtadd(thumbBorderName, %1);
+		txtadd(thumbBorderName, '_controlBar_dockedThumbnails');
+		removelayer(get(thumbBorderName));
+
+
+	</action>
+	
+	
+	<action name="initArrows_controlBar_dockedThumbnails">
+		ifnot(device.touchdevice,
+			
+			if(layer[scrollPrevArrow_controlBar_dockedThumbnails].targetHeight LE 0,
+				set(layer[scrollPrevArrow_controlBar_dockedThumbnails].targetHeight, get(layer[scrollPrevArrow_controlBar_dockedThumbnails].height));
+				set(layer[scrollPrevArrow_controlBar_dockedThumbnails].targetWidth, get(layer[scrollPrevArrow_controlBar_dockedThumbnails].width));
+			);
+			if(layer[scrollNextArrow_controlBar_dockedThumbnails].targetHeight LE 0,
+				set(layer[scrollNextArrow_controlBar_dockedThumbnails].targetHeight, get(layer[scrollNextArrow_controlBar_dockedThumbnails].height));
+				set(layer[scrollNextArrow_controlBar_dockedThumbnails].targetWidth, get(layer[scrollNextArrow_controlBar_dockedThumbnails].width));
+			);
+			
+			
+			set(layer[scrollPrevArrow_controlBar_dockedThumbnails].width, get(layer[scrollPrevArrow_controlBar_dockedThumbnails].targetWidth));
+			set(layer[scrollNextArrow_controlBar_dockedThumbnails].width, get(layer[scrollNextArrow_controlBar_dockedThumbnails].targetWidth));
+			
+				set(layer[scrollPrevArrowBg_controlBar_dockedThumbnails].width, get(layer[scrollPrevArrow_controlBar_dockedThumbnails].targetWidth));
+				set(layer[scrollNextArrowBg_controlBar_dockedThumbnails].width, get(layer[scrollNextArrow_controlBar_dockedThumbnails].targetWidth));
+			
+			div(btPrevQuarterHeight_controlBar_dockedThumbnails, get(layer[scrollPrevArrow_controlBar_dockedThumbnails].targetHeight), 3);
+			div(btNextQuarterHeight_controlBar_dockedThumbnails, get(layer[scrollNextArrow_controlBar_dockedThumbnails].targetHeight), 3);
+			
+			set(cropBtPrevX_controlBar_dockedThumbnails, 0);
+			set(cropBtPrevY_controlBar_dockedThumbnails, 0);
+			set(cropBtPrevW_controlBar_dockedThumbnails, get(layer[scrollPrevArrow_controlBar_dockedThumbnails].width));
+			set(cropBtPrevH_controlBar_dockedThumbnails, get(btPrevQuarterHeight_controlBar_dockedThumbnails));
+			
+			txtadd(layer[scrollPrevArrow_controlBar_dockedThumbnails].cropDefault, get(cropBtPrevX_controlBar_dockedThumbnails), '|', get(cropBtPrevY_controlBar_dockedThumbnails), '|', get(cropBtPrevW_controlBar_dockedThumbnails), '|', get(cropBtPrevH_controlBar_dockedThumbnails));
+			add(cropBtPrevY_controlBar_dockedThumbnails, get(btPrevQuarterHeight_controlBar_dockedThumbnails));
+			txtadd(layer[scrollPrevArrow_controlBar_dockedThumbnails].cropOver, get(cropBtPrevX_controlBar_dockedThumbnails), '|', get(cropBtPrevY_controlBar_dockedThumbnails), '|', get(cropBtPrevW_controlBar_dockedThumbnails), '|', get(cropBtPrevH_controlBar_dockedThumbnails));
+			add(cropBtPrevY_controlBar_dockedThumbnails, get(btPrevQuarterHeight_controlBar_dockedThumbnails));
+			txtadd(layer[scrollPrevArrow_controlBar_dockedThumbnails].cropDown, get(cropBtPrevX_controlBar_dockedThumbnails), '|', get(cropBtPrevY_controlBar_dockedThumbnails), '|', get(cropBtPrevW_controlBar_dockedThumbnails), '|', get(cropBtPrevH_controlBar_dockedThumbnails));
+			
+			set(cropBtNextX_controlBar_dockedThumbnails, 0);
+			set(cropBtNextY_controlBar_dockedThumbnails, 0);
+			set(cropBtNextW_controlBar_dockedThumbnails, get(layer[scrollNextArrow_controlBar_dockedThumbnails].width));
+			set(cropBtNextH_controlBar_dockedThumbnails, get(btNextQuarterHeight_controlBar_dockedThumbnails));
+			
+			txtadd(layer[scrollNextArrow_controlBar_dockedThumbnails].cropDefault, get(cropBtNextX_controlBar_dockedThumbnails), '|', get(cropBtNextY_controlBar_dockedThumbnails), '|', get(cropBtNextW_controlBar_dockedThumbnails), '|', get(cropBtNextH_controlBar_dockedThumbnails));
+			add(cropBtNextY_controlBar_dockedThumbnails, get(btNextQuarterHeight_controlBar_dockedThumbnails));
+			txtadd(layer[scrollNextArrow_controlBar_dockedThumbnails].cropOver, get(cropBtNextX_controlBar_dockedThumbnails), '|', get(cropBtNextY_controlBar_dockedThumbnails), '|', get(cropBtNextW_controlBar_dockedThumbnails), '|', get(cropBtNextH_controlBar_dockedThumbnails));
+			add(cropBtNextY_controlBar_dockedThumbnails, get(btNextQuarterHeight_controlBar_dockedThumbnails));
+			txtadd(layer[scrollNextArrow_controlBar_dockedThumbnails].cropDown, get(cropBtNextX_controlBar_dockedThumbnails), '|', get(cropBtNextY_controlBar_dockedThumbnails), '|', get(cropBtNextW_controlBar_dockedThumbnails), '|', get(cropBtNextH_controlBar_dockedThumbnails));
+		);
+	</action>
+	
+	<action name="setupArrows_controlBar_dockedThumbnails">
+		
+		if(layer[scrollAreaContainer_controlBar_dockedThumbnails].adjustToContent,
+			hideArrows_controlBar_dockedThumbnails();
+		,
+			ifnot(device.touchdevice,
+				
+					if(layer[scrollAreaContainer_controlBar_dockedThumbnails].width LT layer[thumbsScrollArea_controlBar_dockedThumbnails].width,
+				
+					showArrows_controlBar_dockedThumbnails();
+				,
+					hideArrows_controlBar_dockedThumbnails();
+				);
+			,
+				hideArrows_controlBar_dockedThumbnails();
+			);
+		);
+		
+		
+		if(%1,
+			scrollToCurrentThumb_controlBar_dockedThumbnails();
+		);
+		
+		
+			
+			if(layer[scrollAreaContainer_controlBar_dockedThumbnails].width LT layer[scrollAreaContainer_controlBar_dockedThumbnails].itemWidth,
+				set(layer[get(layer[scrollAreaContainer_controlBar_dockedThumbnails].parent)].visible, false);
+			);
+	</action>
+	
+	
+	<action name="showArrows_controlBar_dockedThumbnails">
+		
+		
+			set(layer[scrollPrevArrow_controlBar_dockedThumbnails].crop, get(layer[scrollPrevArrow_controlBar_dockedThumbnails].cropDefault));
+			set(layer[scrollPrevArrow_controlBar_dockedThumbnails].onovercrop, get(layer[scrollPrevArrow_controlBar_dockedThumbnails].cropOver));
+			set(layer[scrollPrevArrow_controlBar_dockedThumbnails].ondowncrop, get(layer[scrollPrevArrow_controlBar_dockedThumbnails].cropDown));
+			
+			set(layer[scrollNextArrow_controlBar_dockedThumbnails].crop, get(layer[scrollNextArrow_controlBar_dockedThumbnails].cropDefault));
+			set(layer[scrollNextArrow_controlBar_dockedThumbnails].onovercrop, get(layer[scrollNextArrow_controlBar_dockedThumbnails].cropOver));
+			set(layer[scrollNextArrow_controlBar_dockedThumbnails].ondowncrop, get(layer[scrollNextArrow_controlBar_dockedThumbnails].cropDown));
+			
+				set(layer[scrollPrevArrow_controlBar_dockedThumbnails].height, 36);
+				set(layer[scrollPrevArrow_controlBar_dockedThumbnails].width, 36);
+				
+				set(layer[scrollNextArrow_controlBar_dockedThumbnails].height, 36);
+				set(layer[scrollNextArrow_controlBar_dockedThumbnails].width, 36);
+			
+					set(layer[scrollPrevArrowBg_controlBar_dockedThumbnails].height, 36);
+					set(layer[scrollPrevArrowBg_controlBar_dockedThumbnails].width, 36);
+					
+					set(layer[scrollNextArrowBg_controlBar_dockedThumbnails].height, 36);
+					set(layer[scrollNextArrowBg_controlBar_dockedThumbnails].width, 36);
+				set(layer[scrollPrevArrowBg_controlBar_dockedThumbnails].crop, get(layer[scrollPrevArrow_controlBar_dockedThumbnails].cropDefault));
+				set(layer[scrollNextArrowBg_controlBar_dockedThumbnails].crop, get(layer[scrollNextArrow_controlBar_dockedThumbnails].cropDefault));
+			
+		
+		
+		set(layer[scrollPrevArrow_controlBar_dockedThumbnails].visible, true);
+		set(layer[scrollNextArrow_controlBar_dockedThumbnails].visible, true);
+		
+			set(layer[scrollPrevArrowBg_controlBar_dockedThumbnails].visible, true);
+			set(layer[scrollNextArrowBg_controlBar_dockedThumbnails].visible, true);
+		
+		
+			
+			add(totalArrowSize_controlBar_dockedThumbnails, get(layer[scrollPrevArrow_controlBar_dockedThumbnails].width), get(layer[scrollNextArrow_controlBar_dockedThumbnails].width));
+		
+			
+			sub(scrollAreaContainerSize_controlBar_dockedThumbnails, get(layer[get(layer[scrollAreaContainer_controlBar_dockedThumbnails].parent)].pixelwidth), get(totalArrowSize_controlBar_dockedThumbnails));
+		
+			set(layer[scrollAreaContainer_controlBar_dockedThumbnails].width, get(scrollAreaContainerSize_controlBar_dockedThumbnails));
+			
+			set(layer[scrollAreaContainer_controlBar_dockedThumbnails].x, get(layer[scrollPrevArrow_controlBar_dockedThumbnails].width));
+			
+		
+		
+		set(layer[scrollPrevArrow_controlBar_dockedThumbnails].onhover, scrollPrev_controlBar_dockedThumbnails();changeArrowsBgCrop_controlBar_dockedThumbnails('prev','over'););
+		set(layer[scrollNextArrow_controlBar_dockedThumbnails].onhover, scrollNext_controlBar_dockedThumbnails();changeArrowsBgCrop_controlBar_dockedThumbnails('next','over'););
+		
+		set(layer[scrollPrevArrow_controlBar_dockedThumbnails].onclick, scrollPrev_controlBar_dockedThumbnails(get(layer[scrollAreaContainer_controlBar_dockedThumbnails].scrollSpeedAcceleration)););
+		set(layer[scrollNextArrow_controlBar_dockedThumbnails].onclick, scrollNext_controlBar_dockedThumbnails(get(layer[scrollAreaContainer_controlBar_dockedThumbnails].scrollSpeedAcceleration)););
+		
+		
+		
+		
+		
+		set(layer[scrollPrevArrow_controlBar_dockedThumbnails].onout, set(layer[scrollAreaContainer_controlBar_dockedThumbnails].scrollSpeed, get(layer[scrollAreaContainer_controlBar_dockedThumbnails].scrollSpeedInit));changeArrowsBgCrop_controlBar_dockedThumbnails('prev','out'););
+		set(layer[scrollNextArrow_controlBar_dockedThumbnails].onout, set(layer[scrollAreaContainer_controlBar_dockedThumbnails].scrollSpeed, get(layer[scrollAreaContainer_controlBar_dockedThumbnails].scrollSpeedInit));changeArrowsBgCrop_controlBar_dockedThumbnails('next','out'););
+		
+	</action>
+	
+	
+	<action name="changeArrowsBgCrop_controlBar_dockedThumbnails">
+		if(%1 == "prev",
+			if(%2 == "over",
+				set(layer[scrollPrevArrowBg_controlBar_dockedThumbnails].crop, get(layer[scrollPrevArrow_controlBar_dockedThumbnails].cropOver));
+			,
+				set(layer[scrollPrevArrowBg_controlBar_dockedThumbnails].crop, get(layer[scrollPrevArrow_controlBar_dockedThumbnails].cropDefault));
+			);
+		,
+			if(%2 == "over",
+				set(layer[scrollNextArrowBg_controlBar_dockedThumbnails].crop, get(layer[scrollNextArrow_controlBar_dockedThumbnails].cropOver));
+			,
+				set(layer[scrollNextArrowBg_controlBar_dockedThumbnails].crop, get(layer[scrollNextArrow_controlBar_dockedThumbnails].cropDefault));
+			);
+		);
+	</action>
+	
+	
+	<action name="hideArrows_controlBar_dockedThumbnails">
+		
+		set(layer[scrollPrevArrow_controlBar_dockedThumbnails].visible, false);
+		set(layer[scrollNextArrow_controlBar_dockedThumbnails].visible, false);
+		
+			set(layer[scrollPrevArrowBg_controlBar_dockedThumbnails].visible, false);
+			set(layer[scrollNextArrowBg_controlBar_dockedThumbnails].visible, false);
+		
+
+			mul(totalMargin_controlBar_dockedThumbnails, get(layer[scrollAreaContainer_controlBar_dockedThumbnails].marginX), 2);
+			
+			sub(scrollAreaContainerSize_controlBar_dockedThumbnails, get(layer[get(layer[scrollAreaContainer_controlBar_dockedThumbnails].parent)].pixelwidth), get(totalMargin_controlBar_dockedThumbnails));
+
+			set(layer[scrollAreaContainer_controlBar_dockedThumbnails].width, get(scrollAreaContainerSize_controlBar_dockedThumbnails));
+			set(layer[scrollAreaContainer_controlBar_dockedThumbnails].x, get(layer[scrollAreaContainer_controlBar_dockedThumbnails].marginX));
+			 
+			
+	</action>
+	
+	
+	<action name="scrollPrev_controlBar_dockedThumbnails">
+		
+		
+		if(%1,
+			inc(layer[scrollAreaContainer_controlBar_dockedThumbnails].scrollSpeed, %1);
+		);
+		
+		layer[thumbsScrollArea_controlBar_dockedThumbnails].stopscrolling();
+		
+		set(scrollLimit_controlBar_dockedThumbnails, 0);
+		
+		
+			
+			
+			add(layer[thumbsScrollArea_controlBar_dockedThumbnails].x, get(layer[scrollAreaContainer_controlBar_dockedThumbnails].scrollSpeed));
+			if(layer[thumbsScrollArea_controlBar_dockedThumbnails].x GE scrollLimit_controlBar_dockedThumbnails,
+				set(layer[thumbsScrollArea_controlBar_dockedThumbnails].x, get(scrollLimit_controlBar_dockedThumbnails));
+			);
+		
+		if(layer[scrollAreaContainer_controlBar_dockedThumbnails].scrollSpeed LT layer[scrollAreaContainer_controlBar_dockedThumbnails].scrollSpeedMax,
+			inc(layer[scrollAreaContainer_controlBar_dockedThumbnails].scrollSpeed);
+		);
+		
+	</action>
+	
+	
+	<action name="scrollNext_controlBar_dockedThumbnails">
+		
+		
+		if(%1,
+			inc(layer[scrollAreaContainer_controlBar_dockedThumbnails].scrollSpeed, %1);
+		);
+		
+		layer[thumbsScrollArea_controlBar_dockedThumbnails].stopscrolling();
+		
+			
+			sub(scrollLimit_controlBar_dockedThumbnails, get(layer[thumbsScrollArea_controlBar_dockedThumbnails].width), get(layer[scrollAreaContainer_controlBar_dockedThumbnails].width));
+			
+			mul(scrollLimit_controlBar_dockedThumbnails, -1);
+			
+			sub(layer[thumbsScrollArea_controlBar_dockedThumbnails].x, get(layer[scrollAreaContainer_controlBar_dockedThumbnails].scrollSpeed));
+			if(layer[thumbsScrollArea_controlBar_dockedThumbnails].x LE scrollLimit_controlBar_dockedThumbnails,
+				set(layer[thumbsScrollArea_controlBar_dockedThumbnails].x, get(scrollLimit_controlBar_dockedThumbnails));
+			);
+		
+		if(layer[scrollAreaContainer_controlBar_dockedThumbnails].scrollSpeed LT layer[scrollAreaContainer_controlBar_dockedThumbnails].scrollSpeedMax,
+			inc(layer[scrollAreaContainer_controlBar_dockedThumbnails].scrollSpeed);
+		);
+		
+	</action>
+	
+	
+	<action name="resetMouseBehavior_controlBar_dockedThumbnails">
+	
+		
+		
+			for( set(j_controlBar_dockedThumbnails, 0), j_controlBar_dockedThumbnails LT scene.count, inc(j_controlBar_dockedThumbnails),
+				set(thumbBorderName, 'thumbBorder_');
+				txtadd(thumbBorderName, get(scene[get(j_controlBar_dockedThumbnails)].name));
+				txtadd(thumbBorderName, '_controlBar_dockedThumbnails');
+				
+				setupMouseBehavior_controlBar_dockedThumbnails(get(scene[get(j_controlBar_dockedThumbnails)].name), get(scene[get(j_controlBar_dockedThumbnails)].titleid));
+			);
+		
+	</action>
+	
+	
+	<action name="setupMouseBehavior_controlBar_dockedThumbnails">
+
+		set(thumbName, 'thumb_');
+		txtadd(thumbName, %1);
+		txtadd(thumbName, '_controlBar_dockedThumbnails');
+		
+		set(thumbBorderName, 'thumbBorder_');
+		txtadd(thumbBorderName, %1);
+		txtadd(thumbBorderName, '_controlBar_dockedThumbnails');
+		
+		if(layer[thumbnailBorderSource_controlBar_dockedThumbnails].url,
+			set(layer[get(thumbBorderName)].crop, get(layer[thumbnailBorderSource_controlBar_dockedThumbnails].cropDefault));
+			set(layer[get(thumbBorderName)].onovercrop, get(layer[thumbnailBorderSource_controlBar_dockedThumbnails].cropHover));
+			set(layer[get(thumbBorderName)].ondowncrop, get(layer[thumbnailBorderSource_controlBar_dockedThumbnails].cropHover));
+			set(layer[get(thumbBorderName)].tooltip, %2);
+				set(layer[get(thumbBorderName)].onhover, showTooltip('plugin', controlBar_dockedThumbnailsmenuTooltipStyle));
+				set(layer[get(thumbBorderName)].onout, hideTooltip());
+		,
+			set(layer[get(thumbBorderName)].bgcolor, get(layer[thumbnailBorderSource_controlBar_dockedThumbnails].borderColorDefault));
+			set(layer[get(thumbBorderName)].bgalpha, get(layer[thumbnailBorderSource_controlBar_dockedThumbnails].borderAlphaDefault));
+				set(layer[get(thumbName)].tooltip, %2);
+				set(layer[get(thumbName)].onhover, showTooltip('plugin', controlBar_dockedThumbnailsmenuTooltipStyle));
+			
+			set(layer[get(thumbName)].onover, 
+				set(layer[get(parent)].bgcolor, get(layer[thumbnailBorderSource_controlBar_dockedThumbnails].borderColorHover));
+				set(layer[get(parent)].bgalpha, get(layer[thumbnailBorderSource_controlBar_dockedThumbnails].borderAlphaHover));
+			);
+			
+			set(layer[get(thumbName)].onout, 
+				set(layer[get(parent)].bgcolor, get(layer[thumbnailBorderSource_controlBar_dockedThumbnails].borderColorDefault));
+				set(layer[get(parent)].bgalpha, get(layer[thumbnailBorderSource_controlBar_dockedThumbnails].borderAlphaDefault));
+				hideTooltip();
+			);
+		);
+	
+	</action>
+	
+	
+	<action name="highlightCurrentThumb_controlBar_dockedThumbnails">
+			delayedcall(0.1,highlightThumb_controlBar_dockedThumbnails(get(xml.scene)));
+	</action>
+	
+	
+	<action name="highlightThumb_controlBar_dockedThumbnails">
+	
+		set(thumbBorderName, 'thumbBorder_');
+		txtadd(thumbBorderName, %1);
+		txtadd(thumbBorderName, '_controlBar_dockedThumbnails');
+		
+		if(layer[thumbnailBorderSource_controlBar_dockedThumbnails].url,
+			set(layer[get(thumbBorderName)].crop, get(layer[thumbnailBorderSource_controlBar_dockedThumbnails].cropSelected));
+			set(layer[get(thumbBorderName)].onovercrop, get(layer[thumbnailBorderSource_controlBar_dockedThumbnails].cropSelected));
+			set(layer[get(thumbBorderName)].ondowncrop, get(layer[thumbnailBorderSource_controlBar_dockedThumbnails].cropSelected));
+		,
+			set(thumbName, 'thumb_');
+			txtadd(thumbName, %1);
+			txtadd(thumbName, '_controlBar_dockedThumbnails');
+			
+			set(layer[get(thumbBorderName)].bgcolor, get(layer[thumbnailBorderSource_controlBar_dockedThumbnails].borderColorSelected));
+			set(layer[get(thumbBorderName)].bgalpha, get(layer[thumbnailBorderSource_controlBar_dockedThumbnails].borderAlphaSelected));
+			
+			set(layer[get(thumbName)].onover, "");
+			set(layer[get(thumbName)].onout, hideTooltip(););
+		);
+
+		scrollToThumb_controlBar_dockedThumbnails(%1);
+	</action>
+	
+	
+	<action name="scrollToCurrentThumb_controlBar_dockedThumbnails">
+			scrollToThumb_controlBar_dockedThumbnails(get(xml.scene));
+	</action>
+	
+	
+	<action name="scrollToThumb_controlBar_dockedThumbnails">
+		
+		set(thumbName, 'thumb_');
+		set(thumbBorderName, 'thumbBorder_');
+		
+		txtadd(thumbName, %1);
+		txtadd(thumbName, '_controlBar_dockedThumbnails');
+		txtadd(thumbBorderName, %1);
+		txtadd(thumbBorderName, '_controlBar_dockedThumbnails');
+
+			set(posX_controlBar_dockedThumbnails, 0);
+			if(layer[thumbnailBorderSource_controlBar_dockedThumbnails].url,
+				div(halfThumbWidth_controlBar_dockedThumbnails, get(layer[get(thumbName)].width), 2);
+				ifnot(layer[scrollAreaContainer_controlBar_dockedThumbnails].adjustToContent,
+					add(posX_controlBar_dockedThumbnails, get(layer[get(thumbName)].x), get(halfThumbWidth_controlBar_dockedThumbnails));
+				);
+				if(layer[thumbsScrollArea_controlBar_dockedThumbnails].scrolltocenter,
+					layer[thumbsScrollArea_controlBar_dockedThumbnails].scrolltocenter(get(posX_controlBar_dockedThumbnails), 0);
+				);
+			,
+				div(halfThumbWidth_controlBar_dockedThumbnails, get(layer[get(thumbBorderName)].width), 2);
+				ifnot(layer[scrollAreaContainer_controlBar_dockedThumbnails].adjustToContent,
+					add(posX_controlBar_dockedThumbnails, get(layer[get(thumbBorderName)].x), get(halfThumbWidth_controlBar_dockedThumbnails));
+				);
+				if(layer[thumbsScrollArea_controlBar_dockedThumbnails].scrolltocenter,
+					layer[thumbsScrollArea_controlBar_dockedThumbnails].scrolltocenter(get(posX_controlBar_dockedThumbnails), 0);
+				);
+			);
+		
+	</action>
+	
+
+
+<action name="resetThumbnailsBarSize_controlBar_dockedThumbnails">
+	
+	
+	set(sizeHeight, 40);
+	mul(totalMarginY, 5, 2);
+	if(layer[thumbnailBorderSource_controlBar_dockedThumbnails].url,
+		mul(totalOffsetY, get(layer[thumbnailBorderSource_controlBar_dockedThumbnails].offsetY), 2);
+	,
+		mul(totalOffsetY, get(layer[thumbnailBorderSource_controlBar_dockedThumbnails].borderWidth), 2);
+	);
+	add(sizeHeight, totalMarginY);
+	add(sizeHeight, totalOffsetY);
+	
+	setSize_controlBar_dockedThumbnails(%1, sizeHeight);
+</action>
+
+
+
+
+
+<action name="controlBar_dockedThumbnailsbuildMenu">
+	
+    set(controlBar_dockedThumbnailsbutton_pos, 0);
+    set(layer[controlBar_dockedThumbnailsbtn_hidecontrols].x, get(controlBar_dockedThumbnailsbutton_pos));
+    set(layer[controlBar_dockedThumbnailsbtn_hidecontrols_bg].x, get(controlBar_dockedThumbnailsbutton_pos));
+    inc(controlBar_dockedThumbnailsbutton_pos, 36);
+
+
+      if (device.desktop,
+        set(layer[controlBar_dockedThumbnailsbtn_display_help].x, get(controlBar_dockedThumbnailsbutton_pos));
+        set(layer[controlBar_dockedThumbnailsbtn_display_help_bg].x, get(controlBar_dockedThumbnailsbutton_pos));
+        set(layer[controlBar_dockedThumbnailsbtn_close_help].x  , get(controlBar_dockedThumbnailsbutton_pos));
+        set(layer[controlBar_dockedThumbnailsbtn_close_help_bg].x  , get(controlBar_dockedThumbnailsbutton_pos));
+        inc(controlBar_dockedThumbnailsbutton_pos, 36);
+      );
+
+      if (device.fullscreensupport,
+        set(layer[controlBar_dockedThumbnailsbtn_openfs].x, get(controlBar_dockedThumbnailsbutton_pos));
+        set(layer[controlBar_dockedThumbnailsbtn_closefs].x, get(controlBar_dockedThumbnailsbutton_pos));
+        set(layer[controlBar_dockedThumbnailsbtn_openfs_bg ].x, get(controlBar_dockedThumbnailsbutton_pos));
+        set(layer[controlBar_dockedThumbnailsbtn_closefs_bg].x, get(controlBar_dockedThumbnailsbutton_pos));
+        inc(controlBar_dockedThumbnailsbutton_pos, 36);
+      );
+
+
+      set(layer[controlBar_dockedThumbnailsbtn_display_floorplan].x, get(controlBar_dockedThumbnailsbutton_pos));
+      set(layer[controlBar_dockedThumbnailsbtn_hide_floorplan].x, get(controlBar_dockedThumbnailsbutton_pos));
+      set(layer[controlBar_dockedThumbnailsbtn_display_floorplan_bg].x, get(controlBar_dockedThumbnailsbutton_pos));
+      set(layer[controlBar_dockedThumbnailsbtn_hide_floorplan_bg].x, get(controlBar_dockedThumbnailsbutton_pos));
+      inc(controlBar_dockedThumbnailsbutton_pos, 36);
+
+
+      set(layer[controlBar_dockedThumbnailsbtn_autorotate_on].x , get(controlBar_dockedThumbnailsbutton_pos));
+      set(layer[controlBar_dockedThumbnailsbtn_autorotate_on_bg].x , get(controlBar_dockedThumbnailsbutton_pos));
+      set(layer[controlBar_dockedThumbnailsbtn_autorotate_off].x, get(controlBar_dockedThumbnailsbutton_pos));
+      set(layer[controlBar_dockedThumbnailsbtn_autorotate_off_bg].x, get(controlBar_dockedThumbnailsbutton_pos));
+      inc(controlBar_dockedThumbnailsbutton_pos, 36);
+
+
+      set(layer[controlBar_dockedThumbnailsbtn_autotour_on].x , get(controlBar_dockedThumbnailsbutton_pos));
+      set(layer[controlBar_dockedThumbnailsbtn_autotour_on_bg].x , get(controlBar_dockedThumbnailsbutton_pos));
+      set(layer[controlBar_dockedThumbnailsbtn_autotour_off].x, get(controlBar_dockedThumbnailsbutton_pos));
+      set(layer[controlBar_dockedThumbnailsbtn_autotour_off_bg].x, get(controlBar_dockedThumbnailsbutton_pos));
+      inc(controlBar_dockedThumbnailsbutton_pos, 36);
+
+      set(layer[controlBar_dockedThumbnailsbtn_sound_on].x , get(controlBar_dockedThumbnailsbutton_pos));
+      set(layer[controlBar_dockedThumbnailsbtn_sound_on_bg].x , get(controlBar_dockedThumbnailsbutton_pos));
+      set(layer[controlBar_dockedThumbnailsbtn_sound_off].x, get(controlBar_dockedThumbnailsbutton_pos));
+      set(layer[controlBar_dockedThumbnailsbtn_sound_off_bg].x, get(controlBar_dockedThumbnailsbutton_pos));
+      inc(controlBar_dockedThumbnailsbutton_pos, 36);
+
+
+
+
+
+
+      if (device.desktop,
+        set(layer[controlBar_dockedThumbnailsbtn_out].x, get(controlBar_dockedThumbnailsbutton_pos));
+        set(layer[controlBar_dockedThumbnailsbtn_out_bg].x, get(controlBar_dockedThumbnailsbutton_pos));
+        inc(controlBar_dockedThumbnailsbutton_pos, 36);
+        set(layer[controlBar_dockedThumbnailsbtn_in].x, get(controlBar_dockedThumbnailsbutton_pos));
+        set(layer[controlBar_dockedThumbnailsbtn_in_bg].x, get(controlBar_dockedThumbnailsbutton_pos));
+        inc(controlBar_dockedThumbnailsbutton_pos, 36);
+      );
+
+
+
+
+      set(controlBar_dockedThumbnailsThumbnailsPos, get(controlBar_dockedThumbnailsbutton_pos));
+      controlBar_dockedThumbnailsUpdateThumbnailsSize();
+	
+	
+	
+</action>
+
+<events name="controlBar_dockedThumbnailsStartTourEvents" onTourStart="controlBar_dockedThumbnailsCallOnStartTour();" keep="true" />
+
+<action name="controlBar_dockedThumbnailsCallOnStartTour">
+	
+	controlBar_dockedThumbnailsshowMenuControls();
+</action>
+
+
+
+	<action name="controlBar_dockedThumbnailsOnResize">
+		controlBar_dockedThumbnailsUpdateThumbnailsSize();
+	</action>
+	<action name="controlBar_dockedThumbnailsUpdateThumbnailsSize">
+		copy(newThumbnailsBarWidth, stagewidth);
+		sub(newThumbnailsBarWidth, controlBar_dockedThumbnailsThumbnailsPos);
+		
+		resetThumbnailsBarSize_controlBar_dockedThumbnails(get(newThumbnailsBarWidth));
+	</action>
+
+    <layer name="controlBar_dockedThumbnails_bg"
+           keep="true"
+           url="%FIRSTXML%/graphics/dockedthumbscontrolbar/footer.png"
+           zorder="1"
+           width="100%"
+           align="bottomleft"
+           x="0"
+           visible="false" />
+
+    <style name="controlBar_dockedThumbnails_btn_style_bg"
+            keep="true"
+            parent="controlBar_dockedThumbnails_bg"
+            crop="0|0|48|48"
+            url="%FIRSTXML%/graphics/dockedthumbscontrolbar/btn_bg.png"
+            align="bottomright"
+            height="36"
+            width="36"
+            alpha="0.3"
+            y="12"
+            zorder="0"
+            />
+    <style name="controlBar_dockedThumbnails_btn_style_bg_off"
+            keep="true"
+            parent="controlBar_dockedThumbnails_bg"
+            crop="0|0|48|48"
+            url="%FIRSTXML%/graphics/dockedthumbscontrolbar/btn_bg.png"
+            align="bottomright"
+            height="36"
+            width="36"
+            alpha="0.3"
+            y="12"
+            zorder="0"
+            />
+
+    <style name="controlBar_dockedThumbnails_btn_style_on_bg"
+           keep="true"
+           parent="controlBar_dockedThumbnails_bg"
+           crop="0|48|48|48"
+           url="%FIRSTXML%/graphics/dockedthumbscontrolbar/btn_bg.png"
+           align="bottomright"
+           height="36"
+           width="36"
+           alpha="0.3"
+           y="12"
+           zorder="0"
+           />
+    <style name="controlBar_dockedThumbnails_btn_style_on_bg_off"
+           keep="true"
+           parent="controlBar_dockedThumbnails_bg"
+           crop="0|0|48|48"
+           url="%FIRSTXML%/graphics/dockedthumbscontrolbar/btn_bg.png"
+           align="bottomright"
+           height="36"
+           width="36"
+           alpha="0.3"
+           y="12"
+           zorder="0"
+           />
+
+    <style name="controlBar_dockedThumbnails_btn_down_style"
+           keep="true"
+           parent="controlBar_dockedThumbnails_bg"
+                 crop="0| 0|48|48"
+           onovercrop="0|48|48|48"
+           ondowncrop="0|96|48|48"
+           align="bottomright"
+           height="36"
+           width="36"
+           x="0" y="12"
+           zorder="1"
+           onhover="showTooltip('plugin',controlBar_dockedThumbnailsmenuTooltipStyle);"
+           onover="controlBar_dockedThumbnailsctrl_btn_onoveraction"
+           onout="controlBar_dockedThumbnailsctrl_btn_onoutaction"
+           />
+
+    <style name="controlBar_dockedThumbnails_btn_style"
+           keep="true"
+           parent="controlBar_dockedThumbnails_bg"
+                 crop="0| 0|48|48"
+           onovercrop="0|48|48|48"
+           ondowncrop="0|96|48|48"
+           align="bottomright"
+           height="36"
+           width="36"
+           x="0" y="12"
+           zorder="1"
+           onhover="showTooltip('plugin',controlBar_dockedThumbnailsmenuTooltipStyle);"
+           onover="controlBar_dockedThumbnailsctrl_btn_onoveraction"
+           ondown="controlBar_dockedThumbnailsctrl_btn_ondownaction"
+           onout="controlBar_dockedThumbnailsctrl_btn_onoutaction"
+           />
+    <style name="controlBar_dockedThumbnails_btn_style_off"
+           keep="true"
+           parent="controlBar_dockedThumbnails_bg"
+           align="bottomright"
+           height="36"
+           width="36"
+           x="0" y="12"
+           zorder="1"
+           onhover="showTooltip('plugin',controlBar_dockedThumbnailsmenuTooltipStyle);"
+           onout="hideTooltip();"
+           />
+
+  <action name="controlBar_dockedThumbnailsctrl_btn_onoveraction">
+    txtadd(btn_bg_name, get(name), "_bg");
+    set(layer[get(btn_bg_name)].crop, "0|48|48|48");
+  </action>
+
+  <action name="controlBar_dockedThumbnailsctrl_btn_ondownaction">
+    txtadd(btn_bg_name, get(name), "_bg");
+    set(layer[get(btn_bg_name)].crop, "0|96|48|48");
+  </action>
+
+  <action name="controlBar_dockedThumbnailsctrl_btn_onoutaction">
+    txtadd(btn_bg_name, get(name), "_bg");
+    set(layer[get(btn_bg_name)].crop, "0|0|48|48");
+    hideTooltip();
+  </action>
+
+    <style name="controlBar_dockedThumbnails_btn_style_on"
+            keep="true"
+            parent="controlBar_dockedThumbnails_bg"
+                  crop="0|48|48|48"
+            onovercrop="0|48|48|48"
+            ondowncrop="0|96|48|48"
+            align="bottomright"
+            height="36"
+            width="36"
+            y="12"
+            zorder="1"
+            onhover="showTooltip('plugin',controlBar_dockedThumbnailsmenuTooltipStyle);" 
+            onout="hideTooltip();"
+            />
+    <style name="controlBar_dockedThumbnails_btn_style_on_off"
+            keep="true"
+            parent="controlBar_dockedThumbnails_bg"
+            align="bottomright"
+            height="36"
+            width="36"
+            y="12"
+            zorder="1"
+            onhover="showTooltip('plugin',controlBar_dockedThumbnailsmenuTooltipStyle);" 
+            onout="hideTooltip();"
+            />
+
+
+
+    <layer name="controlBar_dockedThumbnailsbtn_in_bg" style="controlBar_dockedThumbnails_btn_style_bg" visible="false" devices="desktop"/>
+    <layer name="controlBar_dockedThumbnailsbtn_in"
+           url="%FIRSTXML%/graphics/dockedthumbscontrolbar/btn_zoom_in.png"
+           style="controlBar_dockedThumbnails_btn_down_style"
+           ondown="controlBar_dockedThumbnailsctrl_btn_ondownaction();viewControlZoomIn(false);"
+           onup="viewControlZoomStop();
+"
+           tooltip="controlBar_dockedThumbnailszoomInTip"
+           devices="desktop"
+           visible="false"
+           />
+    <layer name="controlBar_dockedThumbnailsbtn_out_bg" style="controlBar_dockedThumbnails_btn_style_bg" visible="false" devices="desktop"/>
+    <layer name="controlBar_dockedThumbnailsbtn_out"
+           url="%FIRSTXML%/graphics/dockedthumbscontrolbar/btn_zoom_out.png"
+           style="controlBar_dockedThumbnails_btn_down_style"
+           ondown="controlBar_dockedThumbnailsctrl_btn_ondownaction();viewControlZoomOut(false);
+"
+           onup="viewControlZoomStop();
+"
+           tooltip="controlBar_dockedThumbnailszoomOutTip"
+           devices="desktop"
+           visible="false"
+           />
+
+
+    <layer name="controlBar_dockedThumbnailsbtn_sound_on_bg" style="controlBar_dockedThumbnails_btn_style_bg" visible="false" />
+    <layer name="controlBar_dockedThumbnailsbtn_sound_on"
+           url="%FIRSTXML%/graphics/dockedthumbscontrolbar/btn_start_sound.png"
+           onclick="playTourSounds();
+"
+           style="controlBar_dockedThumbnails_btn_style"
+           visible="false"
+           tooltip="controlBar_dockedThumbnailssoundsOnTip"
+           />
+    <layer name="controlBar_dockedThumbnailsbtn_sound_off_bg" style="controlBar_dockedThumbnails_btn_style_on_bg" visible="false" />
+    <layer name="controlBar_dockedThumbnailsbtn_sound_off"
+           url="%FIRSTXML%/graphics/dockedthumbscontrolbar/btn_stop_sound.png"
+           onclick="stopTourSounds();
+"
+           style="controlBar_dockedThumbnails_btn_style_on"
+           visible="false"
+           tooltip="controlBar_dockedThumbnailssoundsOffTip"
+           />
+
+
+
+
+
+
+    <layer name="controlBar_dockedThumbnailsbtn_display_floorplan_bg" style="controlBar_dockedThumbnails_btn_style_bg" visible="false" />
+    <layer name="controlBar_dockedThumbnailsbtn_display_floorplan"
+           url="%FIRSTXML%/graphics/dockedthumbscontrolbar/btn_floorplan.png"
+           onclick="showFloorplan();
+"
+           style="controlBar_dockedThumbnails_btn_style"
+           visible="false"
+           tooltip="controlBar_dockedThumbnailsdisplayFloorplanTip"
+           />
+    <layer name="controlBar_dockedThumbnailsbtn_hide_floorplan_bg" style="controlBar_dockedThumbnails_btn_style_on_bg" visible="false" />
+    <layer name="controlBar_dockedThumbnailsbtn_hide_floorplan"
+           url="%FIRSTXML%/graphics/dockedthumbscontrolbar/btn_floorplan.png"
+           onclick="hideFloorplan();
+"
+           style="controlBar_dockedThumbnails_btn_style_on"
+           visible="false"
+           tooltip="controlBar_dockedThumbnailshideFloorplanTip"
+           />
+
+    <layer name="controlBar_dockedThumbnailsbtn_openfs_bg" style="controlBar_dockedThumbnails_btn_style_bg" visible="false" devices="fullscreensupport" />
+    <layer name="controlBar_dockedThumbnailsbtn_openfs"
+           url="%FIRSTXML%/graphics/dockedthumbscontrolbar/btn_enter_fs.png"
+           onclick="enterFullscreen();
+"
+           style="controlBar_dockedThumbnails_btn_style"
+           visible="false"
+           tooltip="controlBar_dockedThumbnailsopenFsTip"
+           devices="fullscreensupport"
+           />
+    <layer name="controlBar_dockedThumbnailsbtn_closefs_bg" style="controlBar_dockedThumbnails_btn_style_on_bg" visible="false" devices="fullscreensupport" />
+    <layer name="controlBar_dockedThumbnailsbtn_closefs"
+           url="%FIRSTXML%/graphics/dockedthumbscontrolbar/btn_close_fs.png"
+           onclick="exitFullscreen();
+"
+           style="controlBar_dockedThumbnails_btn_style_on"
+           visible="false"
+           tooltip="controlBar_dockedThumbnailscloseFsTip"
+           devices="fullscreensupport"
+           />
+
+    <layer name="controlBar_dockedThumbnailsbtn_autorotate_on_bg" style="controlBar_dockedThumbnails_btn_style_bg" visible="false" />
+    <layer name="controlBar_dockedThumbnailsbtn_autorotate_on"
+           url="%FIRSTXML%/graphics/dockedthumbscontrolbar/btn_start_autorotation.png"
+           onclick="resumeautorotation();
+"
+           style="controlBar_dockedThumbnails_btn_style"
+           visible="false"
+            tooltip="controlBar_dockedThumbnailsautorotateOnTip"
+           />
+    <layer name="controlBar_dockedThumbnailsbtn_autorotate_off_bg" style="controlBar_dockedThumbnails_btn_style_on_bg" visible="false" />
+    <layer name="controlBar_dockedThumbnailsbtn_autorotate_off"
+           url="%FIRSTXML%/graphics/dockedthumbscontrolbar/btn_stop_autorotation.png"
+           onclick="pauseautorotation();
+"
+           style="controlBar_dockedThumbnails_btn_style_on"
+           visible="false"
+           tooltip="controlBar_dockedThumbnailsautorotateOffTip"
+           />
+
+
+    <layer name="controlBar_dockedThumbnailsbtn_autotour_on_bg" style="controlBar_dockedThumbnails_btn_style_bg" visible="false" />
+    <layer name="controlBar_dockedThumbnailsbtn_autotour_on"
+           url="%FIRSTXML%/graphics/dockedthumbscontrolbar/btn_start_automatic_tour.png"
+           onclick="startautotour();
+"
+           style="controlBar_dockedThumbnails_btn_style"
+           visible="false"
+            tooltip="controlBar_dockedThumbnailsautotourOnTip"
+           />
+    <layer name="controlBar_dockedThumbnailsbtn_autotour_off_bg" style="controlBar_dockedThumbnails_btn_style_on_bg" visible="false" />
+    <layer name="controlBar_dockedThumbnailsbtn_autotour_off"
+           url="%FIRSTXML%/graphics/dockedthumbscontrolbar/btn_stop_automatic_tour.png"
+           onclick="stopautotour();
+"
+           style="controlBar_dockedThumbnails_btn_style_on"
+           visible="false"
+           tooltip="controlBar_dockedThumbnailsautotourOffTip"
+           />
+
+
+    <layer name="controlBar_dockedThumbnailsbtn_display_help_bg" style="controlBar_dockedThumbnails_btn_style_bg" visible="false" devices="desktop" />
+    <layer name="controlBar_dockedThumbnailsbtn_display_help"
+           url="%FIRSTXML%/graphics/dockedthumbscontrolbar/btn_help.png"
+           onclick="controlBar_dockedThumbnailsdisplayHelp();"
+           style="controlBar_dockedThumbnails_btn_style"
+           tooltip="controlBar_dockedThumbnailsdisplayHelpTip"
+           devices="desktop"
+           visible="false"
+           />
+    <layer name="controlBar_dockedThumbnailsbtn_close_help_bg" style="controlBar_dockedThumbnails_btn_style_on_bg" visible="false" devices="desktop"/>
+    <layer name="controlBar_dockedThumbnailsbtn_close_help"
+           url="%FIRSTXML%/graphics/dockedthumbscontrolbar/btn_help.png"
+           onclick="controlBar_dockedThumbnailscloseHelp();"
+           style="controlBar_dockedThumbnails_btn_style_on"
+           visible="false"
+           tooltip="controlBar_dockedThumbnailshideHelpTip"
+           devices="desktop"
+           />
+
+
+
+    <layer name="controlBar_dockedThumbnailsbtn_hidecontrols_bg" style="controlBar_dockedThumbnails_btn_style_bg" visible="false" />
+    <layer name="controlBar_dockedThumbnailsbtn_hidecontrols"
+           url="%FIRSTXML%/graphics/dockedthumbscontrolbar/btn_hide_controls.png"
+           style="controlBar_dockedThumbnails_btn_style"
+           onclick="controlBar_dockedThumbnailshideMenuControls();hideTourControls();
+"
+           visible="false"
+            tooltip="controlBar_dockedThumbnailshideControlsTip"
+           />
+
+    <layer name="controlBar_dockedThumbnailsbtn_showcontrols"
+                  crop="0| 0|48|48"
+            onovercrop="0|48|48|48"
+            ondowncrop="0|96|48|48"
+            keep="true"
+            url="%FIRSTXML%/graphics/dockedthumbscontrolbar/btn_show_controls_bg.png"
+            align="bottomright"
+            zorder="1"
+            height="36"
+            width="36"
+            visible="false"
+            y="12"
+            x="0" >
+    <layer name="controlBar_dockedThumbnailsbtn_showcontrols_fg"
+                  crop="0| 0|48|48"
+            onovercrop="0|48|48|48"
+            ondowncrop="0|96|48|48"
+            onclick="controlBar_dockedThumbnailsshowMenuControls();showTourControls();
+"
+            onhover="showTooltip('plugin',controlBar_dockedThumbnailsmenuTooltipStyle);"
+            onout="hideTooltip();"
+            tooltip="controlBar_dockedThumbnailsdisplayControlsTip"
+            keep="true"
+            url="%FIRSTXML%/graphics/dockedthumbscontrolbar/btn_show_controls.png"
+            align="center"
+            height="36"
+            width="36"
+            />
+    </layer>
+
+
+<action name="controlBar_dockedThumbnailshideMenuControls">
+	set(controlBar_dockedThumbnailsIsOpened, false);
+	set(layer[controlBar_dockedThumbnails_bg].visible, false);
+	set(layer[controlBar_dockedThumbnailsbtn_showcontrols].visible, true);
+	set(layer[controlBar_dockedThumbnailsbtn_hidecontrols_bg].visible, false);
+	set(layer[controlBar_dockedThumbnailsbtn_hidecontrols].visible, false);
+	set(layer[controlBar_dockedThumbnailsbtn_in_bg].visible, false);
+	set(layer[controlBar_dockedThumbnailsbtn_out_bg].visible, false);
+	set(layer[controlBar_dockedThumbnailsbtn_in].visible, false);
+	set(layer[controlBar_dockedThumbnailsbtn_out].visible, false);
+		controlBar_dockedThumbnailsupdateAutorotationButtons();
+
+		controlBar_dockedThumbnailsupdateSoundButtons();
+		controlBar_dockedThumbnailsupdateFloorplanButtons();
+		controlBar_dockedThumbnailsupdateAutotourButtons();
+
+		controlBar_dockedThumbnailsupdateFullscreenButtons();
+		controlBar_dockedThumbnailsupdateHelpButtons();
+</action>
+<action name="controlBar_dockedThumbnailsshowMenuControls">
+	set(controlBar_dockedThumbnailsIsOpened, true);
+      controlBar_dockedThumbnailsupdateFullscreenButtons();
+      controlBar_dockedThumbnailsupdateAutorotationButtons();
+
+      controlBar_dockedThumbnailsupdateAutotourButtons();
+      controlBar_dockedThumbnailsupdateSoundButtons();
+      controlBar_dockedThumbnailsupdateFloorplanButtons();
+
+      controlBar_dockedThumbnailsupdateHelpButtons();
+      set(layer[controlBar_dockedThumbnails_bg].visible, true);
+	set(layer[controlBar_dockedThumbnailsbtn_showcontrols].visible, false);
+	set(layer[controlBar_dockedThumbnailsbtn_hidecontrols_bg].visible, true);
+	set(layer[controlBar_dockedThumbnailsbtn_hidecontrols].visible, true);
+	set(layer[controlBar_dockedThumbnailsbtn_in_bg].visible, true);
+	set(layer[controlBar_dockedThumbnailsbtn_out_bg].visible, true);
+	set(layer[controlBar_dockedThumbnailsbtn_in].visible, true);
+	set(layer[controlBar_dockedThumbnailsbtn_out].visible, true);
+	
+	
+		controlBar_dockedThumbnailsUpdateThumbnailsSize();
+</action>
+
+
+    <layer name="controlBar_dockedThumbnailshelpScreenBg" align="center" keep="true" onclick="controlBar_dockedThumbnailscloseHelp();"
+           url="%FIRSTXML%/graphics/dockedthumbscontrolbar/help_screen_bg.png"
+           visible="false"
+           zorder="97"
+           >
+      <layer name="controlBar_dockedThumbnailshelpScreen" align="center" keep="true" onclick="controlBar_dockedThumbnailscloseHelp();" 
+             url="%FIRSTXML%/graphics/dockedthumbscontrolbar/help_screen_fg.png"
+             height="100%" 
+             width="prop" 
+             displayed="false"
+             />
+    </layer>
+    <action name="controlBar_dockedThumbnailsdisplayHelp">
+      if (device.desktop,
+        set(layer[controlBar_dockedThumbnailshelpScreen].displayed, true);
+        set(layer[controlBar_dockedThumbnailshelpScreenBg].visible,true);
+        controlBar_dockedThumbnailsupdateHelpButtons();
+      );
+    </action>
+    <action name="controlBar_dockedThumbnailscloseHelp">
+      if (device.desktop,
+        set(layer[controlBar_dockedThumbnailshelpScreen].displayed, false);
+        set(layer[controlBar_dockedThumbnailshelpScreenBg].visible,false);
+        controlBar_dockedThumbnailsupdateHelpButtons();
+      );
+    </action>
+	<action name="controlBar_dockedThumbnailsHideHelpButtons">
+		set(layer[controlBar_dockedThumbnailsbtn_display_help].visible, false);
+		set(layer[controlBar_dockedThumbnailsbtn_close_help].visible, false);
+		set(layer[controlBar_dockedThumbnailsbtn_display_help_bg].visible, false);
+		set(layer[controlBar_dockedThumbnailsbtn_close_help_bg].visible, false);
+	</action>
+	<action name="controlBar_dockedThumbnailsShowHelpButtons">
+		if (layer[controlBar_dockedThumbnailshelpScreen].displayed,
+			set(layer[controlBar_dockedThumbnailsbtn_close_help].visible, true);
+			set(layer[controlBar_dockedThumbnailsbtn_display_help].visible, false);
+			set(layer[controlBar_dockedThumbnailsbtn_close_help_bg].visible, true);
+			set(layer[controlBar_dockedThumbnailsbtn_display_help_bg].visible, false);
+		,
+			set(layer[controlBar_dockedThumbnailsbtn_display_help].visible, true);
+			set(layer[controlBar_dockedThumbnailsbtn_close_help].visible, false);
+			set(layer[controlBar_dockedThumbnailsbtn_display_help_bg].visible, true);
+			set(layer[controlBar_dockedThumbnailsbtn_close_help_bg].visible, false);
+		);
+	</action>
+	<action name="controlBar_dockedThumbnailsupdateHelpButtons">
+	if (device.desktop,
+		if (controlBar_dockedThumbnailsIsOpened,
+			controlBar_dockedThumbnailsShowHelpButtons();
+		,
+			controlBar_dockedThumbnailsHideHelpButtons();
+		);
+	,
+		controlBar_dockedThumbnailsHideHelpButtons();
+	);
+	</action>
+    
+
+	<events name="controlBar_dockedThumbnailsDisplayFloorPlanEvents" 
+		onshowtourfloorplan="controlBar_dockedThumbnailsupdateFloorplanButtons();" 
+		onhidetourfloorplan="controlBar_dockedThumbnailsupdateFloorplanButtons();" 
+		keep="true" />
+	<action name="controlBar_dockedThumbnailsHideFloorplanButtons">
+		set(layer[controlBar_dockedThumbnailsbtn_display_floorplan].visible, false);
+		set(layer[controlBar_dockedThumbnailsbtn_hide_floorplan].visible, false);
+		set(layer[controlBar_dockedThumbnailsbtn_display_floorplan_bg].visible, false);
+		set(layer[controlBar_dockedThumbnailsbtn_hide_floorplan_bg].visible, false);
+	</action>
+	<action name="controlBar_dockedThumbnailsShowFloorplanButtons">
+		if (tour_displayfloorplan,
+			set(layer[controlBar_dockedThumbnailsbtn_hide_floorplan].visible, true);
+			set(layer[controlBar_dockedThumbnailsbtn_display_floorplan].visible, false);
+			set(layer[controlBar_dockedThumbnailsbtn_display_floorplan_bg].visible, false);
+			set(layer[controlBar_dockedThumbnailsbtn_hide_floorplan_bg].visible, true);
+		,
+			set(layer[controlBar_dockedThumbnailsbtn_display_floorplan].visible, true);
+			set(layer[controlBar_dockedThumbnailsbtn_hide_floorplan].visible, false);
+			set(layer[controlBar_dockedThumbnailsbtn_display_floorplan_bg].visible, true);
+			set(layer[controlBar_dockedThumbnailsbtn_hide_floorplan_bg].visible, false);
+		);
+	</action>
+	<action name="controlBar_dockedThumbnailsupdateFloorplanButtons">
+		if (controlBar_dockedThumbnailsIsOpened,
+			controlBar_dockedThumbnailsShowFloorplanButtons();
+		,
+			controlBar_dockedThumbnailsHideFloorplanButtons();
+		);
+	</action>
+
+
+	<events name="controlBar_dockedThumbnailsmenufullscreenchangeevent"
+		onenterfullscreen="controlBar_dockedThumbnailsupdateFullscreenButtons();"
+		onexitfullscreen="controlBar_dockedThumbnailsupdateFullscreenButtons();"
+		keep="true"/>
+	<action name="controlBar_dockedThumbnailsHideFullscreenButtons">
+		set(layer[controlBar_dockedThumbnailsbtn_openfs].visible , false);
+		set(layer[controlBar_dockedThumbnailsbtn_closefs].visible, false);
+		set(layer[controlBar_dockedThumbnailsbtn_openfs_bg].visible, false);
+		set(layer[controlBar_dockedThumbnailsbtn_closefs_bg].visible, false);
+	</action>
+	<action name="controlBar_dockedThumbnailsShowFullscreenButtons">
+		if (device.fullscreensupport,
+			if(tour_fullscreen,
+				set(layer[controlBar_dockedThumbnailsbtn_openfs].visible , false);
+				set(layer[controlBar_dockedThumbnailsbtn_closefs].visible, true);
+				set(layer[controlBar_dockedThumbnailsbtn_openfs_bg].visible, false);
+				set(layer[controlBar_dockedThumbnailsbtn_closefs_bg].visible, true);
+			,
+				set(layer[controlBar_dockedThumbnailsbtn_openfs].visible ,true);
+				set(layer[controlBar_dockedThumbnailsbtn_closefs].visible,false);
+				set(layer[controlBar_dockedThumbnailsbtn_openfs_bg].visible, true);
+				set(layer[controlBar_dockedThumbnailsbtn_closefs_bg].visible, false);
+			);
+		,
+			controlBar_dockedThumbnailsHideFullscreenButtons();
+		);
+	</action>
+	<action name="controlBar_dockedThumbnailsupdateFullscreenButtons">
+		if (controlBar_dockedThumbnailsIsOpened,
+			controlBar_dockedThumbnailsShowFullscreenButtons();
+		,
+			controlBar_dockedThumbnailsHideFullscreenButtons();
+		);
+	</action>
+
+	<events name="controlBar_dockedThumbnailsAutorotationEvents"
+		onstartautorotation="controlBar_dockedThumbnailsupdateAutorotationButtons();"
+		onresumeautorotation="controlBar_dockedThumbnailsupdateAutorotationButtons();"
+		onstopautorotation="controlBar_dockedThumbnailsupdateAutorotationButtons();"
+		onpauseautorotation="controlBar_dockedThumbnailsupdateAutorotationButtons();"
+		keep="true"/>
+	<action name="controlBar_dockedThumbnailsHideAutorotationButtons">
+		set(layer[controlBar_dockedThumbnailsbtn_autorotate_off].visible, false);
+		set(layer[controlBar_dockedThumbnailsbtn_autorotate_on].visible , false);
+		set(layer[controlBar_dockedThumbnailsbtn_autorotate_off_bg].visible, false);
+		set(layer[controlBar_dockedThumbnailsbtn_autorotate_on_bg].visible , false);
+	</action>
+	<action name="controlBar_dockedThumbnailsShowAutorotationButtons">
+		if(autorotate.enabled == false,
+			set(layer[controlBar_dockedThumbnailsbtn_autorotate_off].visible, false);
+			set(layer[controlBar_dockedThumbnailsbtn_autorotate_on].visible , true);
+			set(layer[controlBar_dockedThumbnailsbtn_autorotate_off_bg].visible, false);
+			set(layer[controlBar_dockedThumbnailsbtn_autorotate_on_bg].visible , true);
+		,
+			set(layer[controlBar_dockedThumbnailsbtn_autorotate_off].visible, true);
+			set(layer[controlBar_dockedThumbnailsbtn_autorotate_on].visible , false);
+			set(layer[controlBar_dockedThumbnailsbtn_autorotate_off_bg].visible, true);
+			set(layer[controlBar_dockedThumbnailsbtn_autorotate_on_bg].visible , false);
+		);
+	</action>
+	<action name="controlBar_dockedThumbnailsupdateAutorotationButtons">
+		if (controlBar_dockedThumbnailsIsOpened,
+			controlBar_dockedThumbnailsShowAutorotationButtons();
+		,
+			controlBar_dockedThumbnailsHideAutorotationButtons();
+		);
+	</action>
+
+
+	<events name="controlBar_dockedThumbnailsAutotourEvents"
+		onstartautotour="controlBar_dockedThumbnailsupdateAutotourButtons();"
+		onstopautotour="controlBar_dockedThumbnailsupdateAutotourButtons();"
+		keep="true"/>
+	<action name="controlBar_dockedThumbnailsHideAutotourButtons">
+		set(layer[controlBar_dockedThumbnailsbtn_autotour_off].visible, false);
+		set(layer[controlBar_dockedThumbnailsbtn_autotour_on].visible , false);
+		set(layer[controlBar_dockedThumbnailsbtn_autotour_off_bg].visible, false);
+		set(layer[controlBar_dockedThumbnailsbtn_autotour_on_bg].visible, false);
+	</action>
+	<action name="controlBar_dockedThumbnailsShowAutotourButtons">
+		if (tour_autotourenabled == false,
+			set(layer[controlBar_dockedThumbnailsbtn_autotour_off].visible, false);
+			set(layer[controlBar_dockedThumbnailsbtn_autotour_on].visible , true);
+			set(layer[controlBar_dockedThumbnailsbtn_autotour_off_bg].visible, false);
+			set(layer[controlBar_dockedThumbnailsbtn_autotour_on_bg].visible, true);
+		,
+			set(layer[controlBar_dockedThumbnailsbtn_autotour_off].visible, true);
+			set(layer[controlBar_dockedThumbnailsbtn_autotour_on].visible , false);
+			set(layer[controlBar_dockedThumbnailsbtn_autotour_off_bg].visible, true);
+			set(layer[controlBar_dockedThumbnailsbtn_autotour_on_bg].visible, false);
+		);
+	</action>
+	<action name="controlBar_dockedThumbnailsupdateAutotourButtons">
+		if (controlBar_dockedThumbnailsIsOpened,
+			controlBar_dockedThumbnailsShowAutotourButtons();
+		,
+			controlBar_dockedThumbnailsHideAutotourButtons();
+		);
+	</action>
+
+	<events name="controlBar_dockedThumbnailsplaystopsoundsevent" playtoursoundsevent="controlBar_dockedThumbnailsupdateSoundButtons();" stoptoursoundsevent="controlBar_dockedThumbnailsupdateSoundButtons();" keep="true"/>
+	<action name="controlBar_dockedThumbnailsHideSoundButtons">
+		set(layer[controlBar_dockedThumbnailsbtn_sound_off].visible, false);
+		set(layer[controlBar_dockedThumbnailsbtn_sound_on].visible , false);
+		set(layer[controlBar_dockedThumbnailsbtn_sound_off_bg].visible, false);
+		set(layer[controlBar_dockedThumbnailsbtn_sound_on_bg].visible, false);
+	</action>
+	<action name="controlBar_dockedThumbnailsShowSoundButtons">
+		if (tour_soundson == false,
+			set(layer[controlBar_dockedThumbnailsbtn_sound_off].visible, false);
+			set(layer[controlBar_dockedThumbnailsbtn_sound_on].visible , true);
+			set(layer[controlBar_dockedThumbnailsbtn_sound_off_bg].visible, false);
+			set(layer[controlBar_dockedThumbnailsbtn_sound_on_bg].visible, true);
+		,
+			set(layer[controlBar_dockedThumbnailsbtn_sound_off].visible, true);
+			set(layer[controlBar_dockedThumbnailsbtn_sound_on].visible , false);
+			set(layer[controlBar_dockedThumbnailsbtn_sound_off_bg].visible, true);
+			set(layer[controlBar_dockedThumbnailsbtn_sound_on_bg].visible, false);
+		);
+	</action>
+	<action name="controlBar_dockedThumbnailsupdateSoundButtons">
+		if (controlBar_dockedThumbnailsIsOpened,
+			controlBar_dockedThumbnailsShowSoundButtons();
+		,
+			controlBar_dockedThumbnailsHideSoundButtons();
+		);
+	</action>
+
+
+	<layer name="controlBar_dockedThumbnailsmenuTooltipStyle"
+	keep="true"
+	enabled="false"
+	capture="false"
+	type="text"
+	align="center"
+	bg="true"
+	bgcolor="0xffffff"
+	bgalpha="0.80000000000000004"
+  bgroundedge="3"
+	bgborder="1.0 0x028342 1"
+  mergedalpha="false"
+	css="color:#028342;font-family:Verdana;font-weight:bold;font-size:11px;text-align:left;"
+	edge="bottom"
+	interactivecontent="false"
+	zorder="0"
+	padding="2"
+	xoffset="0"
+	yoffset="0"
+	visible="false"
+	html=""
+	/>
+
+
+
+<!-- ********** -->
+<!-- Planta Baixa -->
+<!-- id : floorPlan -->
+<!-- ********** -->
+
+	<ptplugin name="floorPlan" engine="KolorFloorPlan">
+		<settings>
+			<option name="background_color" value="f2f2f2" type="string" />
+			<option name="background_lighter_color" value="ffffff" type="string" />
+			<option name="background_darker_color" value="cacaca" type="string" />
+			<option name="background_alpha" value="0.40000000000000002" type="float" />
+			<option name="text_color" value="1a6a1c" type="string" />
+
+			<option name="text_font" value="Verdana" type="string" />
+			<option name="text_size" value="10" type="int" />
+			<option name="text_weight" value="bold" type="string" />
+			<option name="text_decoration" value="normal" type="string" />
+			<option name="text_bkg" value="ffffff" type="string" />
+			<option name="text_bkg_alpha" value="1" type="float" />
+
+			<option name="resize" value="false" type="bool" />
+			<option name="fp_selector" value="one" type="string" />
+			<option name="fp_selector_label" value="floorPlanmenu_label" type="string" />
+			<option name="display_title" value="true" type="bool" />
+			<option name="title" value="project_floor_title" type="string" />
+			<option name="title_font" value="Verdana" type="string" />
+			<option name="title_size" value="11" type="int" />
+			<option name="title_weight" value="normal" type="string" />
+			<option name="title_decoration" value="normal" type="string" />
+			<option name="title_color" value="000000" type="string" />
+			<option name="display_orientation" value="false" type="bool" />
+			<option name="display_radar" value="true" type="bool" />
+			<option name="radar_radius" value="50" type="int" />
+			<option name="radar_line_width" value="1" type="int" />
+			<option name="radar_line_color" value="3f537a" type="string" />
+			<option name="radar_line_alpha" value="0.50000762951094835" type="float" />
+			<option name="radar_fill_color" value="475e89" type="string" />
+			<option name="radar_fill_alpha" value="0.7000076295109483" type="float" />
+			<option name="close_on_click" value="false" type="bool" />
+			<option name="position" value="left" type="string" />
+			<option name="zorder" value="2" type="int" />
+			<option name="use_i18n" value="true" type="bool" />
+		</settings>
+		
+		<floorplanItems selectedItem="fpitemmain" selectedSpot="" selectedSpotScene="" selectedSpotHeading="" selectedSpotFov="">
+				
+				<floorplanItem 
+					name="fpitemmain" 
+					width="335" 
+					height="211" 
+					groupName="" 
+					url="floorplan/planta-final2a.png" 
+					title="project_floor_title"
+					heading="0">
+							<spot name="spotmap73" posX="0.876518011" posY="0.511254013" heading="177.19999999999951" desc="spotmap73_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano17966" jsClick="spotmap73ActionSpotFloorPlan">
+								<icon url="spots/pin_2d_hole_user_defaultmap0.png" iconWidth="12" iconHeight="24" iconAnchor="center" />
+							</spot>
+							<spot name="spotmap75" posX="0.103239" posY="0.633440018" heading="-147" desc="spotmap75_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano17964" jsClick="spotmap75ActionSpotFloorPlan">
+								<icon url="spots/pin_2d_hole_user_defaultmap0.png" iconWidth="12" iconHeight="24" iconAnchor="center" />
+							</spot>
+							<spot name="spotmap10092" posX="0.0951417014" posY="0.424436986" heading="-101.1999999999998" desc="spotmap10092_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano17961" jsClick="spotmap10092ActionSpotFloorPlan">
+								<icon url="spots/pin_2d_hole_user_defaultmap0.png" iconWidth="12" iconHeight="24" iconAnchor="center" />
+							</spot>
+							<spot name="spotmap14472" posX="0.613359988" posY="0.540193021" heading="176.8000000000001" desc="spotmap14472_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano17965" jsClick="spotmap14472ActionSpotFloorPlan">
+								<icon url="spots/pin_2d_hole_user_defaultmap0.png" iconWidth="12" iconHeight="24" iconAnchor="center" />
+							</spot>
+							<spot name="spotmap18041" posX="0.651821971" posY="0.765272975" heading="92.399999999999977" desc="spotmap18041_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano23240" jsClick="spotmap18041ActionSpotFloorPlan">
+								<icon url="spots/pin_2d_hole_user_defaultmap0.png" iconWidth="12" iconHeight="24" iconAnchor="center" />
+							</spot>
+							<spot name="spotmap18042" posX="0.809717" posY="0.819935977" heading="111.60000000000009" desc="spotmap18042_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano17968" jsClick="spotmap18042ActionSpotFloorPlan">
+								<icon url="spots/pin_2d_hole_user_defaultmap0.png" iconWidth="12" iconHeight="24" iconAnchor="center" />
+							</spot>
+							<spot name="spotmap18043" posX="0.303644001" posY="0.951768994" heading="90.199999999999477" desc="spotmap18043_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano17972" jsClick="spotmap18043ActionSpotFloorPlan">
+								<icon url="spots/pin_2d_hole_user_defaultmap0.png" iconWidth="12" iconHeight="24" iconAnchor="center" />
+							</spot>
+							<spot name="spotmap21198" posX="0.271254987" posY="0.308681995" heading="-90.000000000000597" desc="spotmap21198_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano17969" jsClick="spotmap21198ActionSpotFloorPlan">
+								<icon url="spots/pin_2d_hole_user_defaultmap0.png" iconWidth="12" iconHeight="24" iconAnchor="center" />
+							</spot>
+							<spot name="spotmap21201" posX="0.248988003" posY="0.559485972" heading="89.999999999999943" desc="spotmap21201_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano21185" jsClick="spotmap21201ActionSpotFloorPlan">
+								<icon url="spots/pin_2d_hole_user_defaultmap0.png" iconWidth="12" iconHeight="24" iconAnchor="center" />
+							</spot>
+							<spot name="spotmap26571" posX="0.410930991" posY="0.315113008" heading="-8.1999999999999602" desc="spotmap26571_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano25492" jsClick="spotmap26571ActionSpotFloorPlan">
+								<icon url="spots/pin_2d_hole_user_defaultmap0.png" iconWidth="12" iconHeight="24" iconAnchor="center" />
+							</spot>
+							<spot name="spotmap26572" posX="0.53441298" posY="0.118970998" heading="-5.8000000000002103" desc="spotmap26572_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano25493" jsClick="spotmap26572ActionSpotFloorPlan">
+								<icon url="spots/pin_2d_hole_user_defaultmap0.png" iconWidth="12" iconHeight="24" iconAnchor="center" />
+							</spot>
+							<spot name="spotmap32598" posX="0.273279011" posY="0.131833002" heading="112.5999999999996" desc="spotmap32598_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano32536" jsClick="spotmap32598ActionSpotFloorPlan">
+								<icon url="spots/pin_2d_hole_user_defaultmap0.png" iconWidth="12" iconHeight="24" iconAnchor="center" />
+							</spot>
+							<spot name="spotmap32599" posX="0.093117401" posY="0.954984009" heading="85.400000000000261" desc="spotmap32599_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano32539" jsClick="spotmap32599ActionSpotFloorPlan">
+								<icon url="spots/pin_2d_hole_user_defaultmap0.png" iconWidth="12" iconHeight="24" iconAnchor="center" />
+							</spot>
+							<spot name="spotmap32600" posX="0.941295981" posY="0.810289025" heading="-140.60000000000031" desc="spotmap32600_tooltip" descType="tooltip" groupName="" isScene="true" planar="false" scene="pano32543" jsClick="spotmap32600ActionSpotFloorPlan">
+								<icon url="spots/pin_2d_hole_user_defaultmap0.png" iconWidth="12" iconHeight="24" iconAnchor="center" />
+							</spot>
+				</floorplanItem>
+			
+			
+		</floorplanItems>
+	</ptplugin>
+	
+	<action name="kolorFloorplanJsReady_floorPlan">
+		set(ptplugin[floorPlan].jsready, true);
+		
+		ifnot(ptplugin[floorPlan].floorplanItems.selectedSpot == "",
+			set(ptplugin[floorPlan].floorplanItems.selectedSpotFov, get(view.hfov));
+			js(invokePluginFunction(floorPlan, setKolorFloorPlanSelectedSpotOptions, get(xml.scene), get(view.hlookat), get(view.hfov)));
+		);
+	</action>
+	
+	
+		<!-- floorplan main spots counter : 14 -->
+			<action name="spotmap73ActionSpotFloorPlan">if(xml.scene == pano17966,if(ptplugin[floorPlanArea].isOpen,hideFloorplan();
+floorPlanActivateDefaultSpot();););
+          mainloadscene(pano17966);lookat(get(panoview.h), get(panoview.v), get(panoview.fov));
+
+</action>
+			<action name="spotmap75ActionSpotFloorPlan">if(xml.scene == pano17964,if(ptplugin[floorPlanArea].isOpen,hideFloorplan();
+floorPlanActivateDefaultSpot();););
+          mainloadscene(pano17964);lookat(get(panoview.h), get(panoview.v), get(panoview.fov));
+
+</action>
+			<action name="spotmap10092ActionSpotFloorPlan">if(xml.scene == pano17961,if(ptplugin[floorPlanArea].isOpen,hideFloorplan();
+floorPlanActivateDefaultSpot();););
+          mainloadscene(pano17961);lookat(get(panoview.h), get(panoview.v), get(panoview.fov));
+
+</action>
+			<action name="spotmap14472ActionSpotFloorPlan">if(xml.scene == pano17965,if(ptplugin[floorPlanArea].isOpen,hideFloorplan();
+floorPlanActivateDefaultSpot();););
+          mainloadscene(pano17965);lookat(-84.400000, 0.000000, 80.000000);
+
+</action>
+			<action name="spotmap18041ActionSpotFloorPlan">if(xml.scene == pano23240,if(ptplugin[floorPlanArea].isOpen,hideFloorplan();
+floorPlanActivateDefaultSpot();););
+          mainloadscene(pano23240);lookat(get(panoview.h), get(panoview.v), get(panoview.fov));
+
+</action>
+			<action name="spotmap18042ActionSpotFloorPlan">if(xml.scene == pano17968,if(ptplugin[floorPlanArea].isOpen,hideFloorplan();
+floorPlanActivateDefaultSpot();););
+          mainloadscene(pano17968);lookat(get(panoview.h), get(panoview.v), get(panoview.fov));
+
+</action>
+			<action name="spotmap18043ActionSpotFloorPlan">if(xml.scene == pano17972,if(ptplugin[floorPlanArea].isOpen,hideFloorplan();
+floorPlanActivateDefaultSpot();););
+          mainloadscene(pano17972);lookat(95.368000, 10.694000, 80.000000);
+
+</action>
+			<action name="spotmap21198ActionSpotFloorPlan">if(xml.scene == pano17969,if(ptplugin[floorPlanArea].isOpen,hideFloorplan();
+floorPlanActivateDefaultSpot();););
+          mainloadscene(pano17969);lookat(get(panoview.h), get(panoview.v), get(panoview.fov));
+
+</action>
+			<action name="spotmap21201ActionSpotFloorPlan">if(xml.scene == pano21185,if(ptplugin[floorPlanArea].isOpen,hideFloorplan();
+floorPlanActivateDefaultSpot();););
+          mainloadscene(pano21185);lookat(get(panoview.h), get(panoview.v), get(panoview.fov));
+
+</action>
+			<action name="spotmap26571ActionSpotFloorPlan">if(xml.scene == pano25492,if(ptplugin[floorPlanArea].isOpen,hideFloorplan();
+floorPlanActivateDefaultSpot();););
+          mainloadscene(pano25492);lookat(get(panoview.h), get(panoview.v), get(panoview.fov));
+
+</action>
+			<action name="spotmap26572ActionSpotFloorPlan">if(xml.scene == pano25493,if(ptplugin[floorPlanArea].isOpen,hideFloorplan();
+floorPlanActivateDefaultSpot();););
+          mainloadscene(pano25493);lookat(get(panoview.h), get(panoview.v), get(panoview.fov));
+
+</action>
+			<action name="spotmap32598ActionSpotFloorPlan">if(xml.scene == pano32536,if(ptplugin[floorPlanArea].isOpen,hideFloorplan();
+floorPlanActivateDefaultSpot();););
+          mainloadscene(pano32536);lookat(get(panoview.h), get(panoview.v), get(panoview.fov));
+
+</action>
+			<action name="spotmap32599ActionSpotFloorPlan">if(xml.scene == pano32539,if(ptplugin[floorPlanArea].isOpen,hideFloorplan();
+floorPlanActivateDefaultSpot();););
+          mainloadscene(pano32539);lookat(82.130000, 6.430000, 80.000000);
+
+</action>
+			<action name="spotmap32600ActionSpotFloorPlan">if(xml.scene == pano32543,if(ptplugin[floorPlanArea].isOpen,hideFloorplan();
+floorPlanActivateDefaultSpot();););
+          mainloadscene(pano32543);lookat(get(panoview.h), get(panoview.v), get(panoview.fov));
+
+</action>
+	
+	
+	
+	<events name="floorPlanEvents" 
+	onxmlcomplete="ifnot(floorPlanFloorPlanLoaded,set(tour_displayfloorplan,false););floorPlanActivateDefaultSpot();" 
+	onviewchanged="floorPlanOnViewChange();" 
+	onhidetourfloorplan="floorPlanCloseTourFloorPlan();" 
+	onshowtourfloorplan="if(tour_displayfloorplan,floorPlanOpenTourFloorPlan(););" 
+	onTourStart=""
+	changetourlanguage="floorPlanChangeLanguage();"
+	keep="true" />
+	
+	<action name="floorPlanChangeLanguage">
+		if(ptplugin[floorPlan].jsready,
+			stopdelayedcall(delay_floorPlan);
+			js(invokePluginFunction(floorPlanArea, changeLanguage, false));
+			js(invokePluginFunction(floorPlan, changeLanguage));
+		,
+			delayedcall(delay_floorPlan, 0.1, floorPlanChangeLanguage(););
+		);
+	</action>
+	
+	
+	<krpano floorPlanFloorPlanLoaded="false" />
+	
+	<action name="floorPlanHideTourFloorPlan">
+		hideKolorArea_floorPlanArea(false);
+	</action>
+	
+	<action name="floorPlanCloseTourFloorPlan">
+		closeKolorArea_floorPlanArea();
+	</action>
+	
+	<action name="floorPlanShowTourFloorPlan">
+		if(ptplugin[floorPlanArea].isOpen === null,
+			openKolorArea_floorPlanArea();
+		,
+			showKolorArea_floorPlanArea(false);
+		);
+	</action>
+	
+	<action name="floorPlanOpenTourFloorPlan">
+		openKolorArea_floorPlanArea();
+	</action>
+	
+	<action name="floorPlanOnViewChange">
+		if (floorPlanFloorPlanLoaded == true,
+			ifnot(ptplugin[floorPlan].floorplanItems.selectedSpot == "",
+				ifnot(scene[get(xml.scene)].planar,
+					js(invokePluginFunction(floorPlan, changeDirection, get(xml.scene), get(view.hlookat), get(view.hfov)));
+				);
+			);
+		);
+	</action>
+	
+	<action name="floorPlanActivateSpot">
+		
+		set(ptplugin[floorPlan].floorplanItems.selectedSpot, %1);
+		set(ptplugin[floorPlan].floorplanItems.selectedItem, %2);
+		
+		if(%1 !== "",
+			set(ptplugin[floorPlan].floorplanItems.selectedSpotScene, get(xml.scene));
+			set(ptplugin[floorPlan].floorplanItems.selectedSpotHeading, get(view.hlookat));
+			set(ptplugin[floorPlan].floorplanItems.selectedSpotFov, get(view.hfov));
+		);
+		
+		
+		if(ptplugin[floorPlanArea].isOpen,
+			floorPlanSelectActivatedSpot(%1, %2, %3);
+		);
+	</action>
+	
+	<action name="floorPlanSelectActivatedSpot">
+		js(invokePluginFunction(floorPlan, selectSpot, %1, %2, %3));
+
+		if(%1 !== "",
+			if(scene[get(xml.scene)].planar,
+				js(invokePluginFunction(floorPlan, hideRadar));
+			,
+				js(invokePluginFunction(floorPlan, changeDirection, get(xml.scene), get(view.hlookat), get(view.hfov)));
+			);
+		);
+	</action>
+	
+	<action name="floorPlanDeactivateSpot">
+		set(ptplugin[floorPlan].floorplanItems.selectedSpot, "");
+		
+		js(invokePluginFunction(floorPlan, unselectSpot));
+	</action>
+	
+	<action name="floorPlanActivateDefaultSpot">
+		set(floorPlanFloorPlanLoaded, true);
+		
+		set(floorPlanSpotFound, "");
+		set(floorPlanSpotScene, "");
+		set(floorPlanItemFound, "");
+		set(floorPlanItemSearch, true);
+		set(floorPlanSpotSearchActivated, true);
+		set(floorPlanSpotSearchContinue, true);
+		
+		
+		for(set(defaultfloorplaniteminc,0), defaultfloorplaniteminc LT ptplugin[floorPlan].floorplanItems.floorplanItem.count , inc(defaultfloorplaniteminc),
+                        if(floorPlanSpotSearchActivated == true,
+				
+				if(ptplugin[floorPlan].floorplanItems.floorplanItem[get(defaultfloorplaniteminc)].groupName == scene[get(xml.scene)].group,
+					set(floorPlanItemFound, get(ptplugin[floorPlan].floorplanItems.floorplanItem[get(defaultfloorplaniteminc)].name));
+					set(ptplugin[floorPlan].floorplanItems.selectedItem, get(ptplugin[floorPlan].floorplanItems.floorplanItem[get(defaultfloorplaniteminc)].name));
+					set(floorPlanItemSearch, false);
+				,
+					
+					if(floorPlanItemFound == "",
+						set(floorPlanItemFound, get(ptplugin[floorPlan].floorplanItems.floorplanItem[fpitemmain].name));
+						set(ptplugin[floorPlan].floorplanItems.selectedItem, get(ptplugin[floorPlan].floorplanItems.floorplanItem[fpitemmain].name));
+					);
+				);
+			);
+			if(floorPlanSpotSearchActivated == true,
+                                for(set(defaultspotinc,0), defaultspotinc LT ptplugin[floorPlan].floorplanItems.floorplanItem[get(defaultfloorplaniteminc)].spot.count , inc(defaultspotinc),
+                                        if(ptplugin[floorPlan].floorplanItems.floorplanItem[get(defaultfloorplaniteminc)].spot[get(defaultspotinc)].isScene == true,
+					
+						if(floorPlanSpotSearchContinue == true,
+							if(ptplugin[floorPlan].floorplanItems.floorplanItem[get(defaultfloorplaniteminc)].spot[get(defaultspotinc)].scene == xml.scene,
+								set(floorPlanSpotFound, get(ptplugin[floorPlan].floorplanItems.floorplanItem[get(defaultfloorplaniteminc)].spot[get(defaultspotinc)].name));
+								set(floorPlanSpotScene, get(ptplugin[floorPlan].floorplanItems.floorplanItem[get(defaultfloorplaniteminc)].spot[get(defaultspotinc)].scene));
+								set(ptplugin[floorPlan].floorplanItems.selectedItem, get(ptplugin[floorPlan].floorplanItems.floorplanItem[get(defaultfloorplaniteminc)].name));
+								if(floorPlanItemSearch == false,
+									set(floorPlanSpotSearchContinue, false);
+									set(floorPlanSpotSearchActivated, false);
+								);
+							);
+						);
+					);
+					
+				);
+			);
+		);
+		
+		if(floorPlanSpotFound == "",
+			
+			
+			floorPlanDeactivateSpot();
+			
+			
+			set(ptplugin[floorPlan].floorplanItems.selectedItem, get(floorPlanItemFound));
+			
+			
+			ifnot(ptplugin[floorPlan].floorplanItems.selectedItem == "",
+				floorPlanActivateSpot("", get(ptplugin[floorPlan].floorplanItems.selectedItem), "");
+			);
+		,
+			
+			floorPlanActivateSpot(get(floorPlanSpotFound), get(ptplugin[floorPlan].floorplanItems.selectedItem), get(floorPlanSpotScene));
+		);
+	</action>
+	
+	<action name="floorPlanChangeTitle">
+		js(invokePluginFunction(floorPlan, changeTitle, %1));
+	</action>
+	
+	<ptplugin name="floorPlanArea" engine="kolorArea">
+	<settings>
+		<option name="position" value="left" type="string" />
+		<option name="start_position" value="left" type="string" />
+		<option name="margin_x" value="5" type="int" />
+		<option name="margin_y" value="0" type="int" />
+		<option name="display_title" value="true" type="bool" />
+		<option name="title" value="project_floor_title" type="string" />
+		<option name="title_font" value="Verdana" type="string" />
+		<option name="title_size" value="11" type="int" />
+		<option name="title_weight" value="normal" type="string" />
+		<option name="title_decoration" value="normal" type="string" />
+		<option name="title_color" value="000000" type="string" />
+		<option name="close_displayed" value="false" type="bool" />
+		<option name="close_text" value="floorPlandisplay_close_text" type="string" />
+
+		<option name="background_color" value="f2f2f2" type="string" />
+		<option name="background_alpha" value="0.40000000000000002" type="float" />
+		<option name="overlay_displayed" value="false" type="bool" />
+		<option name="overlay_color" value="f3d0ff" type="string" />
+		<option name="overlay_alpha" value="1" type="float" />
+
+		<option name="padding" value="10" type="int" />
+		<option name="topleft_radius" value="0" type="int" />
+		<option name="topright_radius" value="0" type="int" />
+		<option name="bottomleft_radius" value="0" type="int" />
+		<option name="bottomright_radius" value="0" type="int" />
+		<option name="area_border_width" value="0" type="int" />
+		<option name="area_border_color" value="3f537a" type="string" />
+		<option name="area_border_alpha" value="1" type="float" />
+		<option name="area_width" value="390" type="int" />
+		<option name="area_height" value="290" type="int" />
+		<option name="area_width_unit" value="pixel" type="string" />
+		<option name="area_height_unit" value="pixel" type="string" />
+		<option name="animation" value="false" type="bool" />
+		<option name="animation_duration" value="500" type="int" />
+		<option name="close_on_click" value="false" type="bool" />
+		<option name="refresh_content" value="false" type="bool" />
+		<option name="open_callback" value="addKolorFloorPlan('floorPlan', 'floorPlanArea_floorplanDIV');" type="string" />
+		<option name="close_callback" value="invokeKrFunction('closeKolorAreaCallback_floorPlanArea')" type="string" />
+		<option name="zorder" value="2" type="int" />
+		<option name="use_i18n" value="true" type="bool" />
+	</settings>
+	</ptplugin>
+	
+	<action name="kolorAreaJsReady_floorPlanArea">
+		set(ptplugin[floorPlanArea].jsready, true);
+
+	</action>
+	
+	<action name="openKolorArea_floorPlanArea">
+		ifnot(ptplugin[floorPlanArea].isOpen,
+			set(ptplugin[floorPlanArea].isOpen, true);
+			pauseautorotation(forceplugin);
+
+			js(showKolorArea(floorPlanArea, &lt;div id="floorPlanArea_floorplanDIV"&gt;&lt;/div&gt;));
+			
+			if(ptplugin[floorPlan].floorplanItems.selectedSpot != "",
+				floorPlanSelectActivatedSpot(get(ptplugin[floorPlan].floorplanItems.selectedSpot), get(ptplugin[floorPlan].floorplanItems.selectedItem), get(ptplugin[floorPlan].floorplanItems.selectedSpotScene));
+			);
+			events.dispatch(onremovedisplayedobject);
+		);
+	</action>
+	
+	<action name="closeKolorArea_floorPlanArea">
+		if(ptplugin[floorPlanArea].isOpen,
+			js(invokePluginFunction(floorPlanArea, closeKolorArea));
+		);
+	</action>
+	
+	<action name="toggleKolorArea_floorPlanArea">
+		if(ptplugin[floorPlanArea].isOpen,
+			closeKolorArea_floorPlanArea();
+		,
+			openKolorArea_floorPlanArea();
+		);
+	</action>
+	
+	<action name="closeKolorAreaCallback_floorPlanArea">
+		if(ptplugin[floorPlanArea].isOpen,resumeautorotation(forceplugin);
+
+			
+		);
+		set(ptplugin[floorPlanArea].isOpen, false);hideFloorplan();
+
+	</action>
+	
+	<action name="changeTitleKolorArea_floorPlanArea">
+		js(invokePluginFunction(floorPlanArea, changeTitle, %1));
+	</action>
+	
+	<action name="showKolorArea_floorPlanArea">
+		set(ptplugin[floorPlanArea].isOpen, true);
+		pauseautorotation(forceplugin);
+
+		js(invokePluginFunction(floorPlanArea, showKolorArea, %1));
+		events.dispatch(onremovedisplayedobject);
+	</action>
+		
+	<action name="hideKolorArea_floorPlanArea">
+		resumeautorotation(forceplugin);
+
+		
+		set(ptplugin[floorPlanArea].isOpen, false);
+		js(invokePluginFunction(floorPlanArea, hideKolorArea, %1));
+	</action>
+	
+	<events name="kolorAreaEvents_floorPlanArea" 
+		keep="true"
+		onremovepano="if(ptplugin[floorPlanArea].isOpen,hideFloorplan();
+);"
+	/>
+	
+
+<!-- ********** -->
+<!-- Logo CMO -->
+<!-- id : logo -->
+<!-- ********** -->
+
+
+  <layer align="topleft"
+         x="10"
+         y="10"
+         zorder="3"
+         name="logo"
+         keep="true"
+         visible="false"
+         capture="false"
+
+			tooltip="logotooltipText"
+			onhover="showTooltip('plugin');"
+			onout="hideTooltip();"
+         url="%FIRSTXML%/graphics/logo/cmo-construtora-120px.png" 
+         onclick="
+getmessage(urltoopen,logowebsiteurl);openurl(get(urltoopen),_blank);
+"
+
+
+         />
+
+  <events name="logoevents" 
+    onTourStart="showlogo();"
+    keep="true" />
+
+  <action name="hidelogo">
+    set(layer[logo].visible, false);
+  </action>
+  <action name="showlogo">
+      set(layer[logo].visible, true);
+  </action>
+
+
+
+
+
+<!-- ********** -->
+<!-- Logo Cidade360 -->
+<!-- id : logo1 -->
+<!-- ********** -->
+
+
+  <layer align="bottomright"
+         x="10"
+         y="65"
+         zorder="4"
+         name="logo1"
+         keep="true"
+         visible="false"
+         capture="false"
+
+			tooltip="logo1tooltipText"
+			onhover="showTooltip('plugin');"
+			onout="hideTooltip();"
+         url="%FIRSTXML%/graphics/logo1/icone-cidade360.png" 
+         onclick="
+getmessage(urltoopen,logo1websiteurl);openurl(get(urltoopen),_blank);
+"
+
+         height="30"
+         width="30"
+
+         />
+
+  <events name="logo1events" 
+    onTourStart="showlogo1();"
+    keep="true" />
+
+  <action name="hidelogo1">
+    set(layer[logo1].visible, false);
+  </action>
+  <action name="showlogo1">
+      set(layer[logo1].visible, true);
+  </action>
+
+
+
+
+
+<!-- ********** -->
+<!-- Nome do Ambiente -->
+<!-- id : title -->
+<!-- ********** -->
+
+  <events name="title_events" 
+    onTourStart="showtitle();"
+    hidetourcontrols="hidetitle();" 
+    showtourcontrols="showtitle();" 
+    onnewpano="updatetitle();"
+    changetourlanguage="changeLanguagetitle"
+    keep="true" />
+
+  <action name="hidetitle">set(layer[title].visible, false);</action>
+  <action name="showtitle">set(layer[title].visible, true );</action>
+
+  <action name="changeLanguagetitle">
+    updatetitle();
+  </action>
+
+  <action name="updatetitle">
+    getmessage(layer[title].html, get(scene[get(xml.scene)].titleid));
+    escape(layer[title].html);
+  </action>
+  <layer name="title" keep="true" zorder="5"
+         type="text"
+         align="top" x="0" y="0"
+         bg="false"
+         bgborder="0"
+         alpha="1"
+         visible="false"
+         capture="false" handcursor="false" enabled="false"
+         interactivecontent="false" 
+         txtshadow="1.0 1.0 4.0 0x000000 1.0"
+         css="text-align:center;
+              color:#ffffff;
+              font-family:Verdana;
+              font-weight:bold;
+              font-size:18px;"/>
+
+<!-- ********** -->
+<!-- Descrição -->
+<!-- id : description -->
+<!-- ********** -->
+
+<ptplugin name="description" canStart="false" newPano="false" openatstart="false" mode="panorama" startMethod="showDescription_description" engine="kolorArea">
+	<settings>
+		<option name="position" value="center" type="string" />
+		<option name="start_position" value="bottom" type="string" />
+		<option name="margin_x" value="0" type="int" />
+		<option name="margin_y" value="0" type="int" />
+		<option name="background_color" value="f2f2f2" type="string" />
+		<option name="background_alpha" value="1" type="float" />
+		<option name="topleft_radius" value="0" type="int" />
+		<option name="topright_radius" value="0" type="int" />
+		<option name="bottomleft_radius" value="0" type="int" />
+		<option name="bottomright_radius" value="0" type="int" />
+		<option name="area_border_width" value="0" type="int" />
+		<option name="area_border_color" value="f2f2f2" type="string" />
+		<option name="area_border_alpha" value="1" type="float" />
+		<option name="padding" value="15" type="int" />
+		<option name="display_title" value="true" type="bool" />
+		<option name="title" value="" type="string" />
+		<option name="title_font" value="Verdana" type="string" />
+		<option name="title_size" value="14" type="int" />
+		<option name="title_weight" value="normal" type="string" />
+		<option name="title_decoration" value="normal" type="string" />
+		<option name="title_color" value="000000" type="string" />
+		<option name="close_displayed" value="true" type="bool" />
+		<option name="close_text" value="descriptiondisplay_close_text" type="string" />
+
+		<option name="overlay_displayed" value="true" type="bool" />
+		<option name="overlay_color" value="000000" type="string" />
+		<option name="overlay_alpha" value="0.50000762951094835" type="float" />
+
+		<option name="area_width" value="400" type="int" />
+		<option name="area_height" value="300" type="int" />
+		<option name="area_width_unit" value="pixel" type="string" />
+		<option name="area_height_unit" value="pixel" type="string" />
+		<option name="animation" value="true" type="bool" />
+		<option name="animation_duration" value="500" type="int" />
+		<option name="refresh_content" value="true" type="bool" />
+		<option name="close_callback" value="invokeKrFunction('closeKolorAreaCallback_description')" type="string" />
+		<option name="close_on_click" value="false" type="bool" />
+		<option name="open_callback" value="invokeKrFunction('openKolorAreaCallback_description')" type="string" />
+		<option name="zorder" value="6" type="int" />
+		<option name="use_i18n" value="true" type="bool" />
+	</settings>
+</ptplugin>
+
+<action name="kolorAreaJsReady_description">
+	set(ptplugin[description].jsready, true);
+
+</action>
+
+<action name="updateTitle_description">
+	js(invokePluginFunction(description, changeTitle, get(scene[get(xml.scene)].titleid)));
+</action>
+
+<action name="openKolorArea_description">
+	ifnot(ptplugin[description].isOpen,
+		set(ptplugin[description].isOpen, true);
+		
+		js(showKolorArea(description, get(ptplugin[description].descID)));
+		events.dispatch(onremovedisplayedobject);
+	);
+</action>
+
+<action name="closeKolorArea_description">
+	if(ptplugin[description].isOpen,
+		js(invokePluginFunction(description, closeKolorArea));
+	);
+</action>
+
+<action name="toggleKolorArea_description">
+	if(ptplugin[description].isOpen,
+		closeKolorArea_description();
+	,
+		openKolorArea_description();
+	);
+</action>
+
+<action name="closeKolorAreaCallback_description">
+	set(ptplugin[description].isOpen, false);
+	if(tour_displayinfo,hideTourInfo();
+
+	);
+</action>
+
+
+<action name="openKolorAreaCallback_description">
+	updateTitle_description();
+</action>
+
+<action name="showKolorArea_description">
+	ifnot(ptplugin[description].startMethod == "",
+		delayedcall(0,get(ptplugin[description].startMethod));
+	,
+		set(ptplugin[description].isOpen, true);
+		
+		js(invokePluginFunction(description, showKolorArea, %1));
+		events.dispatch(onremovedisplayedobject);
+	);
+</action>
+	
+<action name="hideKolorArea_description">
+	
+	set(ptplugin[description].isOpen, false);
+	js(invokePluginFunction(description, hideKolorArea, %1));
+</action>
+
+<action name="openDescription_description">
+	openKolorArea_description();
+</action>
+
+<action name="openSpotDescription_description">
+	set(ptplugin[description].descID, %1);
+	openKolorArea_description();
+</action>
+
+<action name="closeDescription_description">
+	set(ptplugin[description].currentGroup, false);
+	if(%1,
+		set(restore_description, true);
+	,
+		set(restore_description, false);
+	);
+	closeKolorArea_description();
+</action> 
+
+<action name="showDescription_description">
+	if(ptplugin[description].canStart,
+		set(ptplugin[description].descID, get(scene[get(xml.scene)].descriptionid));
+		if(ptplugin[description].descID == null,
+			set(ptplugin[description].descID, "");
+		);
+		if(ptplugin[description].descID != "",
+			openDescription_description();
+		,
+			hideKolorArea_description(false);
+		);
+		set(ptplugin[description].startMethod, "");
+	);
+</action>
+
+
+<action name="refreshPanoDescription_description">
+	set(ptplugin[description].descID, get(scene[get(xml.scene)].descriptionid));
+	if(ptplugin[description].descID == null,
+		set(ptplugin[description].descID, "");
+	);
+	if(ptplugin[description].descID != "",
+		if(ptplugin[description].isOpen,
+			js(invokePluginFunction(description, updateKolorArea, get(ptplugin[description].descID)));
+			updateTitle_description();
+		,
+			if(restore_description,
+				showDescription_description();
+			);
+		);
+	,
+		if(tour_displayinfo,
+			delayedcall(0.1,showTourInfo();
+);
+		);
+		closeDescription_description(get(ptplugin[description].isOpen));
+	);
+</action>
+
+<action name="onNewPano_description">
+	if(ptplugin[description].newPano,
+		if(ptplugin[description].startMethod == "",
+			if(ptplugin[description].isOpen,
+				refreshPanoDescription_description();
+			,
+				if(tour_displayinfo,
+				showDescription_description();
+				,
+				refreshPanoDescription_description();
+				);
+			);
+		);
+	);
+	set(ptplugin[description].newPano, true);
+</action>
+
+<action name="changeLanguage_description">
+	if(ptplugin[description].jsready,
+		stopdelayedcall(delay_description);
+		js(invokePluginFunction(description, changeLanguage, true));
+	,
+		delayedcall(delay_description, 0.1, changeLanguage_description(););
+	);
+</action>
+
+<events name="kolorAreaEvents_description" 
+	keep="true"
+	onTourStart="set(ptplugin[description].canStart, true);if(ptplugin[description].openatstart,showTourInfo();
+);"
+	onshowtourinfo="if(tour_displayinfo,showDescription_description(););"
+	onhidetourinfo="if(ptplugin[description].isOpen,closeDescription_description(false););"
+	onnewpano="onNewPano_description();"
+	changetourlanguage="changeLanguage_description();"
+/>
+
+<!-- ********** -->
+<!-- Abrir Planta Baixa -->
+<!-- id : togglebutton -->
+<!-- ********** -->
+
+
+
+  <layer name="togglebutton"
+         keep="true"
+         url="%FIRSTXML%/graphics/togglebutton/botao-mostrar-ocultar.png" 
+         align="bottomleft"
+         x="0"
+         y="60"
+         zorder="7"
+         tooltip=""
+         onhover="togglebuttonOnHover"
+         state="true"
+         onclick="togglebuttonOnClick"
+         onout="hideTooltip();"
+         visible="false"
+         />
+
+  <action name="togglebuttonOnHover">
+    if (state,
+      set(tooltip, togglebuttonfirsttooltip);
+     ,
+      set(tooltip, togglebuttonsecondtooltip);
+    );
+    if (tooltip != "", showTooltip('plugin'););
+  </action>
+  <action name="togglebuttonOnClick">
+    if (state,
+      set(state, false);
+if(tour_displayfloorplan,if(ptplugin[floorPlanArea].isOpen,hideFloorplan();
+,showFloorplan();
+);,showFloorplan();
+);
+
+
+      set(url,%FIRSTXML%/graphics/togglebutton/botao-mostrar-ocultar.png);
+     ,
+      set(state, true);
+if(tour_displayfloorplan,if(ptplugin[floorPlanArea].isOpen,hideFloorplan();
+,showFloorplan();
+);,showFloorplan();
+);
+
+
+      set(url,%FIRSTXML%/graphics/togglebutton/botao-mostrar-ocultar.png);
+    );
+  </action>
+
+  <events name="togglebuttonevents" 
+    onTourStart="showtogglebutton();"
+    hidetourcontrols="hidetogglebutton();" 
+    showtourcontrols="showtogglebutton();" 
+    keep="true" />
+  <action name="hidetogglebutton">set(layer[togglebutton].visible, false);</action>
+  <action name="showtogglebutton">if(tour_displaycontrols,set(layer[togglebutton].visible, true);,hidetogglebutton(););</action>
+
+
+<!-- ********** -->
+<!-- Galeria Ar Condicionado -->
+<!-- id : gallery -->
+<!-- ********** -->
+
+<ptplugin name="gallery" engine="kolorBox">
+	<settings>
+		<option name="position" value="center" type="string" />
+		<option name="margin_x" value="0" type="int" />
+		<option name="margin_y" value="0" type="int" />
+		<option name="external_padding" value="15" type="int" />
+		<option name="draggable_box" value="false" type="bool" />
+		<option name="slideshow_autoplay" value="false" type="bool" />
+		<option name="slideshow" value="5000" type="int" />
+		<option name="container_auto_size" value="false" type="bool" />
+		<option name="container_width" value="100" type="int" />
+		<option name="container_width_unit" value="percent" type="string" />
+		<option name="container_height" value="100" type="int" />
+		<option name="container_height_unit" value="percent" type="string" />
+		<option name="container_color" value="ffffff" type="string" />
+		<option name="container_alpha" value="0.80000000000000004" type="float" />
+		<option name="container_topleft_border_radius" value="15" type="int" />
+		<option name="container_topright_border_radius" value="15" type="int" />
+		<option name="container_bottomleft_border_radius" value="15" type="int" />
+		<option name="container_bottomright_border_radius" value="15" type="int" />
+		<option name="container_border_width" value="0" type="int" />
+		<option name="container_border_color" value="ffffff" type="string" />
+		<option name="container_border_alpha" value="1" type="float" />
+		<option name="overlay_displayed" value="true" type="bool" />
+		<option name="overlay_color" value="000000" type="string" />
+		<option name="overlay_alpha" value="0.50000762951094835" type="float" />
+
+		<option name="item_border_width" value="0" type="int" />
+		<option name="item_border_color" value="ffffff" type="string" />
+		<option name="item_border_alpha" value="1" type="float" />
+		
+		<option name="title_displayed" value="false" type="bool" />
+		
+		<option name="caption_displayed" value="false" type="bool" />
+		
+		<option name="play_displayed" value="true" type="bool" />
+		<option name="play_position" value="bottomleft" type="string" />
+		<option name="play_text" value="galleryplay_text" type="string" />
+
+
+
+
+		<option name="navigation_displayed" value="true" type="bool" />
+		<option name="navigation_position" value="bottom" type="string" />
+		<option name="counter_color" value="666666" type="string" />
+		<option name="navprev_text" value="gallerynavprev_text" type="string" />
+		<option name="navnext_text" value="gallerynavnext_text" type="string" />
+
+
+
+
+		<option name="navigation_arrows" value="true" type="bool" />
+
+
+
+
+		<option name="fullscreen_displayed" value="true" type="bool" />
+		<option name="fullscreen_position" value="topleft" type="string" />
+		<option name="fullscreen_text" value="galleryfullscreen_text" type="string" />
+
+
+
+
+		<option name="close_displayed" value="true" type="bool" />
+		<option name="close_position" value="topright" type="string" />
+		<option name="close_text" value="galleryclose_text" type="string" />
+
+		<option name="close_callback" value="invokeKrFunction('closeKolorBoxCallback_gallery')" type="string" />
+		<option name="zorder" value="8" type="int" />
+		<option name="use_i18n" value="true" type="bool" />
+	</settings>
+	<internaldata>
+		<item name="item_1" title="gallerypicture_title0" caption="gallerypicture_caption0" value="final2adata/graphics/gallery/arcondicionado-altoareiao.jpg"/>
+	</internaldata>
+</ptplugin>
+
+<action name="kolorBoxJsReady_gallery">
+	set(ptplugin[gallery].jsready, true);
+</action>
+
+<action name="showGallery_gallery">
+	ifnot(ptplugin[gallery].isOpen,
+		set(ptplugin[gallery].isOpen, true);
+		set(ptplugin[gallery].doNotDeleteMe, false);
+		set(gallery_boxurl, %1);
+		pauseautorotation(forceplugin);
+
+		js(invokePluginFunction(gallery, openKolorBox, %1));
+		events.dispatch(onremovedisplayedobject);
+	,
+		if(%1 !== null AND %1 != gallery_boxurl,
+			closeKolorBox_gallery();
+			delayedcall(0.3,showGallery_gallery(%1););
+		);
+	);
+</action>
+
+<action name="toggleGallery_gallery">
+	js(invokePluginFunction(gallery, toggleKolorBox, %1));
+</action>
+
+
+<action name="closeKolorBox_gallery">
+	js(invokePluginFunction(gallery, closeKolorBox));
+</action>
+
+<action name="closeKolorBoxCallback_gallery">
+	resumeautorotation(forceplugin);
+
+	set(ptplugin[gallery].isOpen, false);
+</action>
+
+<action name="changeLanguage_gallery">
+	if(ptplugin[gallery].jsready,
+		js(invokePluginFunction(gallery, changeLanguage));
+	,
+		delayedcall(delay_gallery, 0.1, changeLanguage_gallery(););
+	);
+</action>
+
+<events name="kolorBoxEvents_gallery" 
+	keep="true"
+	changetourlanguage="changeLanguage_gallery();"
+	/>
+
+<!-- ********** -->
+<!-- Galeria Registro Agua Fria -->
+<!-- id : gallery1 -->
+<!-- ********** -->
+
+<ptplugin name="gallery1" engine="kolorBox">
+	<settings>
+		<option name="position" value="center" type="string" />
+		<option name="margin_x" value="0" type="int" />
+		<option name="margin_y" value="0" type="int" />
+		<option name="external_padding" value="15" type="int" />
+		<option name="draggable_box" value="false" type="bool" />
+		<option name="slideshow_autoplay" value="false" type="bool" />
+		<option name="slideshow" value="5000" type="int" />
+		<option name="container_auto_size" value="false" type="bool" />
+		<option name="container_width" value="100" type="int" />
+		<option name="container_width_unit" value="percent" type="string" />
+		<option name="container_height" value="100" type="int" />
+		<option name="container_height_unit" value="percent" type="string" />
+		<option name="container_color" value="ffffff" type="string" />
+		<option name="container_alpha" value="0.80000000000000004" type="float" />
+		<option name="container_topleft_border_radius" value="15" type="int" />
+		<option name="container_topright_border_radius" value="15" type="int" />
+		<option name="container_bottomleft_border_radius" value="15" type="int" />
+		<option name="container_bottomright_border_radius" value="15" type="int" />
+		<option name="container_border_width" value="0" type="int" />
+		<option name="container_border_color" value="ffffff" type="string" />
+		<option name="container_border_alpha" value="1" type="float" />
+		<option name="overlay_displayed" value="true" type="bool" />
+		<option name="overlay_color" value="000000" type="string" />
+		<option name="overlay_alpha" value="0.50000762951094835" type="float" />
+
+		<option name="item_border_width" value="0" type="int" />
+		<option name="item_border_color" value="ffffff" type="string" />
+		<option name="item_border_alpha" value="1" type="float" />
+		
+		<option name="title_displayed" value="false" type="bool" />
+		
+		<option name="caption_displayed" value="false" type="bool" />
+		
+		<option name="play_displayed" value="true" type="bool" />
+		<option name="play_position" value="bottomleft" type="string" />
+		<option name="play_text" value="gallery1play_text" type="string" />
+
+
+
+
+		<option name="navigation_displayed" value="true" type="bool" />
+		<option name="navigation_position" value="bottom" type="string" />
+		<option name="counter_color" value="666666" type="string" />
+		<option name="navprev_text" value="gallery1navprev_text" type="string" />
+		<option name="navnext_text" value="gallery1navnext_text" type="string" />
+
+
+
+
+		<option name="navigation_arrows" value="true" type="bool" />
+
+
+
+
+		<option name="fullscreen_displayed" value="true" type="bool" />
+		<option name="fullscreen_position" value="topleft" type="string" />
+		<option name="fullscreen_text" value="gallery1fullscreen_text" type="string" />
+
+
+
+
+		<option name="close_displayed" value="true" type="bool" />
+		<option name="close_position" value="topright" type="string" />
+		<option name="close_text" value="gallery1close_text" type="string" />
+
+		<option name="close_callback" value="invokeKrFunction('closeKolorBoxCallback_gallery1')" type="string" />
+		<option name="zorder" value="9" type="int" />
+		<option name="use_i18n" value="true" type="bool" />
+	</settings>
+	<internaldata>
+		<item name="item_1" title="gallerypicture_title0" caption="gallerypicture_caption0" value="final2adata/graphics/gallery1/registrodeaguafria01-altoareiao.jpg"/>
+		<item name="item_2" title="gallery1picture_title1" caption="gallery1picture_caption1" value="final2adata/graphics/gallery1/registrodeaguafria02-altoareiao.jpg"/>
+	</internaldata>
+</ptplugin>
+
+<action name="kolorBoxJsReady_gallery1">
+	set(ptplugin[gallery1].jsready, true);
+</action>
+
+<action name="showGallery_gallery1">
+	ifnot(ptplugin[gallery1].isOpen,
+		set(ptplugin[gallery1].isOpen, true);
+		set(ptplugin[gallery1].doNotDeleteMe, false);
+		set(gallery1_boxurl, %1);
+		pauseautorotation(forceplugin);
+
+		js(invokePluginFunction(gallery1, openKolorBox, %1));
+		events.dispatch(onremovedisplayedobject);
+	,
+		if(%1 !== null AND %1 != gallery1_boxurl,
+			closeKolorBox_gallery1();
+			delayedcall(0.3,showGallery_gallery1(%1););
+		);
+	);
+</action>
+
+<action name="toggleGallery_gallery1">
+	js(invokePluginFunction(gallery1, toggleKolorBox, %1));
+</action>
+
+
+<action name="closeKolorBox_gallery1">
+	js(invokePluginFunction(gallery1, closeKolorBox));
+</action>
+
+<action name="closeKolorBoxCallback_gallery1">
+	resumeautorotation(forceplugin);
+
+	set(ptplugin[gallery1].isOpen, false);
+</action>
+
+<action name="changeLanguage_gallery1">
+	if(ptplugin[gallery1].jsready,
+		js(invokePluginFunction(gallery1, changeLanguage));
+	,
+		delayedcall(delay_gallery1, 0.1, changeLanguage_gallery1(););
+	);
+</action>
+
+<events name="kolorBoxEvents_gallery1" 
+	keep="true"
+	changetourlanguage="changeLanguage_gallery1();"
+	/>
+
+<!-- ********** -->
+<!-- Galeria Quadro Elétrico -->
+<!-- id : gallery2 -->
+<!-- ********** -->
+
+<ptplugin name="gallery2" engine="kolorBox">
+	<settings>
+		<option name="position" value="center" type="string" />
+		<option name="margin_x" value="0" type="int" />
+		<option name="margin_y" value="0" type="int" />
+		<option name="external_padding" value="15" type="int" />
+		<option name="draggable_box" value="false" type="bool" />
+		<option name="slideshow_autoplay" value="false" type="bool" />
+		<option name="slideshow" value="5000" type="int" />
+		<option name="container_auto_size" value="false" type="bool" />
+		<option name="container_width" value="100" type="int" />
+		<option name="container_width_unit" value="percent" type="string" />
+		<option name="container_height" value="100" type="int" />
+		<option name="container_height_unit" value="percent" type="string" />
+		<option name="container_color" value="ffffff" type="string" />
+		<option name="container_alpha" value="0.80000000000000004" type="float" />
+		<option name="container_topleft_border_radius" value="15" type="int" />
+		<option name="container_topright_border_radius" value="15" type="int" />
+		<option name="container_bottomleft_border_radius" value="15" type="int" />
+		<option name="container_bottomright_border_radius" value="15" type="int" />
+		<option name="container_border_width" value="0" type="int" />
+		<option name="container_border_color" value="ffffff" type="string" />
+		<option name="container_border_alpha" value="1" type="float" />
+		<option name="overlay_displayed" value="true" type="bool" />
+		<option name="overlay_color" value="000000" type="string" />
+		<option name="overlay_alpha" value="0.50000762951094835" type="float" />
+
+		<option name="item_border_width" value="0" type="int" />
+		<option name="item_border_color" value="ffffff" type="string" />
+		<option name="item_border_alpha" value="1" type="float" />
+		
+		<option name="title_displayed" value="false" type="bool" />
+		
+		<option name="caption_displayed" value="false" type="bool" />
+		
+		<option name="play_displayed" value="true" type="bool" />
+		<option name="play_position" value="bottomleft" type="string" />
+		<option name="play_text" value="gallery2play_text" type="string" />
+
+
+
+
+		<option name="navigation_displayed" value="true" type="bool" />
+		<option name="navigation_position" value="bottom" type="string" />
+		<option name="counter_color" value="666666" type="string" />
+		<option name="navprev_text" value="gallery2navprev_text" type="string" />
+		<option name="navnext_text" value="gallery2navnext_text" type="string" />
+
+
+
+
+		<option name="navigation_arrows" value="true" type="bool" />
+
+
+
+
+		<option name="fullscreen_displayed" value="true" type="bool" />
+		<option name="fullscreen_position" value="topleft" type="string" />
+		<option name="fullscreen_text" value="gallery2fullscreen_text" type="string" />
+
+
+
+
+		<option name="close_displayed" value="true" type="bool" />
+		<option name="close_position" value="topright" type="string" />
+		<option name="close_text" value="gallery2close_text" type="string" />
+
+		<option name="close_callback" value="invokeKrFunction('closeKolorBoxCallback_gallery2')" type="string" />
+		<option name="zorder" value="10" type="int" />
+		<option name="use_i18n" value="true" type="bool" />
+	</settings>
+	<internaldata>
+		<item name="item_1" title="gallerypicture_title0" caption="gallerypicture_caption0" value="final2adata/graphics/gallery2/quadroeletrico-altoareiao01.jpg"/>
+		<item name="item_2" title="gallery1picture_title1" caption="gallery1picture_caption1" value="final2adata/graphics/gallery2/quadroeletrico-altoareiao02.jpg"/>
+		<item name="item_3" title="gallery2picture_title2" caption="gallery2picture_caption2" value="final2adata/graphics/gallery2/quadroeletrico-altoareiao03-final1a.jpg"/>
+		<item name="item_4" title="gallery2picture_title3" caption="gallery2picture_caption3" value="final2adata/graphics/gallery2/quadroeletrico-altoareiao04.jpg"/>
+		<item name="item_5" title="gallery2picture_title4" caption="gallery2picture_caption4" value="final2adata/graphics/gallery2/quadroeletrico-altoareiao05.jpg"/>
+		<item name="item_6" title="gallery2picture_title5" caption="gallery2picture_caption5" value="final2adata/graphics/gallery2/quadroeletrico-altoareiao06.jpg"/>
+	</internaldata>
+</ptplugin>
+
+<action name="kolorBoxJsReady_gallery2">
+	set(ptplugin[gallery2].jsready, true);
+</action>
+
+<action name="showGallery_gallery2">
+	ifnot(ptplugin[gallery2].isOpen,
+		set(ptplugin[gallery2].isOpen, true);
+		set(ptplugin[gallery2].doNotDeleteMe, false);
+		set(gallery2_boxurl, %1);
+		pauseautorotation(forceplugin);
+
+		js(invokePluginFunction(gallery2, openKolorBox, %1));
+		events.dispatch(onremovedisplayedobject);
+	,
+		if(%1 !== null AND %1 != gallery2_boxurl,
+			closeKolorBox_gallery2();
+			delayedcall(0.3,showGallery_gallery2(%1););
+		);
+	);
+</action>
+
+<action name="toggleGallery_gallery2">
+	js(invokePluginFunction(gallery2, toggleKolorBox, %1));
+</action>
+
+
+<action name="closeKolorBox_gallery2">
+	js(invokePluginFunction(gallery2, closeKolorBox));
+</action>
+
+<action name="closeKolorBoxCallback_gallery2">
+	resumeautorotation(forceplugin);
+
+	set(ptplugin[gallery2].isOpen, false);
+</action>
+
+<action name="changeLanguage_gallery2">
+	if(ptplugin[gallery2].jsready,
+		js(invokePluginFunction(gallery2, changeLanguage));
+	,
+		delayedcall(delay_gallery2, 0.1, changeLanguage_gallery2(););
+	);
+</action>
+
+<events name="kolorBoxEvents_gallery2" 
+	keep="true"
+	changetourlanguage="changeLanguage_gallery2();"
+	/>
+
+<!-- ********** -->
+<!-- Galeria Ramais de Inferfone -->
+<!-- id : gallery3 -->
+<!-- ********** -->
+
+<ptplugin name="gallery3" engine="kolorBox">
+	<settings>
+		<option name="position" value="center" type="string" />
+		<option name="margin_x" value="0" type="int" />
+		<option name="margin_y" value="0" type="int" />
+		<option name="external_padding" value="15" type="int" />
+		<option name="draggable_box" value="false" type="bool" />
+		<option name="slideshow_autoplay" value="false" type="bool" />
+		<option name="slideshow" value="5000" type="int" />
+		<option name="container_auto_size" value="false" type="bool" />
+		<option name="container_width" value="100" type="int" />
+		<option name="container_width_unit" value="percent" type="string" />
+		<option name="container_height" value="100" type="int" />
+		<option name="container_height_unit" value="percent" type="string" />
+		<option name="container_color" value="ffffff" type="string" />
+		<option name="container_alpha" value="0.80000000000000004" type="float" />
+		<option name="container_topleft_border_radius" value="15" type="int" />
+		<option name="container_topright_border_radius" value="15" type="int" />
+		<option name="container_bottomleft_border_radius" value="15" type="int" />
+		<option name="container_bottomright_border_radius" value="15" type="int" />
+		<option name="container_border_width" value="0" type="int" />
+		<option name="container_border_color" value="ffffff" type="string" />
+		<option name="container_border_alpha" value="1" type="float" />
+		<option name="overlay_displayed" value="true" type="bool" />
+		<option name="overlay_color" value="000000" type="string" />
+		<option name="overlay_alpha" value="0.50000762951094835" type="float" />
+
+		<option name="item_border_width" value="0" type="int" />
+		<option name="item_border_color" value="ffffff" type="string" />
+		<option name="item_border_alpha" value="1" type="float" />
+		
+		<option name="title_displayed" value="false" type="bool" />
+		
+		<option name="caption_displayed" value="false" type="bool" />
+		
+		<option name="play_displayed" value="true" type="bool" />
+		<option name="play_position" value="bottomleft" type="string" />
+		<option name="play_text" value="gallery3play_text" type="string" />
+
+
+
+
+		<option name="navigation_displayed" value="true" type="bool" />
+		<option name="navigation_position" value="bottom" type="string" />
+		<option name="counter_color" value="666666" type="string" />
+		<option name="navprev_text" value="gallery3navprev_text" type="string" />
+		<option name="navnext_text" value="gallery3navnext_text" type="string" />
+
+
+
+
+		<option name="navigation_arrows" value="true" type="bool" />
+
+
+
+
+		<option name="fullscreen_displayed" value="true" type="bool" />
+		<option name="fullscreen_position" value="topleft" type="string" />
+		<option name="fullscreen_text" value="gallery3fullscreen_text" type="string" />
+
+
+
+
+		<option name="close_displayed" value="true" type="bool" />
+		<option name="close_position" value="topright" type="string" />
+		<option name="close_text" value="gallery3close_text" type="string" />
+
+		<option name="close_callback" value="invokeKrFunction('closeKolorBoxCallback_gallery3')" type="string" />
+		<option name="zorder" value="11" type="int" />
+		<option name="use_i18n" value="true" type="bool" />
+	</settings>
+	<internaldata>
+		<item name="item_1" title="gallerypicture_title0" caption="gallerypicture_caption0" value="final2adata/graphics/gallery3/ramaisdeinterfone-altoareiao.jpg"/>
+	</internaldata>
+</ptplugin>
+
+<action name="kolorBoxJsReady_gallery3">
+	set(ptplugin[gallery3].jsready, true);
+</action>
+
+<action name="showGallery_gallery3">
+	ifnot(ptplugin[gallery3].isOpen,
+		set(ptplugin[gallery3].isOpen, true);
+		set(ptplugin[gallery3].doNotDeleteMe, false);
+		set(gallery3_boxurl, %1);
+		pauseautorotation(forceplugin);
+
+		js(invokePluginFunction(gallery3, openKolorBox, %1));
+		events.dispatch(onremovedisplayedobject);
+	,
+		if(%1 !== null AND %1 != gallery3_boxurl,
+			closeKolorBox_gallery3();
+			delayedcall(0.3,showGallery_gallery3(%1););
+		);
+	);
+</action>
+
+<action name="toggleGallery_gallery3">
+	js(invokePluginFunction(gallery3, toggleKolorBox, %1));
+</action>
+
+
+<action name="closeKolorBox_gallery3">
+	js(invokePluginFunction(gallery3, closeKolorBox));
+</action>
+
+<action name="closeKolorBoxCallback_gallery3">
+	resumeautorotation(forceplugin);
+
+	set(ptplugin[gallery3].isOpen, false);
+</action>
+
+<action name="changeLanguage_gallery3">
+	if(ptplugin[gallery3].jsready,
+		js(invokePluginFunction(gallery3, changeLanguage));
+	,
+		delayedcall(delay_gallery3, 0.1, changeLanguage_gallery3(););
+	);
+</action>
+
+<events name="kolorBoxEvents_gallery3" 
+	keep="true"
+	changetourlanguage="changeLanguage_gallery3();"
+	/>
+
+<!-- ********** -->
+<!-- Galeria Ducha Higiênica BSuite -->
+<!-- id : gallery8 -->
+<!-- ********** -->
+
+<ptplugin name="gallery8" engine="kolorBox">
+	<settings>
+		<option name="position" value="center" type="string" />
+		<option name="margin_x" value="0" type="int" />
+		<option name="margin_y" value="0" type="int" />
+		<option name="external_padding" value="15" type="int" />
+		<option name="draggable_box" value="false" type="bool" />
+		<option name="slideshow_autoplay" value="false" type="bool" />
+		<option name="slideshow" value="5000" type="int" />
+		<option name="container_auto_size" value="false" type="bool" />
+		<option name="container_width" value="100" type="int" />
+		<option name="container_width_unit" value="percent" type="string" />
+		<option name="container_height" value="100" type="int" />
+		<option name="container_height_unit" value="percent" type="string" />
+		<option name="container_color" value="ffffff" type="string" />
+		<option name="container_alpha" value="0.80000000000000004" type="float" />
+		<option name="container_topleft_border_radius" value="15" type="int" />
+		<option name="container_topright_border_radius" value="15" type="int" />
+		<option name="container_bottomleft_border_radius" value="15" type="int" />
+		<option name="container_bottomright_border_radius" value="15" type="int" />
+		<option name="container_border_width" value="0" type="int" />
+		<option name="container_border_color" value="ffffff" type="string" />
+		<option name="container_border_alpha" value="1" type="float" />
+		<option name="overlay_displayed" value="true" type="bool" />
+		<option name="overlay_color" value="000000" type="string" />
+		<option name="overlay_alpha" value="0.50000762951094835" type="float" />
+
+		<option name="item_border_width" value="0" type="int" />
+		<option name="item_border_color" value="ffffff" type="string" />
+		<option name="item_border_alpha" value="1" type="float" />
+		
+		<option name="title_displayed" value="false" type="bool" />
+		
+		<option name="caption_displayed" value="false" type="bool" />
+		
+		<option name="play_displayed" value="true" type="bool" />
+		<option name="play_position" value="bottomleft" type="string" />
+		<option name="play_text" value="gallery8play_text" type="string" />
+
+
+
+
+		<option name="navigation_displayed" value="true" type="bool" />
+		<option name="navigation_position" value="bottom" type="string" />
+		<option name="counter_color" value="666666" type="string" />
+		<option name="navprev_text" value="gallery8navprev_text" type="string" />
+		<option name="navnext_text" value="gallery8navnext_text" type="string" />
+
+
+
+
+		<option name="navigation_arrows" value="true" type="bool" />
+
+
+
+
+		<option name="fullscreen_displayed" value="true" type="bool" />
+		<option name="fullscreen_position" value="topleft" type="string" />
+		<option name="fullscreen_text" value="gallery8fullscreen_text" type="string" />
+
+
+
+
+		<option name="close_displayed" value="true" type="bool" />
+		<option name="close_position" value="topright" type="string" />
+		<option name="close_text" value="gallery8close_text" type="string" />
+
+		<option name="close_callback" value="invokeKrFunction('closeKolorBoxCallback_gallery8')" type="string" />
+		<option name="zorder" value="12" type="int" />
+		<option name="use_i18n" value="true" type="bool" />
+	</settings>
+	<internaldata>
+		<item name="item_1" title="gallerypicture_title0" caption="gallerypicture_caption0" value="final2adata/graphics/gallery8/final_1a2b_-_ducha_higienica_-bsuite.jpg"/>
+	</internaldata>
+</ptplugin>
+
+<action name="kolorBoxJsReady_gallery8">
+	set(ptplugin[gallery8].jsready, true);
+</action>
+
+<action name="showGallery_gallery8">
+	ifnot(ptplugin[gallery8].isOpen,
+		set(ptplugin[gallery8].isOpen, true);
+		set(ptplugin[gallery8].doNotDeleteMe, false);
+		set(gallery8_boxurl, %1);
+		pauseautorotation(forceplugin);
+
+		js(invokePluginFunction(gallery8, openKolorBox, %1));
+		events.dispatch(onremovedisplayedobject);
+	,
+		if(%1 !== null AND %1 != gallery8_boxurl,
+			closeKolorBox_gallery8();
+			delayedcall(0.3,showGallery_gallery8(%1););
+		);
+	);
+</action>
+
+<action name="toggleGallery_gallery8">
+	js(invokePluginFunction(gallery8, toggleKolorBox, %1));
+</action>
+
+
+<action name="closeKolorBox_gallery8">
+	js(invokePluginFunction(gallery8, closeKolorBox));
+</action>
+
+<action name="closeKolorBoxCallback_gallery8">
+	resumeautorotation(forceplugin);
+
+	set(ptplugin[gallery8].isOpen, false);
+</action>
+
+<action name="changeLanguage_gallery8">
+	if(ptplugin[gallery8].jsready,
+		js(invokePluginFunction(gallery8, changeLanguage));
+	,
+		delayedcall(delay_gallery8, 0.1, changeLanguage_gallery8(););
+	);
+</action>
+
+<events name="kolorBoxEvents_gallery8" 
+	keep="true"
+	changetourlanguage="changeLanguage_gallery8();"
+	/>
+
+<!-- ********** -->
+<!-- Galeria Ducha Higiênica BSocial -->
+<!-- id : gallery5 -->
+<!-- ********** -->
+
+<ptplugin name="gallery5" engine="kolorBox">
+	<settings>
+		<option name="position" value="center" type="string" />
+		<option name="margin_x" value="0" type="int" />
+		<option name="margin_y" value="0" type="int" />
+		<option name="external_padding" value="15" type="int" />
+		<option name="draggable_box" value="false" type="bool" />
+		<option name="slideshow_autoplay" value="false" type="bool" />
+		<option name="slideshow" value="5000" type="int" />
+		<option name="container_auto_size" value="false" type="bool" />
+		<option name="container_width" value="100" type="int" />
+		<option name="container_width_unit" value="percent" type="string" />
+		<option name="container_height" value="100" type="int" />
+		<option name="container_height_unit" value="percent" type="string" />
+		<option name="container_color" value="ffffff" type="string" />
+		<option name="container_alpha" value="0.80000000000000004" type="float" />
+		<option name="container_topleft_border_radius" value="15" type="int" />
+		<option name="container_topright_border_radius" value="15" type="int" />
+		<option name="container_bottomleft_border_radius" value="15" type="int" />
+		<option name="container_bottomright_border_radius" value="15" type="int" />
+		<option name="container_border_width" value="0" type="int" />
+		<option name="container_border_color" value="ffffff" type="string" />
+		<option name="container_border_alpha" value="1" type="float" />
+		<option name="overlay_displayed" value="true" type="bool" />
+		<option name="overlay_color" value="000000" type="string" />
+		<option name="overlay_alpha" value="0.50000762951094835" type="float" />
+
+		<option name="item_border_width" value="0" type="int" />
+		<option name="item_border_color" value="ffffff" type="string" />
+		<option name="item_border_alpha" value="1" type="float" />
+		
+		<option name="title_displayed" value="false" type="bool" />
+		
+		<option name="caption_displayed" value="false" type="bool" />
+		
+		<option name="play_displayed" value="true" type="bool" />
+		<option name="play_position" value="bottomleft" type="string" />
+		<option name="play_text" value="gallery5play_text" type="string" />
+
+
+
+
+		<option name="navigation_displayed" value="true" type="bool" />
+		<option name="navigation_position" value="bottom" type="string" />
+		<option name="counter_color" value="666666" type="string" />
+		<option name="navprev_text" value="gallery5navprev_text" type="string" />
+		<option name="navnext_text" value="gallery5navnext_text" type="string" />
+
+
+
+
+		<option name="navigation_arrows" value="true" type="bool" />
+
+
+
+
+		<option name="fullscreen_displayed" value="true" type="bool" />
+		<option name="fullscreen_position" value="topleft" type="string" />
+		<option name="fullscreen_text" value="gallery5fullscreen_text" type="string" />
+
+
+
+
+		<option name="close_displayed" value="true" type="bool" />
+		<option name="close_position" value="topright" type="string" />
+		<option name="close_text" value="gallery5close_text" type="string" />
+
+		<option name="close_callback" value="invokeKrFunction('closeKolorBoxCallback_gallery5')" type="string" />
+		<option name="zorder" value="13" type="int" />
+		<option name="use_i18n" value="true" type="bool" />
+	</settings>
+	<internaldata>
+		<item name="item_1" title="gallerypicture_title0" caption="gallerypicture_caption0" value="final2adata/graphics/gallery5/final_1a2b_-_ducha_higienica_-bsocial.jpg"/>
+	</internaldata>
+</ptplugin>
+
+<action name="kolorBoxJsReady_gallery5">
+	set(ptplugin[gallery5].jsready, true);
+</action>
+
+<action name="showGallery_gallery5">
+	ifnot(ptplugin[gallery5].isOpen,
+		set(ptplugin[gallery5].isOpen, true);
+		set(ptplugin[gallery5].doNotDeleteMe, false);
+		set(gallery5_boxurl, %1);
+		pauseautorotation(forceplugin);
+
+		js(invokePluginFunction(gallery5, openKolorBox, %1));
+		events.dispatch(onremovedisplayedobject);
+	,
+		if(%1 !== null AND %1 != gallery5_boxurl,
+			closeKolorBox_gallery5();
+			delayedcall(0.3,showGallery_gallery5(%1););
+		);
+	);
+</action>
+
+<action name="toggleGallery_gallery5">
+	js(invokePluginFunction(gallery5, toggleKolorBox, %1));
+</action>
+
+
+<action name="closeKolorBox_gallery5">
+	js(invokePluginFunction(gallery5, closeKolorBox));
+</action>
+
+<action name="closeKolorBoxCallback_gallery5">
+	resumeautorotation(forceplugin);
+
+	set(ptplugin[gallery5].isOpen, false);
+</action>
+
+<action name="changeLanguage_gallery5">
+	if(ptplugin[gallery5].jsready,
+		js(invokePluginFunction(gallery5, changeLanguage));
+	,
+		delayedcall(delay_gallery5, 0.1, changeLanguage_gallery5(););
+	);
+</action>
+
+<events name="kolorBoxEvents_gallery5" 
+	keep="true"
+	changetourlanguage="changeLanguage_gallery5();"
+	/>
+
+<!-- ********** -->
+<!-- Ir p/ Suite 2A -->
+<!-- id : extendedtitle -->
+<!-- ********** -->
+
+  <events name="extendedtitle_events" 
+    onTourStart="showextendedtitle();"
+    hidetourcontrols="hideextendedtitle();" 
+    showtourcontrols="showextendedtitle();" 
+    onnewpano="showextendedtitle();"
+    changetourlanguage="changeLanguageextendedtitle"
+    keep="true" />
+  <action name="hideextendedtitle">set(layer[extendedtitle].visible, false);</action>
+  <action name="showextendedtitle">
+    if (tour_displaycontrols,
+    set(displaytheextendedtitle, false);
+    if (xml.scene == pano21187, set(displaytheextendedtitle, true); );
+    if (displaytheextendedtitle,
+      set(layer[extendedtitle].visible, true);
+    ,
+      hideextendedtitle();
+    );
+    ,
+      set(layer[extendedtitle].visible, false );
+    );
+  </action>
+  <action name="changeLanguageextendedtitle">
+    updateextendedtitle();
+  </action>
+
+  <action name="updateextendedtitle">
+    getmessage(layer[extendedtitle].html, extendedtitlecustomtitle);
+    escape(layer[extendedtitle].html);
+  showextendedtitle();
+  </action>
+
+
+  <layer name="extendedtitle" keep="true" zorder="14"
+         type="text"
+         align="topright" x="0" y="5"
+         onloaded="getmessage(html,extendedtitlecustomtitle);escape(html);"
+         bg="false" 
+         bgborder="0"
+         alpha="1"
+         visible="false"
+         capture="true" handcursor="true" enabled="true"
+         onclick="extendedtitleOnClick"
+         interactivecontent="false" 
+         txtshadow="1.0 1.0 4.0 0x000000 1.0"
+         css="text-align:right;
+              color:#405dff;
+              font-family:Verdana;
+              font-weight:bold;
+              font-size:12px;"/>
+
+<action name="viewControlZoomIn">
+	if(%1,
+		if(%2,
+			if(%2 LT view.fovmin,
+				zoomto(get(view.fovmin));
+			,
+				if(%2 LT view.fov,
+					zoomto(%2);
+				);
+			);
+		,
+			set(fov_moveforce, -1);
+			delayedcall(0.1, viewControlZoomStop());
+		);
+	,
+		set(fov_moveforce, -1);
+	);
+</action>
+<action name="viewControlZoomOut">
+	if(%1,
+		if(%2,
+			if(%2 GT view.fovmax,
+				zoomto(get(view.fovmax));
+			,
+				if(%2 GT view.fov,
+					zoomto(%2);
+				);
+			);
+		,
+			set(fov_moveforce, +1);
+			delayedcall(0.1, viewControlZoomStop());
+		);
+	,
+		set(fov_moveforce, +1);
+	);
+</action>
+<action name="viewControlZoomStop">
+	set(fov_moveforce, 0);
+</action>
+
+  <!-- Tour Information -->
+  <action name="hideTourInfo">set(tour_displayinfo, false);events.dispatch(onhidetourinfo);</action>
+  <action name="showTourInfo">set(tour_displayinfo, true); events.dispatch(onshowtourinfo);</action>
+
+
+  <action name="displayImage">
+    if (layer[displayedStandardImage],
+      if(layer[displayedStandardImage].doNotDeleteMe,
+        set(layer[displayedStandardImage].currentCall, false);
+        set(layer[displayedStandardImage].doNotDeleteMe, false);
+        
+        if (%1 == layer[displayedStandardImage].url,
+          applyDisplayedImageObjectAnimation(%8);
+        ,
+          setDisplayedImageObjectParameters(%1, %2, %3, %4, %5, %6, %7, %8, %9, %10);
+        );
+      ,
+        set(layer[displayedStandardImage].currentCall, false);
+        set(layer[displayedStandardImage].doNotDeleteMe, true);
+        events.dispatch(onremovedisplayedobject);
+        delayedcall(0.2,displayImage(%1, %2, %3, %4, %5, %6, %7, %8, %9, %10, %11, %12););
+      );
+    ,
+      if(%10,
+        addlayer(displayedStandardImageOverlay);
+        set(layer[displayedStandardImageOverlay].keep, false);
+        set(layer[displayedStandardImageOverlay].width, 100%);
+        set(layer[displayedStandardImageOverlay].height, 100%);
+        set(layer[displayedStandardImageOverlay].type, container);
+        set(layer[displayedStandardImageOverlay].zorder, 98);
+        set(layer[displayedStandardImageOverlay].visible, false);
+        set(layer[displayedStandardImageOverlay].onclick, applyDisplayedImageObjectAnimation(%8););
+        set(layer[displayedStandardImageOverlay].bgcolor, "0x%11");
+        set(layer[displayedStandardImageOverlay].bgalpha, %12);
+        set(layer[displayedStandardImageOverlay].bgcapture, true);
+      );
+      addlayer(displayedStandardImage);
+      set(layer[displayedStandardImage].keep, false);
+      set(layer[displayedStandardImage].onclick, applyDisplayedImageObjectAnimation(%8););
+      set(layer[displayedStandardImage].zorder , 99);
+      set(layer[displayedStandardImage].currentCall, true);
+      set(layer[displayedStandardImage].doNotDeleteMe, true);
+      set(layer[displayedStandardImage].onloaded, resizeDisplayedImageObject());
+      events.dispatch(onremovedisplayedobject);
+      delayedcall(0.2,displayImage(%1, %2, %3, %4, %5, %6, %7, %8, %9, %10, %11, %12););
+      set(layer[displayedStandardImage].visible, false);
+    );
+  </action>
+  <action name="applyDisplayedImageObjectAnimation">resumeautorotation(forcehotspot);
+
+    if (%1,
+      stoptween(layer[displayedStandardImage].width, layer[displayedStandardImage].height);
+      tween(layer[displayedStandardImage].width|layer[displayedStandardImage].height, 1|1, 1, easeOutQuad, WAIT);
+      if(layer[displayedStandardImage].overlay,removelayer(displayedStandardImageOverlay););removelayer(displayedStandardImage);
+    ,
+      if(layer[displayedStandardImage].overlay,removelayer(displayedStandardImageOverlay););removelayer(displayedStandardImage);
+    );
+  </action>
+  <action name="setDisplayedImageObjectParameters">
+    set(layer[displayedStandardImage].url       , %1);
+    set(layer[displayedStandardImage].align     , %2);
+    set(layer[displayedStandardImage].x         , %3);
+    set(layer[displayedStandardImage].y         , %4);
+    set(layer[displayedStandardImage].imgwidth  , %5);
+    set(layer[displayedStandardImage].imgheight , %6);
+    set(layer[displayedStandardImage].animated  , %8);
+    set(layer[displayedStandardImage].applyratio, %9);
+    set(layer[displayedStandardImage].overlay   , %10);
+    if (%7,pauseautorotation(forcehotspot);
+);
+  </action>
+  <action name="resizeDisplayedImageObject">
+    if(layer[displayedStandardImage].url,
+    set(layer[displayedStandardImage].fullwidth, get(layer[displayedStandardImage].width));
+    set(layer[displayedStandardImage].fullheight, get(layer[displayedStandardImage].height));
+    if(layer[displayedStandardImage].animated,
+      set(layer[displayedStandardImage].width , 1);
+      set(layer[displayedStandardImage].height, 1);
+    );
+    if(layer[displayedStandardImage].imgwidth != "" AND layer[displayedStandardImage].imgheight != "",
+      if(layer[displayedStandardImage].imgwidth == "prop",
+        set(tempDisplayedImageObjectHeight, get(layer[displayedStandardImage].imgheight));
+        indexoftxt(tempDisplayedImageObjectHeightPercent, get(tempDisplayedImageObjectHeight), "%");
+        if(tempDisplayedImageObjectHeightPercent GT 0,
+          txtreplace(tempDisplayedImageObjectHeight, '%', '');
+          mul(tempDisplayedImageObjectHeight, get(stageheight));
+          div(tempDisplayedImageObjectHeight, 100);
+          Math.round(tempDisplayedImageObjectHeight);
+        );
+        mul(flyingImgWidth,get(layer[displayedStandardImage].fullwidth),get(tempDisplayedImageObjectHeight));
+        div(flyingImgWidth,get(layer[displayedStandardImage].fullheight));
+        Math.round(flyingImgWidth);
+        set(layer[displayedStandardImage].imgwidth , get(flyingImgWidth));
+        set(layer[displayedStandardImage].imgheight, get(tempDisplayedImageObjectHeight));
+      ,
+        if(layer[displayedStandardImage].imgheight == "prop",
+          set(tempDisplayedImageObjectWidth, get(layer[displayedStandardImage].imgwidth));
+          indexoftxt(tempDisplayedImageObjectWidthPercent, get(tempDisplayedImageObjectWidth), "%");
+          if(tempDisplayedImageObjectWidthPercent GT 0,
+            txtreplace(tempDisplayedImageObjectWidth, '%', '');
+            mul(tempDisplayedImageObjectWidth, get(stagewidth));
+            div(tempDisplayedImageObjectWidth, 100);
+            Math.round(tempDisplayedImageObjectWidth);
+          );
+          mul(flyingImgHeight,get(layer[displayedStandardImage].fullheight),get(tempDisplayedImageObjectWidth));
+          div(flyingImgHeight,get(layer[displayedStandardImage].fullwidth));
+          Math.round(flyingImgHeight);
+          set(layer[displayedStandardImage].imgwidth , get(tempDisplayedImageObjectWidth));
+          set(layer[displayedStandardImage].imgheight , get(flyingImgHeight));
+        ,
+          set(tempDisplayedImageObjectWidth, get(layer[displayedStandardImage].imgwidth));
+          set(tempDisplayedImageObjectHeight, get(layer[displayedStandardImage].imgheight));
+          indexoftxt(tempDisplayedImageObjectWidthPercent, get(tempDisplayedImageObjectWidth), "%");
+          indexoftxt(tempDisplayedImageObjectHeightPercent, get(tempDisplayedImageObjectHeight), "%");
+          if(tempDisplayedImageObjectWidthPercent GT 0,
+            txtreplace(tempDisplayedImageObjectWidth, '%', '');
+            mul(tempDisplayedImageObjectWidth, get(stagewidth));
+            div(tempDisplayedImageObjectWidth, 100);
+            Math.round(tempDisplayedImageObjectWidth);
+          );
+          if(tempDisplayedImageObjectHeightPercent GT 0,
+            txtreplace(tempDisplayedImageObjectHeight, '%', '');
+            mul(tempDisplayedImageObjectHeight, get(stageheight));
+            div(tempDisplayedImageObjectHeight, 100);
+            Math.round(tempDisplayedImageObjectHeight);
+          );
+          set(layer[displayedStandardImage].imgwidth , get(tempDisplayedImageObjectWidth));
+          set(layer[displayedStandardImage].imgheight, get(tempDisplayedImageObjectHeight));
+        );
+      );
+    ,
+      set(layer[displayedStandardImage].imgwidth , get(layer[displayedStandardImage].fullwidth));
+      set(layer[displayedStandardImage].imgheight, get(layer[displayedStandardImage].fullheight));
+    );
+    
+    set(resizedwidth, get(layer[displayedStandardImage].imgwidth));
+    set(resizedheight, get(layer[displayedStandardImage].imgheight));
+    if(layer[displayedStandardImage].applyratio,
+      sub(resizedstagewidth, get(stagewidth), get(layer[displayedStandardImage].x));
+      sub(resizedstageheight, get(stageheight), get(layer[displayedStandardImage].y));
+      Math.abs(resizedstagewidth);
+      Math.abs(resizedstageheight);
+      if(resizedwidth GT resizedstagewidth,
+        mul(tempresizedheight, get(resizedheight), get(resizedstagewidth));
+        div(tempresizedheight, get(resizedwidth));
+        Math.round(tempresizedheight);
+        set(resizedwidth, get(resizedstagewidth));
+        set(resizedheight, get(tempresizedheight));
+      );
+      if(resizedheight GT resizedstageheight,
+        mul(tempresizedwidth, get(resizedwidth), get(resizedstageheight));
+        div(tempresizedwidth, get(resizedheight));
+        Math.round(tempresizedwidth);
+        set(resizedheight, get(resizedstageheight));
+        set(resizedwidth, get(tempresizedwidth));
+      );
+    );
+    
+    if(layer[displayedStandardImage].animated,
+      set(layer[displayedStandardImage].animated, false);
+      tween(layer[displayedStandardImage].width , get(resizedwidth), 1, easeOutQuad);
+      tween(layer[displayedStandardImage].height, get(resizedheight), 1, easeOutQuad);
+    ,
+      set(layer[displayedStandardImage].width , get(resizedwidth));
+      set(layer[displayedStandardImage].height, get(resizedheight));
+    );
+    if(layer[displayedStandardImage].overlay,set(layer[displayedStandardImageOverlay].visible, true););
+    set(layer[displayedStandardImage].visible, true);
+    ,
+      delayedcall(0.2,resizeDisplayedImageObject(););
+    );
+  </action>
+  <events name="displayedImageObjectEvents" keep="true" onremovedisplayedobject="displayedImageObjectOnRemoveDisplayedObject" onresize="if(layer[displayedStandardImage],resizeDisplayedImageObject());" />
+  <action name="displayedImageObjectOnRemoveDisplayedObject">
+    ifnot(layer[displayedStandardImage].currentCall,if(layer[displayedStandardImage].visible,resumeautorotation(forcehotspot);
+
+      if(layer[displayedStandardImage].overlay,removelayer(displayedStandardImageOverlay););
+      removelayer(displayedStandardImage);
+    ););
+  </action>
+
+
+  <!-- FLOORPLAN -->
+  <action name="hideFloorplan">set(tour_displayfloorplan, false);events.dispatch(onhidetourfloorplan);</action>
+  <action name="showFloorplan">set(tour_displayfloorplan, true); events.dispatch(onshowtourfloorplan);</action>
+
+
+  <!-- Sounds Management -->
+
+  <action name="play3DLocalSounds">
+    if (xml.scene, if (scene[get(xml.scene)].haslocalsounds, playpanolocalsounds();););
+  </action>
+  <action name="stop3DLocalSounds">
+    if (xml.scene, if (scene[get(xml.scene)].haslocalsounds, stoppanolocalsounds();););
+  </action>
+  <action name="resume3DLocalSounds">
+    if (xml.scene, if (scene[get(xml.scene)].haslocalsounds, 
+      set(kill3dSoundOnResume, true);
+      if(layer[displayedStandardVideo],
+      if(layer[displayedStandardVideo].pausebgsound,
+      if(tour_current_played_video,
+        set(kill3dSoundOnResume, false);
+      );););
+      if(layer[webvideodisplay_player],
+      if(layer[webvideodisplay_player].pausebgsound,
+      if(tour_current_played_web_video,
+        set(kill3dSoundOnResume, false);
+      );););
+      if(tour_current_played_sound_pausesound,
+      if(tour_current_played_sound,
+        set(kill3dSoundOnResume, false);
+      ););
+      if(kill3dSoundOnResume,
+        resumepanolocalsounds();
+      );
+    ););
+  </action>
+  <action name="pause3DLocalSounds">
+    if (xml.scene, if (scene[get(xml.scene)].haslocalsounds, pausepanolocalsounds();););
+  </action>
+  <action name="set3DLocalSoundsVolume">
+    if (xml.scene, if (scene[get(xml.scene)].haslocalsounds, setpanolocalsoundsvolume();););
+  </action>
+  <action name="playTourSounds">
+    set(tour_soundson, true);events.dispatch(playtoursoundsevent);
+    resumeTourSoundsActions(true,true,true,true,true);
+  </action>
+  <action name="stopTourSounds">
+    set(tour_soundson, false);events.dispatch(stoptoursoundsevent);
+    pauseTourSoundsActions(true,true,true,true,true);
+  </action>
+  <action name="setTourSoundsVolume">
+    set(tour_soundsvolume, %1);events.dispatch(changetoursoundsevent);
+    set3DLocalSoundsVolume();
+  </action>
+  <action name="playTourSoundsActions">
+    if(%1,
+        play3DLocalSounds();
+    );
+  </action>
+  <action name="stopTourSoundsActions">
+    if(%1,
+      stop3DLocalSounds();
+    );
+    if(%3,
+      stopVideoActionsSounds();
+    );
+  </action>
+  <action name="resumeTourSoundsActions">
+    if(%1,
+        resume3DLocalSounds();
+    );
+    if(%3,
+      resumeVideoActionsSounds();
+    );
+  </action>
+  <action name="pauseTourSoundsActions">
+    if(%1,
+      pause3DLocalSounds();
+    );
+    if(%3,
+      pauseVideoActionsSounds();
+    );
+  </action>
+  <action name="stopVideoActionsSounds">
+    if(tour_current_played_video,
+      if(layer[displayedStandardVideo],
+        layer[displayedStandardVideo].stop();
+        removelayer(displayedStandardVideo);
+        if(layer[displayedStandardVideoOverlayButton], removelayer(displayedStandardVideoOverlayButton); );
+        if(layer[displayedStandardVideoOverlay], removelayer(displayedStandardVideoOverlay); );
+        delete(tour_current_played_video);
+        set(tour_current_played_video_state, 0);
+      );
+    );
+    if(tour_current_played_web_video,
+      displayWebVideoObjectClose();
+    );
+  </action>
+  <action name="resumeVideoActionsSounds">
+    if(tour_current_played_video,
+      set(resumeVideoActionsVerification, true);
+      if(tour_current_played_sound,
+        if(tour_current_played_video_state LT tour_current_played_sound_state,
+          set(resumeVideoActionsVerification, false);
+        );
+      );
+      if(resumeVideoActionsVerification,
+        if (tour_soundson,
+          if(device.flash OR (device.webgl AND !device.ios),
+            div(volume, tour_soundsvolume, 100);
+            set(layer[displayedStandardVideo].volume, get(volume));
+          ,
+            ifnot(device.ios,
+              js(kpanotour.Sounds.startVideosSounds(get(volume)));
+            ,
+              if(tour_soundsvolume GT 0,
+                set(layer[displayedStandardVideo].muted, false);
+              ,
+                set(layer[displayedStandardVideo].muted, true);
+              );
+            );
+          );
+        ,
+          if(device.flash OR (device.webgl AND !device.ios),
+            set(layer[displayedStandardVideo].volume, 0);
+          ,
+            ifnot(device.ios,
+              js(kpanotour.Sounds.stopVideosSounds());
+            ,
+              set(layer[displayedStandardVideo].muted, true);
+            );
+          );
+        );
+      );
+    );
+  </action>
+  <action name="pauseVideoActionsSounds">
+    if(tour_current_played_video,
+      if(device.flash OR (device.webgl AND !device.ios),
+        set(layer[displayedStandardVideo].volume, 0);
+      ,
+        ifnot(device.ios,
+          js(kpanotour.Sounds.stopVideosSounds());
+        ,
+          set(layer[displayedStandardVideo].muted, true);
+        );
+      );
+    );
+  </action>
+
+  <!-- Hide / Show Controls -->
+  <action name="hideTourControls">set(tour_displaycontrols, false);events.dispatch(hidetourcontrols);</action>
+  <action name="showTourControls">set(tour_displaycontrols, true); events.dispatch(showtourcontrols);</action>
+
+
+  <!-- Fullscreen Management -->
+  <action name="exitFullScreen" devices="fullscreensupport">set(tour_fullscreen,false);js(setFullscreen(false));</action>
+  <action name="enterFullScreen" devices="fullscreensupport">set(tour_fullscreen,true);js(setFullscreen(true));</action>
+  <action name="switchFullScreen">if(tour_fullscreen,exitFullScreen();,enterFullScreen(););</action>
+
+  
+  <events name="krpanoExitFullscreenEvent"
+    onexitfullscreen="if(tour_fullscreen,exitFullScreenChangeEvent(););"
+    keep="true" />
+
+  <action name="exitFullScreenChangeEvent" devices="fullscreensupport">set(tour_fullscreen,false);events.dispatch(onexitfullscreen);</action>
+  <action name="enterFullScreenChangeEvent" devices="fullscreensupport">set(tour_fullscreen,true);events.dispatch(onenterfullscreen);</action>
+  <action name="exitFullScreenFallback">set(fullscreen,false);</action>
+  <action name="enterFullScreenFallback">set(fullscreen,true);</action>
+  
+  <action name="resizeFullScreenEvent">delayedcall(0,updatescreen(););</action>
+
+</krpano>

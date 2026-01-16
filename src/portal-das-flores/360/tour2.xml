@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- for xml compliance -->
+<krpano version="1.0.8.14">
+    <!-- actions to perform while loading -->
+    <events onxmlcomplete="onxmlcompleteaction();"/>
+    <action name="onxmlcompleteaction">
+		unselectmapspotsbutpassed();
+		selectmapspot(mapspot2,333);
+		firstloadcompleteaction();
+	</action>
+    <action name="playpanosounds">
+		 playbackgroundsound(none);
+	</action>
+    <action name="stoppanosounds">
+		 stopbackgroundsound();
+	</action>
+    <action name="closepanoobjects"></action>
+    <!--************** Panorama *******************************************************************-->
+    <!-- @File="tour2.xml" @PanoName="Cozinha" @FilePath="D:/CIDADE360/BEEF BISTRO/MOREIRA ORTENCE/cozinha.jpg" -->
+    <panoview h="14.53" v="0" fov="70"/>
+    <!-- view parameters -->
+    <view fisheye="0" limitview="range" hlookatmin="-180" hlookatmax="180" vlookatmin="-90" vlookatmax="90" fovmin="45" fovmax="90" fov="70" hlookat="14.53" vlookat="0"/>
+    <progress showload="none" showwait="none"/>
+    <autorotate horizon="0" tofov="70" waittime="1" speed="5"/>
+    <!-- preview image -->
+    <preview url="%SWFPATH%/tourdata/tour2/preview.jpg" type="CUBESTRIP" striporder="FRBLUD" details="16"/>	
+		<image>
+			<cube url="%SWFPATH%/tourdata/tour2/pano_%s.jpg" />
+			<mobile>
+				<cube url="%SWFPATH%/tourdata/tour2/mobile_%s.jpg" />
+			</mobile>
+			<tablet>
+				<cube url="%SWFPATH%/tourdata/tour2/tablet_%s.jpg" />
+			</tablet>
+		</image>
+    <!--************** Hotspots and lensflares ****************************************************-->
+    <hotspot name="spot8" hview="13.37" vview="1" fovview="70" hcenter="115.484" vcenter="20.6699" onclick="lookto(get(hcenter),get(vcenter),get(view.fovmin),smooth(400,20,100));mainloadpano(tour3.xml);lookat(get(panoview.h),get(panoview.v),get(panoview.fov));" url="%SWFPATH%/tourdata/graphics/spots/spot1.swf" alturl="%SWFPATH%/tourdata/graphics/spots/spot2.gif" onhover="showtext('Área de Serviço');" ath="475.484" atv="20.6699"/>
+    <hotspot name="spot9" hview="-36.59" vview="3.68" fovview="70" hcenter="-64.3011" vcenter="21.5311" onclick="lookto(get(hcenter),get(vcenter),get(view.fovmin),smooth(400,20,100));mainloadpano(tour1.xml);lookat(get(panoview.h),get(panoview.v),get(panoview.fov));" url="%SWFPATH%/tourdata/graphics/spots/spot1.swf" alturl="%SWFPATH%/tourdata/graphics/spots/spot2.gif" onhover="showtext('Entrada do Apto');" ath="295.699" atv="21.5311"/>
+    <action name="hidepanospotsaction">
+	set(hotspot[spot8].visible, false);
+	set(hotspot[spot9].visible, false);</action>
+    <action name="showpanospotsaction">
+	set(hotspot[spot8].visible, true);
+	set(hotspot[spot9].visible, true);</action>
+    <!-- close all hotspots -->
+</krpano>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CMO Virtual Tours</title>
+  </head>
+  <body style="font-family: Arial, sans-serif; margin: 20px">
+    <h1 style="font-size: 1.5rem">CMO Virtual Tours</h1>
+    <ul
+      id="tours-list"
+      style="display: flex; flex-direction: column; gap: 1.5rem"
+    />
+
+    <script src="tours-data.js"></script>
+    <script>
+      // Função para gerar as listas de tours
+      function generateToursList() {
+        const toursList = document.getElementById("tours-list");
+
+        // Itera sobre cada projeto no objeto toursData
+        for (const [projectName, tours] of Object.entries(toursData)) {
+          // Cria o item da lista principal
+          const li = document.createElement("li");
+
+          // Cria o título do projeto
+          const strong = document.createElement("strong");
+          strong.style.fontSize = "1rem";
+          strong.style.fontWeight = "semibold";
+          strong.textContent = projectName;
+          li.appendChild(strong);
+
+          // Cria a lista ordenada de tours
+          const ol = document.createElement("ol");
+          ol.style.fontSize = "0.875rem";
+          ol.style.fontWeight = "normal";
+
+          // Adiciona cada tour à lista
+          tours.forEach((tour) => {
+            const tourLi = document.createElement("li");
+            const link = document.createElement("a");
+            link.href = tour.href;
+            link.textContent = tour.name;
+            tourLi.appendChild(link);
+            ol.appendChild(tourLi);
+          });
+
+          li.appendChild(ol);
+          toursList.appendChild(li);
+        }
+      }
+
+      // Gera as listas quando a página carregar
+      generateToursList();
+    </script>
+  </body>
+</html>

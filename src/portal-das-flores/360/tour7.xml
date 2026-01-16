@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- for xml compliance -->
+<krpano version="1.0.8.14">
+    <!-- actions to perform while loading -->
+    <events onxmlcomplete="onxmlcompleteaction();"/>
+    <action name="onxmlcompleteaction">
+		unselectmapspotsbutpassed();
+		selectmapspot(mapspot7,241);
+		firstloadcompleteaction();
+		if(plugin[data].soundOn==false,stoppanosounds());
+	</action>
+    <action name="playpanolocalsounds">
+		 set(hotspot[spot17].volume, 1.0);
+	</action>
+    <action name="stoppanolocalsounds">
+		 set(hotspot[spot17].volume, 0.0);
+	</action>
+    <action name="playpanosounds">
+		 playbackgroundsound(none);
+		 playpanolocalsounds();
+	</action>
+    <action name="stoppanosounds">
+		 stopbackgroundsound();
+		 stoppanolocalsounds();
+	</action>
+    <action name="closepanoobjects">stoppanolocalsounds();</action>
+    <!--************** Panorama *******************************************************************-->
+    <!-- @File="tour7.xml" @PanoName="Quarto Suíte" @FilePath="D:/CIDADE360/BEEF BISTRO/MOREIRA ORTENCE/suite.jpg" -->
+    <panoview h="29.4" v="-3.68" fov="70"/>
+    <!-- view parameters -->
+    <view fisheye="0" limitview="range" hlookatmin="-180" hlookatmax="180" vlookatmin="-90" vlookatmax="90" fovmin="45" fovmax="90" fov="70" hlookat="29.4" vlookat="-3.68"/>
+    <progress showload="none" showwait="none"/>
+    <autorotate horizon="-3.68" tofov="70" waittime="1" speed="5"/>
+    <!-- preview image -->
+    <preview url="%SWFPATH%/tourdata/tour7/preview.jpg" type="CUBESTRIP" striporder="FRBLUD" details="16"/>	
+		<image>
+			<cube url="%SWFPATH%/tourdata/tour7/pano_%s.jpg" />
+			<mobile>
+				<cube url="%SWFPATH%/tourdata/tour7/mobile_%s.jpg" />
+			</mobile>
+			<tablet>
+				<cube url="%SWFPATH%/tourdata/tour7/tablet_%s.jpg" />
+			</tablet>
+		</image>
+    <!--************** Hotspots and lensflares ****************************************************-->
+    <hotspot name="spot15" hview="-173.75" vview="-2.51" fovview="70" hcenter="68.6282" vcenter="1.02273" onclick="lookto(get(hcenter),get(vcenter),get(view.fovmin),smooth(400,20,100));mainloadpano(tour0.xml);lookat(get(panoview.h),get(panoview.v),get(panoview.fov));" url="%SWFPATH%/tourdata/graphics/spots/spot1.swf" alturl="%SWFPATH%/tourdata/graphics/spots/spot2.gif" onhover="showtext('Sala de Estar/Jantar');" ath="428.628" atv="1.02273"/>
+    <hotspot name="spot16" hview="153.51" vview="0.84" fovview="70" hcenter="70.3311" vcenter="17.0455" onclick="lookto(get(hcenter),get(vcenter),get(view.fovmin),smooth(400,20,100));mainloadpano(tour8.xml);lookat(get(panoview.h),get(panoview.v),get(panoview.fov));" url="%SWFPATH%/tourdata/graphics/spots/spot1.swf" alturl="%SWFPATH%/tourdata/graphics/spots/spot2.gif" onhover="showtext('Banheiro da Suíte');" ath="430.331" atv="17.0455"/>
+	
+	<hotspot 
+		 name="tv"
+         url="%SWFPATH%/imgtemplate/videoplayer.swf"
+         alturl="%SWFPATH%/imgtemplate/videoplayer.js"
+         videourl="%SWFPATH%/imgtemplate/video/video.flv"
+         altvideourl="%SWFPATH%/imgtemplate/video/video.m4v"
+         posterurl="%SWFPATH%/imgtemplate/video/tela.jpg"
+			ath="83.8854" atv="0.418944"
+	        zoom="false" distorted="true" details="8" flying="0"
+	        width="231" height="132"
+	        scale="1" scalechildren="false" rotate="0"
+	        rx="-0.730068" ry="46.3302" rz="-0.203025"
+         volume="1.0"
+		 alpha="0.9"
+         directionalsound="false"
+         range="90.0"
+         rangefalloff="1.0"
+         outofrangevolume="0.0"
+         onvideoready=""
+         onvideopaused=""
+         onvideocomplete=""
+         onunsupported=""
+		 onhover="if(ispaused, showtext(clique para reproduzir), showtext(clique para pausar));"
+		 onclick="togglepause();"
+		 keep="false"
+		 loop="true"
+    />	
+
+    <action name="hidepanospotsaction">
+	set(hotspot[spot15].visible, false);
+	set(hotspot[spot16].visible, false);
+	set(hotspot[spot17].visible, false);</action>
+    <action name="showpanospotsaction">
+	set(hotspot[spot15].visible, true);
+	set(hotspot[spot16].visible, true);
+	set(hotspot[spot17].visible, true);</action>
+    <!-- close all hotspots -->
+</krpano>

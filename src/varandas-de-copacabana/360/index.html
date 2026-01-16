@@ -1,0 +1,26 @@
+<html>
+	<head> 
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"> 
+		<title>CIDADE360 - A EVOLUCAO DA FOTOGRAFIA</title> 
+		<link rel="stylesheet" type="text/css" href= "default.css"> 
+	</head> 
+
+	<body>
+
+		<div id="tour">
+			<noscript>ERRO: Javascript não ativado</noscript>
+		</div>
+					
+		<script type="text/javascript" src="./swfobject/swfkrpano.js"></script>
+        
+		<script type="text/javascript">
+			var swf = createswf("varandas.swf", "aptSWFObject", "100%", "100%");
+			swf.addVariable("xml", "tour.xml");
+			swf.addParam("allowFullScreen","true");
+			swf.embed("tour");
+			
+			if ( so.write("tour") )
+			{ var mousewheelfixes = new SWFkrpanoMouseWheel(so); }
+		</script>
+	</body>
+</html>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano version="1.0.8.14">
+
+    <!-- actions to perform while loading -->
+    <events onxmlcomplete="onxmlcompleteaction();"/>
+    <action name="onxmlcompleteaction">
+		unselectmapspotsbutpassed();
+		selectmapspot(mapspot0,265);
+		firstloadcompleteaction();
+		if(plugin[data].soundOn==false,stoppanosounds());
+	</action>
+    <action name="playpanolocalsounds">
+		 set(hotspot[spot5].volume, 1.0);
+	</action>
+    <action name="stoppanolocalsounds">
+		 set(hotspot[spot5].volume, 0.0);
+	</action>
+    <action name="playpanosounds">
+		 playbackgroundsound(none);
+		 playpanolocalsounds();
+	</action>
+    <action name="stoppanosounds">
+		 stopbackgroundsound();
+		 stoppanolocalsounds();
+	</action>
+    <action name="closepanoobjects">stoppanolocalsounds();</action>
+
+    <!--************** Panorama *******************************************************************-->
+    <panoview h="-173.75" v="-2.51" fov="70"/>
+    <!-- view parameters -->
+    <view fisheye="0" limitview="range" hlookatmin="-180" hlookatmax="180" vlookatmin="-90" vlookatmax="90" fovmin="45" fovmax="90" fov="70" hlookat="-173.75" vlookat="-2.51"/>
+    <progress showload="none" showwait="none"/>
+    <autorotate horizon="-2.51" tofov="70" waittime="1" speed="5"/>
+    <!-- preview image -->
+    <preview url="%SWFPATH%/tourdata/tour0/preview.jpg" type="CUBESTRIP" striporder="FRBLUD" details="16"/>	
+		<image>
+			<cube url="%SWFPATH%/tourdata/tour0/pano_%s.jpg" />
+			<mobile>
+				<cube url="%SWFPATH%/tourdata/tour0/mobile_%s.jpg" />
+			</mobile>
+			<tablet>
+				<cube url="%SWFPATH%/tourdata/tour0/tablet_%s.jpg" />
+			</tablet>
+		</image>
+    <!--************** Hotspots and lensflares ****************************************************-->
+    <hotspot name="spot0" hview="-36.59" vview="3.68" fovview="70" hcenter="82.3656" vcenter="14.6411" onclick="lookto(get(hcenter),get(vcenter),get(view.fovmin),smooth(400,20,100));mainloadpano(tour1.xml);lookat(get(panoview.h),get(panoview.v),get(panoview.fov));" url="%SWFPATH%/tourdata/graphics/spots/spot1.swf" alturl="%SWFPATH%/tourdata/graphics/spots/spot2.gif" onhover="showtext('Entrada do Apto');" ath="442.366" atv="14.6411"/>
+    <hotspot name="spot1" hview="-29.4" vview="-0.67" fovview="70" hcenter="-93.5484" vcenter="20.2392" onclick="lookto(get(hcenter),get(vcenter),get(view.fovmin),smooth(400,20,100));mainloadpano(tour4.xml);lookat(get(panoview.h),get(panoview.v),get(panoview.fov));" url="%SWFPATH%/tourdata/graphics/spots/spot1.swf" alturl="%SWFPATH%/tourdata/graphics/spots/spot2.gif" onhover="showtext('Sacada');" ath="266.452" atv="20.2392"/>
+    <hotspot name="spot2" hview="67.49" vview="-3.17" fovview="70" hcenter="153.434" vcenter="10.5682" onclick="lookto(get(hcenter),get(vcenter),get(view.fovmin),smooth(400,20,100));mainloadpano(tour6.xml);lookat(get(panoview.h),get(panoview.v),get(panoview.fov));" url="%SWFPATH%/tourdata/graphics/spots/spot1.swf" alturl="%SWFPATH%/tourdata/graphics/spots/spot2.gif" onhover="showtext('Quarto Solteiro');" ath="513.434" atv="10.5682"/>
+    <hotspot name="spot3" hview="-0.17" vview="-1.34" fovview="70" hcenter="168.42" vcenter="13.6364" onclick="lookto(get(hcenter),get(vcenter),get(view.fovmin),smooth(400,20,100));mainloadpano(tour5.xml);lookat(get(panoview.h),get(panoview.v),get(panoview.fov));" url="%SWFPATH%/tourdata/graphics/spots/spot1.swf" alturl="%SWFPATH%/tourdata/graphics/spots/spot2.gif" onhover="showtext('Banheiro Social');" ath="528.42" atv="13.6364"/>
+    <hotspot name="spot4" hview="29.4" vview="-3.68" fovview="70" hcenter="177.616" vcenter="3.75" onclick="lookto(get(hcenter),get(vcenter),get(view.fovmin),smooth(400,20,100));mainloadpano(tour7.xml);lookat(get(panoview.h),get(panoview.v),get(panoview.fov));" url="%SWFPATH%/tourdata/graphics/spots/spot1.swf" alturl="%SWFPATH%/tourdata/graphics/spots/spot2.gif" onhover="showtext('Quarto Suíte');" ath="537.616" atv="3.75"/>
+
+	<hotspot 
+		 name="tv"
+         url="%SWFPATH%/imgtemplate/videoplayer.swf"
+         alturl="%SWFPATH%/imgtemplate/videoplayer.js"
+         videourl="video.flv"
+         altvideourl="%SWFPATH%/imgtemplate/video/video.m4v"
+         posterurl="%SWFPATH%/imgtemplate/video/tela.jpg"
+			ath="-158.163" atv="15.2247"
+	        distorted="true"
+	        width="245" height="138"
+	        scale="1"
+	        rx="15.987" ry="-19.2562" rz="0.685013"
+         volume="1.0"
+         directionalsound="false"
+		 onhover="if(ispaused, showtext(clique para reproduzir), showtext(clique para pausar));"
+		 onclick="togglepause();"
+		 keep="false"
+		 loop="true"
+    />	
+
+    <action name="hidepanospotsaction">
+	set(hotspot[spot0].visible, false);
+	set(hotspot[spot1].visible, false);
+	set(hotspot[spot2].visible, false);
+	set(hotspot[spot3].visible, false);
+	set(hotspot[spot4].visible, false);
+	set(hotspot[spot5].visible, false);</action>
+    <action name="showpanospotsaction">
+	set(hotspot[spot0].visible, true);
+	set(hotspot[spot1].visible, true);
+	set(hotspot[spot2].visible, true);
+	set(hotspot[spot3].visible, true);
+	set(hotspot[spot4].visible, true);
+	set(hotspot[spot5].visible, true);</action>
+    <!-- close all hotspots -->
+</krpano>

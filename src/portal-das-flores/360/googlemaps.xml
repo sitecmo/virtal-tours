@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><!--for xml compliance-->
+<krpano version="1.0.8.14" logkey="false">
+	<plugin name="maps"
+			url="%SWFPATH%/imgtemplate/googlemaps.swf" keep="true" handcursor="false"
+			align="bottomleft"
+			zorder="990"
+			x="-509" y="34" 
+			width="388" height="195"
+			key="ABQIAAAAJS8jYMlAiOtHfOg6LRnY3xQoZbkgcF4eLFERsSrcLBrLsmn21BQF5pSt0Hjifk9fU-fskIiAng5fLQ"
+			zoom="18"
+			maptype="HYBRID"
+			dragging="true"
+			scrollwheel="true"
+			continuouszoom="false"
+			keyboard="false"
+			crosshairs="false"
+			onmapready=""
+			onmapmoved="" 
+			onmapzoomed=""
+			lat="-16.657287" lng="-49.239323"
+	>	
+			<spot name="sfix" lat="-16.657287" lng="-49.239323" active="true" heading="230"/>
+			<radar 	visible="true" size="100" alpha="0.5" fillcolor="0xaaffaa" fillalpha="0.6"
+					linecolor="0xffffff" linealpha="0.5" linewidth="1.0" glow="true" glowcolor="0xFFFFFF"
+					glowwidth="5" glowstrength="15" behindspots="true" dragable="true"
+			/>
+			<maptypecontrol visible="true" anchor="lefttop" x="2" y="2" buttonalign="h"
+			maptypes="NORMAL|SATELLITE|PHYSICAL|HYBRID"/>
+			<positioncontrol visible="true" anchor="lefttop" x="2" y="30"/>
+			<zoomcontrol visible="true" anchor="lefttop" x="23" y="120" hasscrolltrack="false"/>
+	</plugin>
+</krpano>

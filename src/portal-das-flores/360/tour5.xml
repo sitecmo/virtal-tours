@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- for xml compliance -->
+<krpano version="1.0.8.14">
+    <!-- actions to perform while loading -->
+    <events onxmlcomplete="onxmlcompleteaction();"/>
+    <action name="onxmlcompleteaction">
+		unselectmapspotsbutpassed();
+		selectmapspot(mapspot5,164);
+		firstloadcompleteaction();
+	</action>
+    <action name="playpanosounds">
+		 playbackgroundsound(none);
+	</action>
+    <action name="stoppanosounds">
+		 stopbackgroundsound();
+	</action>
+    <action name="closepanoobjects"></action>
+    <!--************** Panorama *******************************************************************-->
+    <!-- @File="tour5.xml" @PanoName="Banheiro Social" @FilePath="D:/CIDADE360/BEEF BISTRO/MOREIRA ORTENCE/BSocial.jpg" -->
+    <panoview h="-0.17" v="-1.34" fov="70"/>
+    <!-- view parameters -->
+    <view fisheye="0" limitview="range" hlookatmin="-180" hlookatmax="180" vlookatmin="-90" vlookatmax="90" fovmin="45" fovmax="90" fov="70" hlookat="-0.17" vlookat="-1.34"/>
+    <progress showload="none" showwait="none"/>
+    <autorotate horizon="-1.34" tofov="70" waittime="1" speed="5"/>
+    <!-- preview image -->
+    <preview url="%SWFPATH%/tourdata/tour5/preview.jpg" type="CUBESTRIP" striporder="FRBLUD" details="16"/>	
+		<image>
+			<cube url="%SWFPATH%/tourdata/tour5/pano_%s.jpg" />
+			<mobile>
+				<cube url="%SWFPATH%/tourdata/tour5/mobile_%s.jpg" />
+			</mobile>
+			<tablet>
+				<cube url="%SWFPATH%/tourdata/tour5/tablet_%s.jpg" />
+			</tablet>
+		</image>
+    <!--************** Hotspots and lensflares ****************************************************-->
+    <hotspot name="spot13" hview="-173.75" vview="-2.51" fovview="70" hcenter="95.2688" vcenter="16.3636" onclick="lookto(get(hcenter),get(vcenter),get(view.fovmin),smooth(400,20,100));mainloadpano(tour0.xml);lookat(get(panoview.h),get(panoview.v),get(panoview.fov));" url="%SWFPATH%/tourdata/graphics/spots/spot1.swf" alturl="%SWFPATH%/tourdata/graphics/spots/spot2.gif" onhover="showtext('Sala de Estar/Jantar');" ath="455.269" atv="16.3636"/>
+    <action name="hidepanospotsaction">
+	set(hotspot[spot13].visible, false);</action>
+    <action name="showpanospotsaction">
+	set(hotspot[spot13].visible, true);</action>
+    <!-- close all hotspots -->
+</krpano>

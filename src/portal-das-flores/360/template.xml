@@ -1,0 +1,793 @@
+<krpano version="1.0.8">
+
+<!-- ---- TEXTO INSTITUCIONAL DA EMPRESA/EVENTO ---- -->
+	<plugin name="infobox"
+			keep="true"
+			style="box_style"
+			zorder="100"
+			visible="true"
+			html="
+			[textformat leftmargin='20' rightmargin='20']
+				[p]
+				[br][font size='14'][b]PORTAL DAS FLORES[/b][/font]
+				[br]
+				[/p]
+			
+				[p][b]Local do Imóvel:[/b][/p]
+				[p]
+				Rua 408
+				[br] Setor Negrão de Lima, Goiânia/GO.
+				[br]
+				[/p]
+				
+				[p][b]Descrição do Imóvel:[/b][/p]			
+				[p]
+				O Portal das Flores é composto por 4 (quatro) edifícios com os seguintes pavimentos: 
+				[br]Térreo e 17 (dezessete) pavimentos tipos com 04 (quatro) unidades por andar, totalizando 272 (duzentos e setenta e dois) apartamentos de 02 quartos, sendo um suíte.
+				[br]
+				[/p]
+			
+				[p][b]Construção e Incorporação:[/b][/p]			
+				[p] CMO Construtora
+				[br] (62) 3216-4272[/p]
+				[br]
+			[/textformat]"
+			align="leftbottom"  
+			x="-550" y="30" 
+			onclick="box_off(infobox);"
+	/>
+<!-- ---- FIM DE TEXTO INSTITUCIONAL DA EMPRESA/EVENTO ---- -->
+	
+
+
+<!-- BT - ICONE CIRCULAR - CREDITOS DA CIDADE FRANQUEADA -->
+    <plugin name="btcredito"
+			url="%SWFPATH%/imgtemplate/iconecidade.png"
+			align="rightbottom"
+			keep="true"
+			onclick="action(abrecreditos);"
+			onhover="showtext(Créditos da Tecnologia, csmall);"
+			x="0" y="30"
+	/>
+    <!-- ---- BOTAO E TELA DE CREDITOS DA CIDADE FRANQUEADA ---- -->
+	<plugin name="tela_creditos"
+			url="%SWFPATH%/imgtemplate/creditoscidade.png"
+			keep="true"
+			visible="false"
+			align="center" 
+			alpha="1.0"
+			onclick="action(escondecreditos);" 
+			onhover="showtext(Clique para fechar esta tela, csmall);"  
+			x="0" y="0"
+	/>
+    <action name="abrecreditos">
+			set(plugin[tela_creditos].visible,true);
+			set(plugin[btcredito].onclick,escondecreditos();)
+	</action>
+    <action name="escondecreditos">
+			set(plugin[tela_creditos].visible,false);
+			set(plugin[btcredito].onclick,abrecreditos());
+	</action>
+    <!-- ---- FIM DO BOTAO E TELA DE CREDITOS DA CIDADE FRANQUEADA ---- -->
+<!-- FIM DE BT - ICONE CIRCULAR - CREDITOS DA CIDADE FRANQUEADA -->	
+
+
+
+<!-- PARAMETRO QUE INFLUENCIAM NA PERFORMANCE DE VISUALIZAÇÃO -->
+	<display fps="60" details="18" movequality="HIGH" stillquality="HIGH" movequality10="HIGH" stillquality10="HIGH" stilltime="0.0"/>
+	<network caching="true" cachesize="7" />
+	
+	<control	usercontrol="all" mousetype="moveto" zoomtocursor="false" zoomoutcursor="true" mouseaccelerate="0.40"
+				mousespeed="3" mousefriction="0.88" headswing="0.00" keybaccelerate="0.50" keybspeed="10.00"
+				keybfriction="0.90" keybinvert="false" mousefovchange="1.00" keybfovchange="0.75" fovspeed="1.60" fovfriction="0.90"
+				movetocursor="none" cursorsize="10.0" keycodesleft="37" keycodesright="39" keycodesup="38" keycodesdown="40"
+				keycodesin="16,65,107" keycodesout="17,89,90,109"
+	/>
+<!-- FIM DE PARAMETRO QUE INFLUENCIAM NA PERFORMANCE DE VISUALIZAÇÃO -->
+
+
+<!-- ******************  BOTOES DE CONTROLE  DO TOUR - DO MENU INFERIOR  ****************** -->
+<!-- ---- INICIO DOS BOTOES - BASE INFERIOR ---- -->
+	<!-- ---- BASE INFERIOR DO MENU ---- -->
+	<plugin name="base_inferior"
+			url="%SWFPATH%/imgtemplate/base_inferior.png"
+			keep="true"
+			visible="true"
+			scale9grid="280|0|80|30"
+			width="100%"
+			handcursor="false"
+			capture="true"
+			scale="1" alpha="1"
+			blendmode="normal"
+			smoothing="true"
+			x="0" y="-90"
+			onloaded="tween(y,-30,0.5)"
+			align="bottomleft"
+			zorder="900"
+	/>	
+	<!-- ---- BOTAO CIDADE360 ---- -->
+	<plugin name="bt_cidade360_mouseover"
+			url="%SWFPATH%/imgtemplate/base_inferior.png"
+			keep="true"
+			visible="true"
+			enabled="true"
+			alpha="0"
+			crop="0|34|109|25"
+			align="leftbottom"
+			x="0" y="0"
+			handcursor="true"
+			capture="true"
+			zorder="1090"
+			onhover="showtext(Sobre o Cidade360,csmall);"
+			onclick="if(plugin[aboutbox].x LT 0,box_off(); box_on(aboutbox);, box_off(););"
+			onover="tween(alpha,1,0.1)"
+			onout="tween(alpha,0,0.5)"
+			onloaded="delayedcall(1,set(visible,true));"
+	/>
+
+	<!-- ---- BOTAO PAUSAR GIRO ---- -->
+	<plugin name="pausargiro_btn"
+			url="%SWFPATH%/imgtemplate/base_inferior.png"
+			keep="true"
+			visible="false"
+			alpha="0"
+			crop="301|34|29|25"
+			align="leftbottom"
+			x="110" y="0"
+			handcursor="true"
+			onhover="showtext(Pausar giro,csmall)"
+			onover="tween(alpha,1,0.1)" 
+			onout="tween(alpha,0,0.5)"
+			onloaded="delayedcall(1,set(visible,true));"
+			onclick="spin();"
+			zorder="1000"
+	/>
+
+	<!-- ---- BOTAO GIRAR ---- -->
+	<plugin name="girar_btn" 
+			url="%SWFPATH%/imgtemplate/base_inferior.png"
+			keep="true"
+			visible="false"
+			alpha="1"
+			crop="208|34|29|25"
+			align="leftbottom"
+			x="110" y="0"
+			handcursor="true"
+			zorder="1001"
+	/>
+	<!-- ---- BOTAO PAUSAR ON ---- -->
+	<plugin name="girar_btn_hover" 
+			url="%SWFPATH%/imgtemplate/base_inferior.png"
+			keep="true"
+			visible="false"
+			alpha="0"
+			crop="110|34|29|25"
+			align="leftbottom" 
+			x="110" y="-1" 
+			handcursor="true"
+			onover="tween(alpha,1,0.1)" 
+			onout="tween(alpha,0,0.5)"
+			onhover="showtext(Iniciar giro automático,csmall)"
+			onclick="spin();"
+			zorder="1002"
+	/>
+	<action name="spin">
+		if(autorotate.enabled == true,
+			set(plugin[pausargiro_btn].visible, false);
+			set(plugin[girar_btn].visible, true);
+			set(plugin[girar_btn_hover].visible, true);
+		);
+		if(autorotate.enabled == false,
+			set(plugin[pausargiro_btn].visible, true);
+			set(plugin[girar_btn].visible, false);
+			set(plugin[girar_btn_hover].visible, false);
+		);
+		switch(autorotate.enabled,true,false); 
+		set(autorotate.waittime,1);	
+	</action>
+
+
+	<!-- ---- BOTAO INFORMACOES DA EMPRESA ---- -->
+	<plugin name="info_btn" 
+			visible="false" 
+			url="%SWFPATH%/imgtemplate/base_inferior.png" 
+			crop="141|34|29|25" 
+			keep="true"
+			align="leftbottom" 
+			x="141" y="0" 
+			handcursor="true" 
+			alpha="0"
+			onhover="showtext(Info sobre as Fotos 360º,csmall)" 
+			onclick="if(plugin[infobox].x LT 0, box_off();box_on(infobox);,box_off();)"
+			onover="tween(alpha,1,0.1)" 
+			onout="tween(alpha,0,0.5)" 
+			onloaded="delayedcall(1,set(visible,true));"
+			zorder="1000"
+	/>
+	<!-- ---- BOTAO ABRIR MAPA ---- -->
+	<plugin name="map_btn" 
+			visible="false" 
+			url="%SWFPATH%/imgtemplate/base_inferior.png" 
+			crop="172|34|29|25" 
+			keep="true"
+			align="leftbottom" 
+			x="172" y="0" 
+			handcursor="true" 
+			alpha="0"
+			onclick="if(plugin[maps].x LT 0,terkepnyit(),terkepzar());"
+			onhover="showtext(Mostrar Mapa,csmall);" 
+			onover="tween(alpha,1,0.1)"
+			onout="tween(alpha,0,0.5)" 
+			onloaded="delayedcall(1,set(visible,true));"
+			zorder="1000"
+	/>
+	<!-- ---- BOTAO FACEBOOK ---- -->
+	<plugin name="facebooktemplate" 
+			visible="false" 
+			url="%SWFPATH%/imgtemplate/base_inferior.png" 
+			crop="203|0|29|25" 
+			keep="true"
+			align="leftbottom" 
+			x="203" y="0" 
+			handcursor="true" 
+			alpha="0"
+			onclick="js(add_to_facebook());"
+			onloaded="delayedcall(1,set(visible,true));"
+			onhover="showtext(Compartilhar no Facebook,csmall);"
+			zorder="9000"
+	/>
+
+
+	<!-- ---- GRAFICO EQUALIZADOR - SOM ---- --
+	<plugin name="skin_equalizer_on"
+			url="%SWFPATH%/imgtemplate/eqalizer_on.swf"  
+			blendmode="invert" 
+			width="15" height="" 
+			x="160" y="2"  
+			align="rightbottom"        
+			edge="rightbottom"    
+			alpha="1" 
+			visible="false" 
+			handcursor="false" 
+			keep="true"
+			zorder="99999"
+			onloaded="delayedcall(2,set(visible,true));"
+	/>
+	<plugin name="skin_equalizer_off"
+			url="%SWFPATH%/imgtemplate/eqalizer_off.swf" 
+			blendmode="invert" 
+			width="15" height="" 
+			x="160" y="2"  
+			align="rightbottom"        
+			edge="rightbottom"    
+			alpha="1" 
+			visible="false"
+			handcursor="false" 
+			keep="true"
+			zorder="99999"
+	/>
+	<!-- ---- FIM GRAFICO EQUALIZADOR - SOM ---- -->	
+
+	<!-- ---- BOTAO DESLIGAR SOM ---- -->
+	<plugin name="sound_off_btn"
+			url="%SWFPATH%/imgtemplate/base_inferior.png"
+			keep="true"
+			visible="false"
+			alpha="0"
+			crop="399|34|29|25"
+			align="rightbottom"
+			x="126" y="0"
+			onloaded="delayedcall(1,set(visible,true));"
+			handcursor="true"
+			onhover="showtext(Desligar som,csmall)"
+			onover="tween(alpha,1,0.1)"
+			onout="tween(alpha,0,0.5)"
+			onclick="sound_play_off();set(plugin[skin_equalizer_on].visible,false);set(plugin[skin_equalizer_off].visible,true);"
+			zorder="1000"
+	/>
+	<!-- ---- BOTAO LIGAR SOM ---- -->
+	<plugin name="sound_on_btn"
+			url="%SWFPATH%/imgtemplate/base_inferior.png"
+			keep="true"
+			visible="false"
+			alpha="1"
+			crop="239|34|29|25"
+			align="rightbottom"
+			x="126" y="0"
+			handcursor="true"
+			zorder="1001"
+	/>
+	<!-- ---- BOTAO LIGAR SOM - ON ---- -->
+	<plugin name="sound_on_btn_hover"
+			url="%SWFPATH%/imgtemplate/base_inferior.png"
+			keep="true"
+			visible="false"
+			alpha="1"
+			crop="332|34|29|25" 
+			align="rightbottom" 
+			x="126" y="0" 
+			handcursor="true"
+			onhover="showtext(Ligar som,csmall)"
+			onover="tween(alpha,1,0.1)" 
+			onout="tween(alpha,0,0.5)"
+			onclick="sound_play_on();set(plugin[skin_equalizer_off].visible,false);set(plugin[skin_equalizer_on].visible,true);"
+			zorder="1002"
+	/>
+	<action name="sound_play_off">
+			set(plugin[sound_off_btn].visible,false);
+			set(plugin[sound_on_btn].visible, true);
+			set(plugin[sound_on_btn_hover].visible, true);
+			snd_off();
+	</action>
+	<action name="sound_play_on">
+			set(plugin[sound_on_btn_hover].visible, false);
+			set(plugin[sound_on_btn].visible, false);
+			set(plugin[sound_off_btn].visible, true);
+			snd_on();
+	</action>
+
+	<!-- ---- BOTAO APROXIMAR ZOOM ---- -->
+	<plugin name="zoom_in_btn" 
+			url="%SWFPATH%/imgtemplate/base_inferior.png"
+			keep="true"
+			visible="false"
+			alpha="0"
+			crop="430|34|29|25"
+			align="rightbottom" 
+			x="95" y="0" 
+			handcursor="true" 
+			onhover="showtext(Aproximar zoom,csmall)"
+			onover="tween(alpha,1,0.1)" 
+			onout="tween(alpha,0,0.5)" 
+			onloaded="delayedcall(1,set(visible,true));"
+			ondown="set(movevectorz,-1);"  
+			onup="set(movevectorz,0);"
+			zorder="1000"
+	/>
+	<!-- ---- BOTAO AFASTAR ZOOM ---- -->
+	<plugin name="zoom_out_btn" 
+			url="%SWFPATH%/imgtemplate/base_inferior.png"
+			visible="false" 
+			keep="true"
+			alpha="0"
+			crop="461|34|29|25"
+			align="rightbottom" 
+			x="64" y="0" 
+			handcursor="true"
+			onhover="showtext(Afastar zoom,csmall)"
+			onover="tween(alpha,1,0.1)" 
+			onout="tween(alpha,0,0.5)" 
+			onloaded="delayedcall(1,set(visible,true));"
+			ondown="set(movevectorz,+1);"  
+			onup="set(movevectorz,0);"
+			zorder="1000"
+	/>
+
+
+			
+	<!-- ---- BOTAO TELA CHEIA ---- -->
+	<plugin name="fullscreen_btn" 
+			visible="false" 
+			url="%SWFPATH%/imgtemplate/base_inferior.png" 
+			crop="492|34|29|25"
+			keep="true" 
+			align="rightbottom" 
+			x="33" y="0" 
+			handcursor="true" 
+			alpha="0"
+			onhover="showtext(Tela Cheia,csmall)"
+			onclick="if(fullscreen == false, fullscreen_on();, fullscreen_off();)" 
+			onover="tween(alpha,1,0.1)" 
+			onout="tween(alpha,0,0.5)" 
+			onloaded="delayedcall(1,set(visible,true));"
+			zorder="1000"
+	/>
+	<!-- ---- BOTAO SAIR TELA CHEIA ---- -->
+	<plugin name="fullscreen_btn_exit" 
+			visible="false" 
+			url="%SWFPATH%/imgtemplate/base_inferior.png" 
+			crop="270|34|29|25"
+			keep="true" 
+			align="rightbottom" 
+			x="33" y="0" 
+			handcursor="true" 
+			alpha="1" 
+			zorder="1001"
+	/>
+	<!-- ---- BOTAO SAIR TELA CHEIA - ON ---- -->
+	<plugin name="fullscreen_btn_exit_hover" 
+			visible="false" 
+			url="%SWFPATH%/imgtemplate/base_inferior.png" 
+			crop="363|34|29|25"
+			keep="true" 
+			align="rightbottom" 
+			x="33" y="-1" 
+			handcursor="true" 
+			alpha="0"
+			onhover="showtext(Sair da Tela Cheia,csmall)"
+			onclick="if(fullscreen == false, fullscreen_on();, fullscreen_off();)"
+			onover="tween(alpha,1,0.1)" 
+			onout="tween(alpha,0,0.5)" 
+			onloaded=""
+			zorder="1002"
+	/>
+	<action name="fullscreen_on">
+			set(plugin[fullscreen_btn].visible,false);
+			set(plugin[fullscreen_btn_exit].visible, true);
+			set(plugin[fullscreen_btn_exit_hover].visible, true);
+			switch(fullscreen,true,false); 
+	</action>
+	<action name="fullscreen_off">
+			set(plugin[fullscreen_btn_exit_hover].visible, false);
+			set(plugin[fullscreen_btn_exit].visible, false);
+			set(plugin[fullscreen_btn].visible, true);
+			switch(fullscreen,true,false); 
+	</action>
+	
+	<!-- ---- BOTAO AJUDA ---- -->
+	<plugin name="help_btn"
+			url="%SWFPATH%/imgtemplate/base_inferior.png"
+			keep="true"
+			visible="false"
+			alpha="0"
+			crop="523|34|29|25"
+			align="rightbottom"
+			x="2" y="0"
+			handcursor="true"
+			zorder="1000"
+			onhover="showtext(Ajuda de Navegação,csmall)"
+			onclick="if(plugin[helpbox].x LT 0,box_off(); box_on(helpbox);set(onhover,showtext(Fechar Ajuda,csmall));, box_off();set(onhover,showtext(Ajuda de Navegação,csmall)););"
+			onover="tween(alpha,1,0.1)"
+			onout="tween(alpha,0,0.5)"
+			onloaded="delayedcall(1,set(visible,true));"
+	/>
+<!-- ******************  FIM DOS BOTOES DE CONTROLE  DO TOUR - DO MENU INFERIOR  ****************** -->
+
+
+
+
+<!-- ******************** CAIXAS DE TEXTO E AVISO ***************** -->
+	<!-- ---- TEXTO DA CAIXA CIDADE360 ---- -->
+	<plugin 
+			name="aboutbox"
+			keep="true"
+			style="box_style"
+			zorder="110"
+			visible="true"
+			html="[textformat leftmargin='20' rightmargin='20']
+						[br]
+						[p align='center']
+						[font size='14'][b]SOBRE O CIDADE360:[/b][/font]
+						[/p]
+			
+						[img src='imgtemplate/logocidade360.png']
+			
+						[br]
+				
+						[p align='justify']
+						O Cidade360 é um guia turístico-empresarial na internet que mostra as cidades em Fotos 360°: comércio, gastronomia, vida noturna, parques, praças, ruas, 
+						shoppings, cultura, eventos, entretenimento e curiosidades.
+			
+						[br][br]O Cidade360 é uma ferramenta contemporânea de inclusão digital. É também uma ferramenta de mídia que 
+						mostra em 360° detalhes que só uma visita presencial poderia revelar. As fotos 360° representam os olhos do usuário percorrendo espaços que ele quer conhecer.
+			
+			
+						[br][br]Inovar a apresentação empresarial: esse é um dos objetivos do Cidade360. Significa levar as empresas até as pessoas.
+						[/p]
+			
+						[br][br]
+				  [/textformat]"
+			align="rightbottom" x="-550" y="30" onclick="box_off(aboutbox);"
+	/>
+
+	<!-- ---- TEXTO DA CAIXA DE AJUDA ---- -->
+	<plugin 
+		name="helpbox" 
+		keep="true" 
+		style="box_style" 
+		zorder="100" 
+		visible="true"
+		html="[textformat leftmargin='20' rightmargin='20'][p][br][font size='14'][b]COMO INTERAGIR COM A FOTO 360º:[/b][/font][br][br]
+		Para mover a imagem, APERTE E SEGURE o botão esquerdo do mouse, então arraste na direção desejada.[br]
+		[/p][img src='imgtemplate/infopic.png'][p]Use as [b]setas[/b] para mover a foto.
+		Aproxime e afaste o zoom como o botão giratório central do mouse.[br]
+		Você também pode usar como zoom os as teclas [b]'A'[/b] e [b]'Z'[/b] ou [b]Shift[/b] e [b]Ctrl[/b] para aproximar e afastar respectivamente.[br] 
+		Para ativar um link interno (ícones no interior das fotos), posicione o mouse sobre o referido ícone e o cursor do mouse mudará para o formato de uma 	
+		MÃO, então CLIQUE.[br]
+		Use o menu inferior para todas as outras funções.
+		[/p][br][br][br][br][br][br]
+		[/textformat]"
+		align="bottomright" x="-550" y="30" onclick="box_off(helpbox);"
+	/>
+
+
+
+	
+	<!-- ---- ACTIONS DE CONTROLE ---- -->
+	
+	<action name="box_on">
+			tween(plugin[%1].x,0,0.2,null,wait);
+	</action>
+	<action name="box_off">
+			terkepzar();
+			tween(plugin[infobox].x,-550,0.2);
+			tween(plugin[helpbox].x,-550,0.2);
+			tween(plugin[aboutbox].x,-550,0.2);
+	</action>
+<!-- ******************** FIM DAS CAIXAS DE TEXTO E AVISO ***************** -->
+
+
+<!--  ************ MAPA E O BOX DO MAPA ************** -->
+	<!-- ---- FUNDO DO MAPA ---- -->
+	<plugin name="mapbg" 
+			url="%SWFPATH%/imgtemplate/fundomapa.png" 
+			handcursor="false" 
+			scale9grid="120|20|230|200" 
+			zorder="980"
+			alpha="0.85" 
+			x="-500" y="29" 
+			width="400" height="223" 
+			align="bottomright" keep="TRUE"/>
+	
+	<!-- ---- BOTAO FECHAR MAPA ---- -->
+	<plugin name="mapbg_close" 
+			url="%SWFPATH%/imgtemplate/fundomapa.png" 
+			crop="0|0|16|16"
+			zorder="980"
+			keep="true" parent="mapbg"
+			align="righttop" 
+			x="4" y="4" 
+			onclick="terkepzar();" 
+			alpha="0"
+			onhover="showtext(Fechar Mapa,csmall)"/>
+	
+	<!-- ---- BOTAO MAXIMIZAR MAPA ---- -->
+	<plugin name="mapbg_maximize" 
+			url="%SWFPATH%/imgtemplate/fundomapa.png" 
+			crop="0|0|16|16"
+			zorder="980"
+			keep="true" parent="mapbg"
+			align="righttop" 
+			x="28" y="4" 
+			onclick="if(plugin[maps].x == 0, terkepmin();,terkepmax(););"
+			onhover="showtext(Maximizar Mapa,csmall)" alpha="0"/>
+	
+	<action name="terkepnyit">
+			box_off(infobox); 
+			box_off(helpbox);
+			plugin[maps].activatespot(sfix);
+			tween(plugin[mapbg].x,0,0.2); 
+			tween(plugin[maps].x,5,0.2);
+			set(plugin[mapbg_maximize].onhover,showtext(Maximizar Mapa,csmall));
+			set(plugin[map_btn].onhover,showtext(Esconder Mapa,csmall)); 
+	</action>
+	<action name="terkepzar"> if(plugin[maps].x == 0,terkepmin(););
+		set(plugin[maps].align,bottomright); 
+		set(plugin[mapbg].align,bottomright);
+		set(plugin[map_btn].onhover,showtext(Mostrar Mapa,csmall));
+		tween(plugin[mapbg].x,-550,0.2); tween(plugin[maps].x,-559,0.2);
+		set(plugin[mapbg_maximize].onhover,showtext(Maximizar Mapa,csmall));
+		set(plugin[map_btn].onclick,if(plugin[maps].x LT 0, terkepnyit(), terkepzar())); 
+	</action>
+	<action name="terkepmin">
+		set(plugin[maps].align,bottomright); 
+		set(plugin[mapbg].align,bottomright);set(plugin[mapbg].x,0); set(plugin[maps].x,5);
+		set(plugin[mapbg].y,29); set(plugin[maps].y,34); set(plugin[mapbg].width,400);
+		set(plugin[mapbg].height,223); set(plugin[maps].width,388); set(plugin[maps].height,195);
+		set(plugin[mapbg_maximize].onhover,showtext(Maximizar Mapa,csmall)); 
+	</action>
+	<action name="terkepmax">
+		set(plugin[maps].align,center); 
+		set(plugin[mapbg].align,center);
+		set(plugin[maps].visible,false); 
+		set(plugin[mapbg].visible,false);
+		set(plugin[maps].x,0); 
+		set(plugin[maps].y,-1%); 
+		set(plugin[maps].width,95%);
+		set(plugin[maps].height,75%); 
+		plugin[maps].updatecontrol(); 
+		set(plugin[mapbg].x,0);
+		set(plugin[mapbg].y,-3%); 
+		set(plugin[mapbg].width,97%); 
+		set(plugin[mapbg].height,82%);
+		set(plugin[mapbg].visible,true); 
+		set(plugin[maps].visible,true);
+		set(plugin[mapbg_maximize].onhover,showtext(Minimizar Mapa,csmall));
+		set(plugin[map_btn].onclick,terkepzar()); 
+	</action>
+	<action name="map_spot_off">
+		tween(plugin[maps].radar.alpha,0,0.5,null,wait);
+		set(plugin[maps].radar.visible,false);
+		set(plugin[maps].spot[sfix].active,false);
+	</action>
+	<action name="heading_set">
+		set(plugin[maps].spot[sfix].lat,%3);
+		set(plugin[maps].spot[sfix].lng,%4); 
+		set(plugin[maps].spot[sfix].heading,%2);
+		set(plugin[radar_logo].heading,%2); 
+		plugin[maps].updatespots(); 
+		plugin[maps].activatespot(sfix);
+		plugin[maps].pantospot(sfix);
+		set(plugin[maps].radar.visible,true);
+		tween(plugin[maps].radar.alpha, 0.5, 1);
+	</action>
+	<action name="megallito"> 
+		breakall(); stopall();
+	</action>
+	
+
+<!-- ****************   CONTROLES DO SOM  **************** -->
+<plugin name="soundinterface"
+        url="%SWFPATH%/imgtemplate/soundinterface.swf"
+        alturl="soundinterface.js"
+		keep="true"
+        preload="true"
+        rootpath="%CURRENTXML%"
+        volume="1.0"
+        mute="false"
+/>
+	<action name="snd_off">
+			tween(plugin[soundinterface].volume,0,0.5,null,wait);
+			set(soundinterface.mute,true);
+	</action>
+	<action name="snd_on">
+			set(plugin[soundinterface].volume,0);
+			set(soundinterface.mute,false);
+			tween(plugin[soundinterface].volume,0.4,0.5,null,wait);
+	</action>
+<!-- ****************   FIM DOS CONTROLES DO SOM  **************** -->
+
+
+<!-- ******************** ESTILOS DOS TEXTOS ***************** -->
+	<textstyle 	name="default" 
+				font="Arial" 
+				fontsize="11" 
+				border="false" 
+				background="false"
+				textcolor="0xFFFFFF" 
+				yoffset="-25" 
+				xoffset="0" 
+				textalign="center" 
+				edge="top"
+				effect="glow(0x000000,0.7,4,2);dropshadow(4,45,0x000000,4,1);" 
+				fadetime="0.1"
+	/>
+	<style 	name="box_style" 
+			url="%SWFPATH%/imgtemplate/textfield.swf" 
+			children="true" 
+			capture="true" 
+			width="400" height="300" 
+			autosize="left" 
+			wordwrap="true" 
+			alpha="0.85"
+			css="p{color:#111111; font-family:Helvetica; font-size:11; margin-left:20; margin-right:20; margin-bottom:20; margin-top:20; margintext-align:justify; display:block}"
+			backgroundcolor="0xFFFFFF" 
+			roundedge="3" 
+			shadow="0" 
+			borderwidth="0" 
+			glow="0"
+			glowcolor="0xFFFFFF" 
+			visible="true" 
+			onhover="showtext(Clique para fechar,small)"
+			onout=""
+	/>
+	<style 	name="infobar_style" 
+			url="%SWFPATH%/imgtemplate/textfield.swf" 
+			children="false" 
+			capture="false" 
+			width="300" height="20" 
+			wordwrap="true" 
+			alpha="1" 
+			background="false" 
+			css="p{color:#333333; font-family:Arial; font-size:11;}"
+			visible="true" 
+	/>
+	<style 	name="start_box_style" 
+			children="false" 
+			capture="false" 
+			width="300"
+			height="85"  
+			wordwrap="true" 
+			css="p{color:#E5E5E5; font-family:Verdana; font-size:12; text-align:center;}"
+			backgroundcolor="0x111111" 
+			roundedge="5" 
+			shadow="2" 
+			borderwidth="0" 
+			glow="3"
+			glowcolor="0xDDDDDD"  
+			onhover=""
+			onout=""
+	/>
+	<textstyle 	name="small" 
+				font="Arial" 
+				fontsize="10" 
+				border="false" 
+				background="false"
+				textcolor="0xFFFFFF" 
+				yoffset="30" 
+				xoffset="13" 
+				textalign="left" 
+				edge="leftbottom"
+				effect="glow(0x000000,0.7,2,1);dropshadow(2,45,0x000000,2,2);"
+	/>
+	<textstyle 	name="csmall" 
+				font="Arial" 
+				fontsize="10" 
+				border="false" 
+				background="false"
+				textcolor="0xFFFFFF" 
+				yoffset="-25" 
+				xoffset="0" 
+				textalign="center" 
+				edge="center"
+				effect="glow(0x000000,0.7,2,1);dropshadow(2,45,0x000000,2,2);"
+	/>
+<!-- ******************** FIM DOS ESTILOS DOS TEXTOS ***************** -->	
+
+
+
+<!-- ************* ACTIONS DO CURSOR ***************** -->
+	<action name="qtvrcursor">
+		set(control.mousetype, moveto); 
+		set(cursors.url, %SWFPATH%/imgtemplate/qtvr-cursors.png); 
+		set(cursors.type, 8way); 
+		set(cursors.move, 0|0|16|16);
+		set(cursors.drag, 16|0|16|16); 
+		set(cursors.arrow_u, 32|0|16|16); 
+		set(cursors.arrow_d, 48|0|16|16); 
+		set(cursors.arrow_l, 64|0|16|16); 
+		set(cursors.arrow_r, 80|0|16|16);
+		set(cursors.arrow_lu, 96|0|16|16); 
+		set(cursors.arrow_ru, 112|0|16|16); 
+		set(cursors.arrow_rd, 128|0|16|16); 
+		set(cursors.arrow_ld, 144|0|16|16); 
+	</action>
+
+
+
+<!-- ************* BOTAO DIREITO DO MOUSE - MENU DE CONTEXTO ***************** -->
+	<contextmenu>
+		<item caption="Criação: Cidade360.com.br" onclick="openurl(http://www.cidade360.com.br,_self);"/>
+		<item caption="Tela Cheia" separator="true" onclick="switch(fullscreen,true,false)"/>
+		<item caption="Visão Normal" onclick="action(rectview);"/>
+		<item caption="Visão Fisheye" onclick="action(fisheyeview);"/>
+		<item caption="Visão Arquitetura" onclick="action(architectural);"/>
+		<item caption="Visão Estereográfica" onclick="action(stereofisheyeview);"/>
+		<item caption="Visão Little Planet" onclick="action(littleplanet);"/>
+	</contextmenu>
+
+
+<!--  ACTIONS DE CONTROLE DO MENU DE CONTEXTO - BOTÃO DIREITO DO MOUSE -->
+	<action name="rectview">
+		tween(view.fovmax, 110.0, distance(179, 0.25), easeoutquad);
+		tween(view.fov, 90.0, distance(179, 0.25), easeoutquad);
+		set(view.maxpixelzoom, 1);
+		tween(view.architectural, 0.0, distance(1.0, 0.25), easeoutquad);
+		tween(view.fisheye, 0.0, distance(1.0, 0.25), easeoutquad, set(view.stereographic,false); );
+	</action>
+	<action name="fisheyeview"> 
+		tween(view.architectural, 0.0, distance(1.0, 0.25), easeoutquad);
+		tween(view.fisheye, 0.0 ,distance(1.0, 0.20), easeoutquad, set(view.stereographic,false);
+		set(view.fovmax,179); 
+		tween(view.fisheye, 0.35, distance(1.0, 1.25)); );
+	</action>
+	<action name="stereofisheyeview">
+		tween(view.architectural, 0.0, distance(1.0, 0.25), easeoutquad);
+		tween(view.fisheye, 0.0 ,distance(1.0, 0.10), easeoutquad, set(view.stereographic,true);
+		tween(view.fisheye, 1.0, distance(1.0, 1.25));
+		tween(view.fovmax, 150, distance(179, 1.25)); ); 
+	</action>
+	<action name="littleplanet"> 
+		tween(view.architectural, 0.0, distance(1.0, 0.25), easeoutquad);
+		tween(view.fisheye, 0.0 ,distance(1.0, 0.10), easeoutquad, set(view.stereographic,true);
+		tween(view.fisheye, 1.0, distance(1.0, 0.75)); 
+		tween(view.fov, 130, distance(179, 0.75), easeoutquad, set(view.fovmax,150);); 
+		tween(view.vlookat, 90, distance(179, 0.75), easeoutquad); ); 
+	</action>
+	<action name="architectural"> 
+		tween(view.fovmax, 110.0, distance(179, 0.25), easeoutquad);
+		tween(view.architectural, 1.0, distance(1.0, 0.25), easeoutquad); 
+		tween(view.fisheye, 0.0, distance(1.0, 0.25), easeoutquad, set(view.stereographic,false); ); 
+	</action>
+
+</krpano>

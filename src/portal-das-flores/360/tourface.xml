@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano version="1.0.8.14" logkey="false">
+    <action name="mainloadpano">
+		 closepanoobjects();
+		 closeglobalobjects();
+		 ifnot(stopSequence === undefined,interruptAnimation(););
+		 loadpano(%1,NULL,NULL,BLEND(1));</action>
+    <events onresize="thumbsResizeEventHandler();"/>
+    <!--************** KrPano plugins and datas ***************************************************-->
+    <plugin name="data" firstPanoHasBeenPlayed="false" introImageHasBeenPlayed="false" keep="true"/>
+    <!--************** Open the first pano ********************************************************-->
+    <include url="tour0.xml"/>
+    <autorotate enabled="false"/>
+    <action name="playsoundaction">
+		 set(plugin[data].soundOn, true);
+		 playpanosounds(forcesounds);
+	</action>
+    <action name="stopsoundaction">
+		 set(plugin[data].soundOn, false);
+		 stoppanosounds();
+	</action>
+    <!--************** Fonts **********************************************************************-->
+    <textstyle name="DEFAULT" bold="false" font="Verdana" fontsize="12" italic="false" textcolor="0xff000000"/>
+    <!--************** Introduction ***************************************************************-->
+    <action name="firstloadcompleteaction">
+	if(plugin[data].firstPanoHasBeenPlayed==false,
+	set(plugin[data].firstPanoHasBeenPlayed,true);
+	set(autorotate.enabled,true);
+	);
+	</action>
+
+
+    <!--************** Menu ***********************************************************************-->
+        <include devices="flash" url="%SWFPATH%/template.xml"/>
+		<include devices="flash" url="%SWFPATH%/googlemaps.xml"/>
+    <!--************** Thumbnail plugin ***********************************************************-->
+    <!-- action performed when mouse hovers over a thumbnail preview -->
+    <action name="magnify">
+		tween(plugin[%1].alpha, 1.5, 0.3, easeInOutCubic);
+		tween(plugin[%1].scale, 1.05, 0.3, easeInOutCubic);
+		 set(plugin[%1].effect, glow(0x913dff,1,2,10000));
+		 set(plugin[%1].jsborder,'2px solid #913dff');
+</action>
+    <!-- action performed when mouse goes away from a thumbnail preview -->
+    <action name="lie">
+		tween(plugin[%1].alpha, 0.8, 0.3, easeInOutCubic);
+		tween(plugin[%1].scale, 1, 0.3, easeInOutCubic);
+		 set(plugin[%1].effect, glow(0xffffff,1,2,10000));
+		 set(plugin[%1].jsborder,'2px solid #ffffff');
+</action>
+    <!-- open the thumbnail -->
+    <action name="slide_action_in">
+		set(plugin[slide].onclick,slide_action_out);
+		set(plugin[strap].onclick,slide_action_out);
+		set(plugin[strapArrow].rotate,180);
+		tween(plugin[thumbArray].y,7%,1,easeOutQuint);
+		tween(plugin[thumbMovePrev].y,3.5%,1,easeOutQuint);
+		tween(plugin[thumbMoveNext].y,3.5%,1,easeOutQuint);
+		thumbsResizeEventHandler();
+</action>
+    <!-- close the thumbnail -->
+    <action name="slide_action_out">
+		set(plugin[slide].onclick,slide_action_in);
+		set(plugin[strap].onclick,slide_action_in);
+		set(plugin[strapArrow].rotate,0);
+		tween(plugin[thumbArray].y,0,1,easeOutQuint);
+		tween(plugin[thumbMovePrev].y,0,1,easeOutQuint);
+		tween(plugin[thumbMoveNext].y,0,1,easeOutQuint);
+		set(plugin[thumbMovePrev].visible,false);
+		set(plugin[thumbMoveNext].visible,false);
+</action>
+    <action name="moveThumbsPrev">
+	plugin[thumbArray].updatepos();
+	copy(truethumbswidth, plugin[thumbArray].pixelwidth);
+	if (area.pixelwidth GT truethumbswidth,
+		set(plugin[thumbBgLayout].x, 0);,
+		set(leftborder, get(area.pixelwidth));
+		sub(leftborder, truethumbswidth);
+		div(leftborder, 2);
+		mul(leftborder, -1);
+		if (plugin[thumbBgLayout].x LT leftborder, inc(plugin[thumbBgLayout].x, %1););
+		if (plugin[thumbBgLayout].x GT leftborder, set(plugin[thumbBgLayout].x, get(leftborder)););
+	);
+	</action>
+    <action name="moveThumbsNext">
+	plugin[thumbArray].updatepos();
+	copy(truethumbswidth, plugin[thumbArray].pixelwidth);
+	if (area.pixelwidth GT truethumbswidth,
+		set(plugin[thumbBgLayout].x, 0);,
+		set(rightborder, get(area.pixelwidth));
+		sub(rightborder, truethumbswidth);
+		div(rightborder, 2);
+		if (plugin[thumbBgLayout].x GT rightborder, dec(plugin[thumbBgLayout].x, %1););
+		if (plugin[thumbBgLayout].x LT rightborder, set(plugin[thumbBgLayout].x, get(rightborder)););
+	);
+	</action>
+    <action name="thumbsResizeEventHandler">
+	plugin[thumbArray].updatepos();
+	copy(truethumbswidth, plugin[thumbArray].pixelwidth);
+	if (area.pixelwidth GT truethumbswidth,
+		set(plugin[thumbBgLayout].x, 0);displayThumbsScrolls(false);,
+		if (plugin[slide].onclick == slide_action_out, displayThumbsScrolls(true););
+	);
+	</action>
+    <action name="displayThumbsScrolls">
+	set(plugin[thumbMovePrev].visible, %1);
+	set(plugin[thumbMovePrev].enabled, %1);
+	set(plugin[thumbMoveNext].visible, %1);
+	set(plugin[thumbMoveNext].enabled, %1);
+	</action>
+    <action name="adjusthtml5thumbsplugins">
+	if (ishtml5 == true,
+	set(plugin[thumbMovePrev].width, 5%);
+	set(plugin[thumbMoveNext].width, 5%);
+	);
+	</action>
+    <plugin name="thumbArray" keep="true" zorder="1" url="%SWFPATH%/tourdata/graphics/transparent.png" handcursor="false" capture="false" children="true" alpha="0.9" blendmode="normal" smoothing="true" x="0" y="7%" scale="1" align="top" edge="bottom" width="prop" height="7%"/>
+    <plugin name="thumbBgLayout" keep="true" zorder="1" url="%SWFPATH%/tourdata/graphics/transparent.png" handcursor="false" capture="false" x="0" y="0" align="center" edge="center" width="prop" height="100%" parent="thumbArray"/>
+    <plugin name="thumbMovePrev" keep="true" zorder="3" capture="true" url="%SWFPATH%/tourdata/graphics/thumb_scroll.png" alpha="0.8" onover="set(alpha, 1);" onout="set(alpha,0.8);set(scrollspeed,10);" scrollspeed="10" onhover="moveThumbsPrev(get(scrollspeed));if(scrollspeed LT 70, inc(scrollspeed););" onclick="moveThumbsPrev(50);" x="10" y="3.5%" align="topleft" edge="left"/>
+    <plugin name="thumbMoveNext" keep="true" zorder="3" capture="true" url="%SWFPATH%/tourdata/graphics/thumb_scroll.png" alpha="0.8" onover="set(alpha, 1);" onout="set(alpha,0.8);set(scrollspeed,10);" scrollspeed="10" onhover="moveThumbsNext(get(scrollspeed));if(scrollspeed LT 70, inc(scrollspeed););" onclick="moveThumbsNext(50);" x="10" y="3.5%" align="topright" edge="right"/>
+    <plugin name="thumbMovePrevArrow" parent="thumbMovePrev" keep="true" zorder="3" capture="false" url="%SWFPATH%/tourdata/graphics/arrow.png" x="0" y="0" align="center" edge="center" rotate="180"/>
+    <plugin name="thumbMoveNextArrow" parent="thumbMoveNext" keep="true" zorder="3" capture="false" url="%SWFPATH%/tourdata/graphics/arrow.png" x="0" y="0" align="center" edge="center"/>
+    <plugin name="slide" parent="thumbArray" keep="true" zorder="0" url="%SWFPATH%/tourdata/graphics/slide.png" handcursor="false" capture="false" children="true" alpha="0.9" blendmode="normal" smoothing="true" x="0" y="0" align="bottom" edge="bottom" width="4000" height="100%" onclick="slide_action_out"/>
+    <plugin name="strap" keep="true" zorder="0" url="%SWFPATH%/tourdata/graphics/strap.png" parent="thumbArray" alpha="0.9" align="bottom" edge="left" rotate="90" handcursor="true" onclick="slide_action_out"/>
+    <plugin name="strapArrow" keep="true" parent="strap" zorder="0" url="%SWFPATH%/tourdata/graphics/arrow.png" align="center" edge="center" capture="false" enabled="false" rotate="180"/>
+    <!-- thumbs pictures -->
+    <plugin name="thumb_tour0" keep="true" zorder="2" parent="thumbBgLayout" url="%SWFPATH%/tourdata/graphics/tour0_thumbnail.jpg" width="10%" height="prop" align="topleft" edge="center" x="6%" y="50%" alpha="0.8" onclick="mainloadpano(tour0.xml);" onover="magnify('thumb_tour0'); " effect="glow(0xffffff,1,2,10000));" jsborder="'2px solid #ffffff');" onhover="showtext('Sala de Estar/Jantar');" onout="lie('thumb_tour0');"/>
+    <plugin name="thumb_tour1" keep="true" zorder="2" parent="thumbBgLayout" url="%SWFPATH%/tourdata/graphics/tour1_thumbnail.jpg" width="10%" height="prop" align="topleft" edge="center" x="17%" y="50%" alpha="0.8" onclick="mainloadpano(tour1.xml);" onover="magnify('thumb_tour1'); " effect="glow(0xffffff,1,2,10000));" jsborder="'2px solid #ffffff');" onhover="showtext('Entrada do Apto');" onout="lie('thumb_tour1');"/>
+    <plugin name="thumb_tour2" keep="true" zorder="2" parent="thumbBgLayout" url="%SWFPATH%/tourdata/graphics/tour2_thumbnail.jpg" width="10%" height="prop" align="topleft" edge="center" x="28%" y="50%" alpha="0.8" onclick="mainloadpano(tour2.xml);" onover="magnify('thumb_tour2'); " effect="glow(0xffffff,1,2,10000));" jsborder="'2px solid #ffffff');" onhover="showtext('Cozinha');" onout="lie('thumb_tour2');"/>
+    <plugin name="thumb_tour3" keep="true" zorder="2" parent="thumbBgLayout" url="%SWFPATH%/tourdata/graphics/tour3_thumbnail.jpg" width="10%" height="prop" align="topleft" edge="center" x="39%" y="50%" alpha="0.8" onclick="mainloadpano(tour3.xml);" onover="magnify('thumb_tour3'); " effect="glow(0xffffff,1,2,10000));" jsborder="'2px solid #ffffff');" onhover="showtext('Área de Serviço');" onout="lie('thumb_tour3');"/>
+    <plugin name="thumb_tour4" keep="true" zorder="2" parent="thumbBgLayout" url="%SWFPATH%/tourdata/graphics/tour4_thumbnail.jpg" width="10%" height="prop" align="topleft" edge="center" x="50%" y="50%" alpha="0.8" onclick="mainloadpano(tour4.xml);" onover="magnify('thumb_tour4'); " effect="glow(0xffffff,1,2,10000));" jsborder="'2px solid #ffffff');" onhover="showtext('Sacada');" onout="lie('thumb_tour4');"/>
+    <plugin name="thumb_tour5" keep="true" zorder="2" parent="thumbBgLayout" url="%SWFPATH%/tourdata/graphics/tour5_thumbnail.jpg" width="10%" height="prop" align="topleft" edge="center" x="61%" y="50%" alpha="0.8" onclick="mainloadpano(tour5.xml);" onover="magnify('thumb_tour5'); " effect="glow(0xffffff,1,2,10000));" jsborder="'2px solid #ffffff');" onhover="showtext('Banheiro Social');" onout="lie('thumb_tour5');"/>
+    <plugin name="thumb_tour6" keep="true" zorder="2" parent="thumbBgLayout" url="%SWFPATH%/tourdata/graphics/tour6_thumbnail.jpg" width="10%" height="prop" align="topleft" edge="center" x="72%" y="50%" alpha="0.8" onclick="mainloadpano(tour6.xml);" onover="magnify('thumb_tour6'); " effect="glow(0xffffff,1,2,10000));" jsborder="'2px solid #ffffff');" onhover="showtext('Quarto Solteiro');" onout="lie('thumb_tour6');"/>
+    <plugin name="thumb_tour7" keep="true" zorder="2" parent="thumbBgLayout" url="%SWFPATH%/tourdata/graphics/tour7_thumbnail.jpg" width="10%" height="prop" align="topleft" edge="center" x="83%" y="50%" alpha="0.8" onclick="mainloadpano(tour7.xml);" onover="magnify('thumb_tour7'); " effect="glow(0xffffff,1,2,10000));" jsborder="'2px solid #ffffff');" onhover="showtext('Quarto Suíte');" onout="lie('thumb_tour7');"/>
+    <plugin name="thumb_tour8" keep="true" zorder="2" parent="thumbBgLayout" url="%SWFPATH%/tourdata/graphics/tour8_thumbnail.jpg" width="10%" height="prop" align="topleft" edge="center" x="94%" y="50%" alpha="0.8" onclick="mainloadpano(tour8.xml);" onover="magnify('thumb_tour8'); " effect="glow(0xffffff,1,2,10000));" jsborder="'2px solid #ffffff');" onhover="showtext('Banheiro da Suíte');" onout="lie('thumb_tour8');" onloaded="thumbsResizeEventHandler();adjusthtml5thumbsplugins();"/>
+	
+	<!-- FULLFACE -->
+	<action name="full_on">
+			set(fullscreen,true); 
+	</action>
+	<action name="full_off">
+			set(fullscreen,false); 
+	</action>
+<!-- FIM FULLFACE -->
+
+	
+    <!--************** Plugin map *****************************************************************-->
+    <plugin name="map" url="%SWFPATH%/tourdata/map/map.png" keep="true" align="leftbottom" x="10" y="35" width="40" height="29" handcursor="false" alpha="0.9" onloaded="hidemapspot();" onclick="openmap();full_on()"/>
+    <plugin keep="true" visible="false" name="mapspot0" onclick="mainloadpano(tour0.xml);" url="%SWFPATH%/tourdata/graphics/spots/spot0.png" blingCounter="0" onhover="showtext('Sala de Estar/Jantar');" align="lefttop" edge="center" parent="map" x="35.5696%" y="18.1185%"/>
+    <plugin keep="true" visible="false" name="mapspot1" onclick="mainloadpano(tour1.xml);" url="%SWFPATH%/tourdata/graphics/spots/spot0.png" blingCounter="0" onhover="showtext('Entrada do Apto');" align="lefttop" edge="center" parent="map" x="82.0253%" y="7.66551%"/>
+    <plugin keep="true" visible="false" name="mapspot2" onclick="mainloadpano(tour2.xml);" url="%SWFPATH%/tourdata/graphics/spots/spot0.png" blingCounter="0" onhover="showtext('Cozinha');" align="lefttop" edge="center" parent="map" x="86.0759%" y="29.2683%"/>
+    <plugin keep="true" visible="false" name="mapspot3" onclick="mainloadpano(tour3.xml);" url="%SWFPATH%/tourdata/graphics/spots/spot0.png" blingCounter="0" onhover="showtext('Área de Serviço');" align="lefttop" edge="center" parent="map" x="86.3291%" y="53.8328%"/>
+    <plugin keep="true" visible="false" name="mapspot4" onclick="mainloadpano(tour4.xml);" url="%SWFPATH%/tourdata/graphics/spots/spot0.png" blingCounter="0" onhover="showtext('Sacada');" align="lefttop" edge="center" parent="map" x="19.3671%" y="21.4286%"/>
+    <plugin keep="true" visible="false" name="mapspot5" onclick="mainloadpano(tour5.xml);" url="%SWFPATH%/tourdata/graphics/spots/spot0.png" blingCounter="0" onhover="showtext('Banheiro Social');" align="lefttop" edge="center" parent="map" x="51.519%" y="81.3589%"/>
+    <plugin keep="true" visible="false" name="mapspot6" onclick="mainloadpano(tour6.xml);" url="%SWFPATH%/tourdata/graphics/spots/spot0.png" blingCounter="0" onhover="showtext('Quarto Solteiro');" align="lefttop" edge="center" parent="map" x="69.4937%" y="82.7526%"/>
+    <plugin keep="true" visible="false" name="mapspot7" onclick="mainloadpano(tour7.xml);" url="%SWFPATH%/tourdata/graphics/spots/spot0.png" blingCounter="0" onhover="showtext('Quarto Suíte');" align="lefttop" edge="center" parent="map" x="14.4304%" y="89.547%"/>
+    <plugin keep="true" visible="false" name="mapspot8" onclick="mainloadpano(tour8.xml);" url="%SWFPATH%/tourdata/graphics/spots/spot0.png" blingCounter="0" onhover="showtext('Banheiro da Suíte');" align="lefttop" edge="center" parent="map" x="32.0253%" y="81.7073%"/>
+    <plugin name="mapradar" parent="map" edge="center" align="lefttop" keep="true" url="%SWFPATH%/tourdata/map/radar.swf" alturl="%SWFPATH%/tourdata/map/radar.js" visible="true" width="70" height="70" linecolor="0xffffff" linealpha="0.494118" linewidth="2" fillcolor="0xffffff" fillalpha="0.494118"/>
+    <action name="showmapspot">
+	set(plugin[mapspot0].alpha,0);
+	set(plugin[mapspot0].visible,true);
+	tween(plugin[mapspot0].alpha,1);
+	set(plugin[mapspot1].alpha,0);
+	set(plugin[mapspot1].visible,true);
+	tween(plugin[mapspot1].alpha,1);
+	set(plugin[mapspot2].alpha,0);
+	set(plugin[mapspot2].visible,true);
+	tween(plugin[mapspot2].alpha,1);
+	set(plugin[mapspot3].alpha,0);
+	set(plugin[mapspot3].visible,true);
+	tween(plugin[mapspot3].alpha,1);
+	set(plugin[mapspot4].alpha,0);
+	set(plugin[mapspot4].visible,true);
+	tween(plugin[mapspot4].alpha,1);
+	set(plugin[mapspot5].alpha,0);
+	set(plugin[mapspot5].visible,true);
+	tween(plugin[mapspot5].alpha,1);
+	set(plugin[mapspot6].alpha,0);
+	set(plugin[mapspot6].visible,true);
+	tween(plugin[mapspot6].alpha,1);
+	set(plugin[mapspot7].alpha,0);
+	set(plugin[mapspot7].visible,true);
+	tween(plugin[mapspot7].alpha,1);
+	set(plugin[mapspot8].alpha,0);
+	set(plugin[mapspot8].visible,true);
+	tween(plugin[mapspot8].alpha,1);
+    </action>
+    <action name="hidemapspot">
+	set(plugin[mapspot0].visible,false);
+	set(plugin[mapspot1].visible,false);
+	set(plugin[mapspot2].visible,false);
+	set(plugin[mapspot3].visible,false);
+	set(plugin[mapspot4].visible,false);
+	set(plugin[mapspot5].visible,false);
+	set(plugin[mapspot6].visible,false);
+	set(plugin[mapspot7].visible,false);
+	set(plugin[mapspot8].visible,false);
+    </action>
+    <!-- close the map -->
+    <action name="closemap">
+	set(plugin[mapradar].visible,false);
+	hidemapspot();
+	set(plugin[map].onclick,openmap);
+	tween(plugin[map].width,40);
+	tween(plugin[map].height,29);
+	full_off();
+    </action>
+    <!-- open the map -->
+    <action name="openmap">
+	if(plugin[mapradar].shouldbevisible == true, set(plugin[mapradar].visible,true););
+	set(plugin[map].onclick,closemap);
+	tween(plugin[map].height, 300, 0.5, easeoutquad);
+	tween(plugin[map].width, 413, 0.5, easeoutquad, showmapspot(););
+	set(plugin[map].align, leftbottom);
+	set(plugin[map].x, 10);
+	set(plugin[map].y, 35);
+	full_on();
+    </action>
+    <!-- Unselect all map spots except the one passed as argument -->
+    <!-- Unselect all map spots if no argument provided -->
+    <action name="unselectmapspotsbutpassed">
+	set(plugin[mapradar].visible,false);
+	set(plugin[mapradar].shouldbevisible,false);
+	if (%1 != mapspot0,
+		if(plugin[mapspot0].animated,
+			set(plugin[mapspot0].frame,0);
+			set(plugin[mapspot0].ypos,0);
+			txtadd(plugin[mapspot0].crop,'0|0|',get(plugin[mapspot0].framewidth),'|',get(plugin[mapspot0].frameheight));
+			set(plugin[mapspot0].animationCounter, 0)
+		,
+			set(plugin[mapspot0].blingCounter,0)
+		)
+	);
+	resetmapspot(mapspot0);
+	if (%1 != mapspot1,
+		if(plugin[mapspot1].animated,
+			set(plugin[mapspot1].frame,0);
+			set(plugin[mapspot1].ypos,0);
+			txtadd(plugin[mapspot1].crop,'0|0|',get(plugin[mapspot1].framewidth),'|',get(plugin[mapspot1].frameheight));
+			set(plugin[mapspot1].animationCounter, 0)
+		,
+			set(plugin[mapspot1].blingCounter,0)
+		)
+	);
+	resetmapspot(mapspot1);
+	if (%1 != mapspot2,
+		if(plugin[mapspot2].animated,
+			set(plugin[mapspot2].frame,0);
+			set(plugin[mapspot2].ypos,0);
+			txtadd(plugin[mapspot2].crop,'0|0|',get(plugin[mapspot2].framewidth),'|',get(plugin[mapspot2].frameheight));
+			set(plugin[mapspot2].animationCounter, 0)
+		,
+			set(plugin[mapspot2].blingCounter,0)
+		)
+	);
+	resetmapspot(mapspot2);
+	if (%1 != mapspot3,
+		if(plugin[mapspot3].animated,
+			set(plugin[mapspot3].frame,0);
+			set(plugin[mapspot3].ypos,0);
+			txtadd(plugin[mapspot3].crop,'0|0|',get(plugin[mapspot3].framewidth),'|',get(plugin[mapspot3].frameheight));
+			set(plugin[mapspot3].animationCounter, 0)
+		,
+			set(plugin[mapspot3].blingCounter,0)
+		)
+	);
+	resetmapspot(mapspot3);
+	if (%1 != mapspot4,
+		if(plugin[mapspot4].animated,
+			set(plugin[mapspot4].frame,0);
+			set(plugin[mapspot4].ypos,0);
+			txtadd(plugin[mapspot4].crop,'0|0|',get(plugin[mapspot4].framewidth),'|',get(plugin[mapspot4].frameheight));
+			set(plugin[mapspot4].animationCounter, 0)
+		,
+			set(plugin[mapspot4].blingCounter,0)
+		)
+	);
+	resetmapspot(mapspot4);
+	if (%1 != mapspot5,
+		if(plugin[mapspot5].animated,
+			set(plugin[mapspot5].frame,0);
+			set(plugin[mapspot5].ypos,0);
+			txtadd(plugin[mapspot5].crop,'0|0|',get(plugin[mapspot5].framewidth),'|',get(plugin[mapspot5].frameheight));
+			set(plugin[mapspot5].animationCounter, 0)
+		,
+			set(plugin[mapspot5].blingCounter,0)
+		)
+	);
+	resetmapspot(mapspot5);
+	if (%1 != mapspot6,
+		if(plugin[mapspot6].animated,
+			set(plugin[mapspot6].frame,0);
+			set(plugin[mapspot6].ypos,0);
+			txtadd(plugin[mapspot6].crop,'0|0|',get(plugin[mapspot6].framewidth),'|',get(plugin[mapspot6].frameheight));
+			set(plugin[mapspot6].animationCounter, 0)
+		,
+			set(plugin[mapspot6].blingCounter,0)
+		)
+	);
+	resetmapspot(mapspot6);
+	if (%1 != mapspot7,
+		if(plugin[mapspot7].animated,
+			set(plugin[mapspot7].frame,0);
+			set(plugin[mapspot7].ypos,0);
+			txtadd(plugin[mapspot7].crop,'0|0|',get(plugin[mapspot7].framewidth),'|',get(plugin[mapspot7].frameheight));
+			set(plugin[mapspot7].animationCounter, 0)
+		,
+			set(plugin[mapspot7].blingCounter,0)
+		)
+	);
+	resetmapspot(mapspot7);
+	if (%1 != mapspot8,
+		if(plugin[mapspot8].animated,
+			set(plugin[mapspot8].frame,0);
+			set(plugin[mapspot8].ypos,0);
+			txtadd(plugin[mapspot8].crop,'0|0|',get(plugin[mapspot8].framewidth),'|',get(plugin[mapspot8].frameheight));
+			set(plugin[mapspot8].animationCounter, 0)
+		,
+			set(plugin[mapspot8].blingCounter,0)
+		)
+	);
+	resetmapspot(mapspot8);
+    </action>
+    <!-- Select a specific map spot -->
+    <action name="selectmapspot">
+	unselectmapspotsbutpassed(%1);
+	if(plugin[%1].animated,
+		inc(plugin[%1].animationCounter, 1);
+		if(plugin[%1].animationCounter == 1,
+			animatemapspot(%1, 0.1);
+		);
+	,
+		inc(plugin[%1].blingCounter,1);
+		if(plugin[%1].blingCounter == 1,
+			blingmapspot(%1);
+		);
+	);
+	copy(plugin[mapradar].x      , plugin[%1].x);
+	copy(plugin[mapradar].y      , plugin[%1].y);
+	set( plugin[mapradar].heading, %2          );
+	set(plugin[mapradar].shouldbevisible,true);
+	if(plugin[map].onclick == closemap, set(plugin[mapradar].visible,true););
+    </action>
+    <!-- make map hotspots flash when selected (recursive action) -->
+    <action name="blingmapspot">
+	tween(plugin[%1].alpha, 0, 0.8, quadratic);
+	tween(plugin[%1].scale, 1.5, 0.8, quadratic);
+	tween(, , 0.8, , resetmapspot(%1);
+	if(plugin[%1].blingCounter &gt; 0, blingmapspot(%1);););
+    </action>
+    <action name="resetmapspot">
+	set(plugin[%1].scale,1);
+	set(plugin[%1].alpha,1);
+    </action>
+    <action name="closeglobalobjects"/>
+    <action name="interruptAnimation">
+        <!-- Raise sequence stopper and wait sequence time to break the delayed calls -->
+	ifnot (stopSequence === undefined,
+		set(stopSequence,true);
+		wait(0);
+	);
+</action>
+</krpano>

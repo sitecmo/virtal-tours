@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano>
+
+<!-- ************************ -->
+<!--         Messages         -->
+<!-- ************************ -->
+
+  <data name="en_project_title"><![CDATA[CMO - LAGO AREIÃO]]></data>
+  <data name="en_project_author_name"><![CDATA[Cidade360 - Comunicação em 360º]]></data>
+  <data name="en_project_author_url"><![CDATA[http://www.cidade360.com.br]]></data>
+
+
+  <data name="en_panogroup17973_title"><![CDATA[Aptos Final 4]]></data>
+
+  <data name="en_pano39641_title"><![CDATA[Entrada - Aptos Final 4]]></data>
+  <data name="en_spotpoint39644_tooltip"><![CDATA[Gesso corrido na laje]]></data>
+  <data name="en_spotpoint39656_tooltip"><![CDATA[Ponto de luminária - Clique e leia instruções]]></data>
+  <data name="en_spotpoint42566_tooltip"><![CDATA[Circulação dos Quartos - Aptos Final 4]]></data>
+  <data name="en_spotpoint45686_tooltip"><![CDATA[Ponto de luminária - Clique e leia instruções]]></data>
+  <data name="en_spotpoint45696_tooltip"><![CDATA[Lavabo - Aptos Final 4]]></data>
+  <data name="en_spotpoint47137_tooltip"><![CDATA[Sala de TV - Aptos Final 4]]></data>
+  <data name="en_spotpolygon48265_tooltip"><![CDATA[Rede frigorígena - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48266_tooltip"><![CDATA[Água fria - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48267_tooltip"><![CDATA[Viga - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48268_tooltip"><![CDATA[Pilar - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48850_tooltip"><![CDATA[Gás - Clique e leia instruções]]></data>
+  <data name="en_pano48847_title"><![CDATA[Lavabo - Aptos Final 4]]></data>
+  <data name="en_spotpolygon48851_tooltip"><![CDATA[Pilar - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48852_tooltip"><![CDATA[Água fria - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48853_tooltip"><![CDATA[Viga - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48854_tooltip"><![CDATA[Água fria - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48855_tooltip"><![CDATA[Água fria - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48856_tooltip"><![CDATA[Esgoto - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48857_tooltip"><![CDATA[Enchimento hidro-sanitário - Clique e leia instruções]]></data>
+  <data name="en_spotpoint48858_tooltip"><![CDATA[Registro de Água Fria - Clique para abrir detalhe]]></data>
+  <data name="en_spotpoint48859_tooltip"><![CDATA[Clique para abrir detalhe]]></data>
+  <data name="en_spotpoint48860_tooltip"><![CDATA[Ponto de luminária - Clique e leia instruções]]></data>
+  <data name="en_spotpoint48861_tooltip"><![CDATA[Entrada - Aptos Final 4]]></data>
+  <data name="en_spotpoint49385_tooltip"><![CDATA[Clique para abrir detalhe]]></data>
+  <data name="en_pano21185_title"><![CDATA[Sala de TV - Aptos Final 4]]></data>
+  <data name="en_spotpoint21739_tooltip"><![CDATA[Cozinha - Aptos Final 4]]></data>
+  <data name="en_spotpoint21741_tooltip"><![CDATA[Entrada - Aptos Final 4]]></data>
+  <data name="en_spotpoint37187_tooltip"><![CDATA[Circulação dos Quartos - Aptos Final 4]]></data>
+  <data name="en_spotpoint38616_tooltip"><![CDATA[Gesso corrido na laje]]></data>
+  <data name="en_spotpoint45173_tooltip"><![CDATA[Ponto de luminária - Clique e leia instruções]]></data>
+  <data name="en_spotpoint45176_tooltip"><![CDATA[Ponto de luminária - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48269_tooltip"><![CDATA[Água fria - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48270_tooltip"><![CDATA[Viga - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48271_tooltip"><![CDATA[Pilar - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48272_tooltip"><![CDATA[Enchimento hidro-sanitário - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48273_tooltip"><![CDATA[Viga - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48274_tooltip"><![CDATA[Viga - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48275_tooltip"><![CDATA[Viga - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48277_tooltip"><![CDATA[Pilar - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48278_tooltip"><![CDATA[Gás - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48279_tooltip"><![CDATA[Esgoto - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48280_tooltip"><![CDATA[Rede frigorígena - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48281_tooltip"><![CDATA[Ar condicionado - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48282_tooltip"><![CDATA[Esgoto - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48283_tooltip"><![CDATA[Esgoto - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48284_tooltip"><![CDATA[Água fria - Clique e leia instruções]]></data>
+  <data name="en_spotpoint48285_tooltip"><![CDATA[Ponto de luminária - Clique e leia instruções]]></data>
+  <data name="en_spotpoint48286_tooltip"><![CDATA[Varanda - Aptos Final 4]]></data>
+  <data name="en_spotpoint49383_tooltip"><![CDATA[Dreno de Ar Condicionado]]></data>
+  <data name="en_spotpoint49386_tooltip"><![CDATA[Clique para abrir detalhe]]></data>
+  <data name="en_spotpoint49387_tooltip"><![CDATA[Clique para abrir detalhe]]></data>
+  <data name="en_pano42532_title"><![CDATA[Varanda - Aptos Final 4]]></data>
+  <data name="en_spotpoint42534_tooltip"><![CDATA[Gesso corrido na laje]]></data>
+  <data name="en_spotpoint48818_tooltip"><![CDATA[Ponto de luminária - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48820_tooltip"><![CDATA[Viga - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48821_tooltip"><![CDATA[Viga - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48822_tooltip"><![CDATA[Esgoto - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48823_tooltip"><![CDATA[Teto com forro de gesso - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48824_tooltip"><![CDATA[Enchimento hidro-sanitário - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48825_tooltip"><![CDATA[Pilar - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48826_tooltip"><![CDATA[Água fria - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48827_tooltip"><![CDATA[Viga - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48828_tooltip"><![CDATA[Pilar - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48829_tooltip"><![CDATA[Esgoto - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48830_tooltip"><![CDATA[Ar condicionado - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48831_tooltip"><![CDATA[Rede frigorígena - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48832_tooltip"><![CDATA[Viga - Clique e leia instruções]]></data>
+  <data name="en_spotpoint48833_tooltip"><![CDATA[Ponto de luminária - Clique e leia instruções]]></data>
+  <data name="en_spotpoint48834_tooltip"><![CDATA[Ponto de luminária - Clique e leia instruções]]></data>
+  <data name="en_spotpoint48835_tooltip"><![CDATA[Ponto de luminária - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48836_tooltip"><![CDATA[Gás - Clique e leia instruções]]></data>
+  <data name="en_spotpoint48837_tooltip"><![CDATA[Clique para abrir detalhe]]></data>
+  <data name="en_spotpoint48838_tooltip"><![CDATA[Clique para abrir detalhe]]></data>
+  <data name="en_spotpolygon48839_tooltip"><![CDATA[Água fria - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48840_tooltip"><![CDATA[Água fria - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48841_tooltip"><![CDATA[Esgoto - Clique e leia instruções]]></data>
+  <data name="en_spotpoint48844_tooltip"><![CDATA[Sala de TV - Aptos Final 4]]></data>
+  <data name="en_spotpoint48845_tooltip"><![CDATA[Cozinha - Aptos Final 4]]></data>
+  <data name="en_pano17964_title"><![CDATA[Cozinha - Aptos Final 4]]></data>
+  <data name="en_spotpoint18057_tooltip"><![CDATA[Gesso corrido na laje]]></data>
+  <data name="en_spotpoint18069_tooltip"><![CDATA[Gesso corrido na laje]]></data>
+  <data name="en_spotpoint29877_tooltip"><![CDATA[Clique para abrir detalhe]]></data>
+  <data name="en_spotpoint37188_tooltip"><![CDATA[Clique para abrir detalhe]]></data>
+  <data name="en_spotpoint40201_tooltip"><![CDATA[Ponto de luminária - Clique e leia instruções]]></data>
+  <data name="en_spotpoint42111_tooltip"><![CDATA[Entrada - Aptos Final 4]]></data>
+  <data name="en_spotpoint42114_tooltip"><![CDATA[Ponto de luminária - Clique e leia instruções]]></data>
+  <data name="en_spotpoint45717_tooltip"><![CDATA[Ponto de luminária - Clique e leia instruções]]></data>
+  <data name="en_spotpoint47140_tooltip"><![CDATA[Sala de TV - Aptos Final 4]]></data>
+  <data name="en_spotpoint47141_tooltip"><![CDATA[Varanda - Aptos Final 4]]></data>
+  <data name="en_spotpoint48862_tooltip"><![CDATA[Ponto de luminária - Clique e leia instruções]]></data>
+  <data name="en_spotpoint48865_tooltip"><![CDATA[Área de Serviço - Aptos Final 4]]></data>
+  <data name="en_spotpolygon48867_tooltip"><![CDATA[Viga - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48868_tooltip"><![CDATA[Viga - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48869_tooltip"><![CDATA[Enchimento hidro-sanitário - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48870_tooltip"><![CDATA[Esgoto - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48871_tooltip"><![CDATA[Esgoto - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48872_tooltip"><![CDATA[Teto com forro de gesso - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48873_tooltip"><![CDATA[Viga - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48874_tooltip"><![CDATA[Viga - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48875_tooltip"><![CDATA[Pilar - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48876_tooltip"><![CDATA[Pilar - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48877_tooltip"><![CDATA[Água fria - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48878_tooltip"><![CDATA[Esgoto - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48879_tooltip"><![CDATA[Enchimento hidro-sanitário - Clique e leia instruções]]></data>
+  <data name="en_spotpoint48880_tooltip"><![CDATA[Ponto de luminária - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48882_tooltip"><![CDATA[Gás - Clique e leia instruções]]></data>
+  <data name="en_pano17961_title"><![CDATA[Área de Serviço - Aptos Final 4]]></data>
+  <data name="en_spotpoint18088_tooltip"><![CDATA[Gesso corrido na laje]]></data>
+  <data name="en_spotpoint36018_tooltip"><![CDATA[Ponto de luminária - Clique e leia instruções]]></data>
+  <data name="en_spotpoint42116_tooltip"><![CDATA[Cozinha - Aptos Final 4]]></data>
+  <data name="en_spotpoint46215_tooltip"><![CDATA[Teto com forro de gesso]]></data>
+  <data name="en_spotpoint46235_tooltip"><![CDATA[Ponto de luminária - Clique e leia instruções]]></data>
+  <data name="en_spotpoint47134_tooltip"><![CDATA[Clique para abrir detalhe]]></data>
+  <data name="en_spotpolygon48884_tooltip"><![CDATA[Quadro elétrico - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48885_tooltip"><![CDATA[Enchimento hidro-sanitário - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48886_tooltip"><![CDATA[Água fria - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48887_tooltip"><![CDATA[Esgoto - Clique e leia instruções]]></data>
+  <data name="en_spotpoint48888_tooltip"><![CDATA[Registro de Água Fria - Clique para abrir detalhe]]></data>
+  <data name="en_spotpolygon48890_tooltip"><![CDATA[Gás - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48891_tooltip"><![CDATA[Enchimento hidro-sanitário - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48892_tooltip"><![CDATA[Viga - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48893_tooltip"><![CDATA[Viga - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48894_tooltip"><![CDATA[Viga - Clique e leia instruções]]></data>
+  <data name="en_pano41033_title"><![CDATA[Circulação dos Quartos - Aptos Final 4]]></data>
+  <data name="en_spotpoint41035_tooltip"><![CDATA[Ponto de luminária - Clique e leia instruções]]></data>
+  <data name="en_spotpoint41036_tooltip"><![CDATA[Gesso corrido na laje]]></data>
+  <data name="en_spotpoint41038_tooltip"><![CDATA[Suíte Casal - Aptos Final 4]]></data>
+  <data name="en_spotpoint41039_tooltip"><![CDATA[Entrada - Aptos Final 4]]></data>
+  <data name="en_spotpoint41041_tooltip"><![CDATA[Suíte 1 - Aptos Final 4]]></data>
+  <data name="en_spotpoint48895_tooltip"><![CDATA[Sala de TV - Aptos Final 4]]></data>
+  <data name="en_spotpoint48896_tooltip"><![CDATA[Suíte 2 - Aptos Final 4]]></data>
+  <data name="en_spotpolygon48897_tooltip"><![CDATA[Pilar - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48898_tooltip"><![CDATA[Viga - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48899_tooltip"><![CDATA[Viga - Clique e leia instruções]]></data>
+  <data name="en_spotpoint48900_tooltip"><![CDATA[Ponto de luminária - Clique e leia instruções]]></data>
+  <data name="en_spotpoint48901_tooltip"><![CDATA[Ponto de luminária - Clique e leia instruções]]></data>
+  <data name="en_spotpoint48902_tooltip"><![CDATA[Ponto de luminária - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48904_tooltip"><![CDATA[Viga - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48905_tooltip"><![CDATA[Pilar - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48906_tooltip"><![CDATA[Rede frigorígena - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon49388_tooltip"><![CDATA[Água fria - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon49389_tooltip"><![CDATA[Rede frigorígena - Clique e leia instruções]]></data>
+  <data name="en_spotpoint49390_tooltip"><![CDATA[Ponto de luminária - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon49391_tooltip"><![CDATA[Gás - Clique e leia instruções]]></data>
+  <data name="en_pano17965_title"><![CDATA[Suíte Casal - Aptos Final 4]]></data>
+  <data name="en_spotpoint18169_tooltip"><![CDATA[Ponto de luminária - Clique e leia instruções]]></data>
+  <data name="en_spotpoint20917_tooltip"><![CDATA[Circulação dos Quartos - Aptos Final 4]]></data>
+  <data name="en_spotpoint21731_tooltip"><![CDATA[Gesso corrido na laje]]></data>
+  <data name="en_spotpoint40256_tooltip"><![CDATA[Ponto de luminária - Clique e leia instruções]]></data>
+  <data name="en_spotpoint46642_tooltip"><![CDATA[Banho Suíte Casal - Aptos Final 4]]></data>
+  <data name="en_spotpolygon48907_tooltip"><![CDATA[Pilar - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48908_tooltip"><![CDATA[Viga - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48909_tooltip"><![CDATA[Rede frigorígena - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48910_tooltip"><![CDATA[Ar condicionado - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48911_tooltip"><![CDATA[Esgoto - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48912_tooltip"><![CDATA[Pilar - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48913_tooltip"><![CDATA[Pilar - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48914_tooltip"><![CDATA[Viga - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48916_tooltip"><![CDATA[Viga - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48917_tooltip"><![CDATA[Viga - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48918_tooltip"><![CDATA[Água fria - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon48919_tooltip"><![CDATA[Água fria - Clique e leia instruções]]></data>
+  <data name="en_spotpoint49384_tooltip"><![CDATA[Dreno de Ar Condicionado]]></data>
+  <data name="en_pano25492_title"><![CDATA[Banho Suíte Casal - Aptos Final 4]]></data>
+  <data name="en_spotpoint26523_tooltip"><![CDATA[Suíte Casal - Aptos Final 4]]></data>
+  <data name="en_spotpoint28460_tooltip"><![CDATA[Teto com forro de gesso]]></data>
+  <data name="en_spotpoint34867_tooltip"><![CDATA[Clique para abrir detalhe]]></data>
+  <data name="en_spotpoint35704_tooltip"><![CDATA[Chuveiro]]></data>
+  <data name="en_spotpoint40260_tooltip"><![CDATA[Registro de Água Fria - Clique para abrir detalhe]]></data>
+  <data name="en_spotpoint42381_tooltip"><![CDATA[Clique para abrir detalhe]]></data>
+  <data name="en_spotpoint46647_tooltip"><![CDATA[Ponto de luminária - Clique e leia instruções]]></data>
+  <data name="en_spotpoint46648_tooltip"><![CDATA[Ponto de luminária - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon49335_tooltip"><![CDATA[Enchimento hidro-sanitário - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon49336_tooltip"><![CDATA[Água fria - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon49337_tooltip"><![CDATA[Água fria - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon49338_tooltip"><![CDATA[Esgoto - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon49339_tooltip"><![CDATA[Viga - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon49340_tooltip"><![CDATA[Água fria - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon49341_tooltip"><![CDATA[Água fria - Clique e leia instruções]]></data>
+  <data name="en_pano23240_title"><![CDATA[Suíte 1 - Aptos Final 4]]></data>
+  <data name="en_spotpoint23252_tooltip"><![CDATA[Circulação dos Quartos - Aptos Final 4]]></data>
+  <data name="en_spotpoint23253_tooltip"><![CDATA[Gesso corrido na laje]]></data>
+  <data name="en_spotpoint34865_tooltip"><![CDATA[Ponto de luminária - Clique e leia instruções]]></data>
+  <data name="en_spotpoint40269_tooltip"><![CDATA[Banho Suíte 1 - Aptos Final 4]]></data>
+  <data name="en_spotpoint46610_tooltip"><![CDATA[Dreno de Ar Condicionado]]></data>
+  <data name="en_spotpolygon49342_tooltip"><![CDATA[Água fria - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon49343_tooltip"><![CDATA[Exaustão - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon49344_tooltip"><![CDATA[Rede frigorígena - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon49345_tooltip"><![CDATA[Ar condicionado - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon49346_tooltip"><![CDATA[Esgoto - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon49347_tooltip"><![CDATA[Pilar - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon49348_tooltip"><![CDATA[Viga - Clique e leia instruções]]></data>
+  <data name="en_spotpoint49349_tooltip"><![CDATA[Ponto de luminária - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon49350_tooltip"><![CDATA[Viga - Clique e leia instruções]]></data>
+  <data name="en_pano35977_title"><![CDATA[Banho Suíte 1 - Aptos Final 4]]></data>
+  <data name="en_spotpoint35979_tooltip"><![CDATA[Clique para abrir detalhe]]></data>
+  <data name="en_spotpoint35981_tooltip"><![CDATA[Suíte 1 - Aptos Final 4]]></data>
+  <data name="en_spotpoint35982_tooltip"><![CDATA[Teto com forro de gesso]]></data>
+  <data name="en_spotpoint37925_tooltip"><![CDATA[Ponto de luminária - Clique e leia instruções]]></data>
+  <data name="en_spotpoint40272_tooltip"><![CDATA[Clique para abrir detalhe]]></data>
+  <data name="en_spotpoint40277_tooltip"><![CDATA[Chuveiro]]></data>
+  <data name="en_spotpoint40280_tooltip"><![CDATA[Registro de Água Fria - Clique para abrir detalhe]]></data>
+  <data name="en_spotpoint49354_tooltip"><![CDATA[Ponto de luminária - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon49355_tooltip"><![CDATA[Pilar - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon49356_tooltip"><![CDATA[Água fria - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon49357_tooltip"><![CDATA[Esgoto - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon49358_tooltip"><![CDATA[Água fria - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon49359_tooltip"><![CDATA[Enchimento hidro-sanitário - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon49360_tooltip"><![CDATA[Viga - Clique e leia instruções]]></data>
+  <data name="en_pano38566_title"><![CDATA[Suíte 2 - Aptos Final 4]]></data>
+  <data name="en_spotpoint38567_tooltip"><![CDATA[Banho Suíte 2 - Aptos Final 4]]></data>
+  <data name="en_spotpoint38568_tooltip"><![CDATA[Gesso corrido na laje]]></data>
+  <data name="en_spotpoint38569_tooltip"><![CDATA[Ponto de luminária - Clique e leia instruções]]></data>
+  <data name="en_spotpoint40270_tooltip"><![CDATA[Circulação dos Quartos - Aptos Final 4]]></data>
+  <data name="en_spotpoint46622_tooltip"><![CDATA[Dreno de Ar Condicionado]]></data>
+  <data name="en_spotpolygon49362_tooltip"><![CDATA[Rede frigorígena - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon49363_tooltip"><![CDATA[Ar condicionado - Clique e leia instruções]]></data>
+  <data name="en_spotpoint49364_tooltip"><![CDATA[Dreno de Ar Condicionado]]></data>
+  <data name="en_spotpolygon49365_tooltip"><![CDATA[Esgoto - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon49366_tooltip"><![CDATA[Viga - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon49367_tooltip"><![CDATA[Pilar - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon49368_tooltip"><![CDATA[Viga - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon49369_tooltip"><![CDATA[Pilar - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon49370_tooltip"><![CDATA[Viga - Clique e leia instruções]]></data>
+  <data name="en_pano17968_title"><![CDATA[Banho Suíte 2 - Aptos Final 4]]></data>
+  <data name="en_spotpoint18014_tooltip"><![CDATA[Suíte 2 - Aptos Final 4]]></data>
+  <data name="en_spotpoint18187_tooltip"><![CDATA[Teto com forro de gesso]]></data>
+  <data name="en_spotpoint26562_tooltip"><![CDATA[Chuveiro]]></data>
+  <data name="en_spotpoint26567_tooltip"><![CDATA[Clique para abrir detalhe]]></data>
+  <data name="en_spotpoint37193_tooltip"><![CDATA[Ponto de luminária - Clique e leia instruções]]></data>
+  <data name="en_spotpoint40286_tooltip"><![CDATA[Registro de Água Fria - Clique para abrir detalhe]]></data>
+  <data name="en_spotpoint40287_tooltip"><![CDATA[Clique para abrir detalhe]]></data>
+  <data name="en_spotpoint49371_tooltip"><![CDATA[Ponto de luminária - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon49373_tooltip"><![CDATA[Enchimento hidro-sanitário - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon49374_tooltip"><![CDATA[Água fria - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon49375_tooltip"><![CDATA[Água fria - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon49376_tooltip"><![CDATA[Esgoto - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon49377_tooltip"><![CDATA[Água fria - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon49378_tooltip"><![CDATA[Pilar - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon49379_tooltip"><![CDATA[Viga - Clique e leia instruções]]></data>
+  <data name="en_spotpolygon49380_tooltip"><![CDATA[Viga - Clique e leia instruções]]></data>
+
+
+	<data name="en_spotmap49863_tooltip"><![CDATA[Clique e Veja:  Entrada - Aptos Final 4]]></data>
+	<data name="en_spotmap49864_tooltip"><![CDATA[Clique e Veja:  Lavabo - Aptos Final 4]]></data>
+	<data name="en_spotmap49865_tooltip"><![CDATA[Clique e Veja:  Sala de TV - Aptos Final 4]]></data>
+	<data name="en_spotmap49866_tooltip"><![CDATA[Clique e Veja:  Varanda - Aptos Final 4]]></data>
+	<data name="en_spotmap49867_tooltip"><![CDATA[Clique e Veja:  Cozinha - Aptos Final 4]]></data>
+	<data name="en_spotmap49868_tooltip"><![CDATA[Clique e Veja:  Área de Serviço - Aptos Final 4]]></data>
+	<data name="en_spotmap49869_tooltip"><![CDATA[Clique e Veja:  Circulação dos Quartos - Aptos Final 4]]></data>
+	<data name="en_spotmap49870_tooltip"><![CDATA[Clique e Veja:  Suíte Casal - Aptos Final 4]]></data>
+	<data name="en_spotmap49871_tooltip"><![CDATA[Clique e Veja:  Banho Suíte Casal - Aptos Final 4]]></data>
+	<data name="en_spotmap49872_tooltip"><![CDATA[Clique e Veja:  Suíte 1 - Aptos Final 4]]></data>
+	<data name="en_spotmap49873_tooltip"><![CDATA[Clique e Veja:  Banho Suíte 1 - Aptos Final 4]]></data>
+	<data name="en_spotmap49874_tooltip"><![CDATA[Clique e Veja:  Suíte 2 - Aptos Final 4]]></data>
+	<data name="en_spotmap49875_tooltip"><![CDATA[Clique e Veja:  Banho Suíte 2 - Aptos Final 4]]></data>
+
+
+	<data name="en_project_floor_title"><![CDATA[CMO - LAGO AREIÃO]]></data>
+	<data name="en_spotmap73_tooltip"><![CDATA[Clique e Veja:  Varanda - Aptos Final 4]]></data>
+	<data name="en_spotmap75_tooltip"><![CDATA[Clique e Veja:  Banho Suíte 1 - Aptos Final 4]]></data>
+	<data name="en_spotmap14472_tooltip"><![CDATA[Clique e Veja:  Cozinha - Aptos Final 4]]></data>
+	<data name="en_spotmap26572_tooltip"><![CDATA[Clique e Veja:  Suíte 1 - Aptos Final 4]]></data>
+	<data name="en_spotmap32600_tooltip"><![CDATA[Clique e Veja:  Suíte 2 - Aptos Final 4]]></data>
+	<data name="en_spotmap36017_tooltip"><![CDATA[Clique e Veja:  Suíte Casal - Aptos Final 4]]></data>
+	<data name="en_spotmap38604_tooltip"><![CDATA[Clique e Veja:  Banho Suíte 2 - Aptos Final 4]]></data>
+	<data name="en_spotmap40294_tooltip"><![CDATA[Clique e Veja:  Sala de TV - Aptos Final 4]]></data>
+	<data name="en_spotmap40296_tooltip"><![CDATA[Clique e Veja:  Banho Suíte Casal - Aptos Final 4]]></data>
+	<data name="en_spotmap40297_tooltip"><![CDATA[Clique e Veja:  Entrada - Aptos Final 4]]></data>
+	<data name="en_spotmap40298_tooltip"><![CDATA[Clique e Veja:  Circulação dos Quartos - Aptos Final 4]]></data>
+	<data name="en_spotmap42674_tooltip"><![CDATA[Varanda Extendida]]></data>
+	<data name="en_spotmap49382_tooltip"><![CDATA[Clique e Veja:  Lavabo - Aptos Final 4]]></data>
+
+
+  <data name="en_controlBar_dockedThumbnailszoomInTip"><![CDATA[Aproximar Zoom]]></data>
+  <data name="en_controlBar_dockedThumbnailszoomOutTip"><![CDATA[Afastar Zoom]]></data>
+  <data name="en_controlBar_dockedThumbnailsopenFsTip"><![CDATA[Visualizar em Tela Cheia]]></data>
+  <data name="en_controlBar_dockedThumbnailscloseFsTip"><![CDATA[Sair da Tela Cheia]]></data>
+  <data name="en_controlBar_dockedThumbnailsautorotateOnTip"><![CDATA[Iniciar Auto Rotação]]></data>
+  <data name="en_controlBar_dockedThumbnailsautorotateOffTip"><![CDATA[Parar Auto Rotação]]></data>
+  <data name="en_controlBar_dockedThumbnailsautotourOnTip"><![CDATA[Iniciar Tour Automático]]></data>
+  <data name="en_controlBar_dockedThumbnailsautotourOffTip"><![CDATA[PAra Tour Automático]]></data>
+  <data name="en_controlBar_dockedThumbnailssoundsOnTip"><![CDATA[Ligar Som]]></data>
+  <data name="en_controlBar_dockedThumbnailssoundsOffTip"><![CDATA[Desligar Som]]></data>
+  <data name="en_controlBar_dockedThumbnailsdisplayFloorplanTip"><![CDATA[Mostrar Planta Baixa]]></data>
+  <data name="en_controlBar_dockedThumbnailshideFloorplanTip"><![CDATA[Esconder Planta Baixa]]></data>
+  <data name="en_controlBar_dockedThumbnailsdisplayHelpTip"><![CDATA[Mostrar Ajuda]]></data>
+  <data name="en_controlBar_dockedThumbnailshideHelpTip"><![CDATA[Esconder Ajuda]]></data>
+  <data name="en_controlBar_dockedThumbnailsdisplayControlsTip"><![CDATA[Mostrar Menu Inferior]]></data>
+  <data name="en_controlBar_dockedThumbnailshideControlsTip"><![CDATA[Esconder Menu Inferior]]></data>
+  <data name="en_logowebsiteurl"><![CDATA[http://www.cmoconstrutora.com.br]]></data>
+  <data name="en_logotooltipText"><![CDATA[Abrir site]]></data>
+  <data name="en_logo1websiteurl"><![CDATA[http://www.cidade360.com.br]]></data>
+  <data name="en_logo1tooltipText"><![CDATA[Abrir site]]></data>
+  <data name="en_descriptiondescription_title"><![CDATA[]]></data>
+  <data name="en_descriptiondisplay_close_text"><![CDATA[Fechar]]></data>
+  <data name="en_togglebuttonfirsttooltip"><![CDATA[Mostrar/Ocultar Planta Baixa]]></data>
+  <data name="en_togglebuttonsecondtooltip"><![CDATA[Mostrar/Ocultar Planta Baixa]]></data>
+  <data name="en_galleryplay_text"><![CDATA[Correr / Pausar]]></data>
+  <data name="en_gallerynavprev_text"><![CDATA[Anterior]]></data>
+  <data name="en_gallerynavnext_text"><![CDATA[Seguinte]]></data>
+  <data name="en_galleryfullscreen_text"><![CDATA[Modo de ecrã inteiro]]></data>
+  <data name="en_galleryclose_text"><![CDATA[Fechar]]></data>
+  <data name="en_gallerypicture_title0"><![CDATA[]]></data>
+  <data name="en_gallerypicture_caption0"><![CDATA[]]></data>
+  <data name="en_gallery1play_text"><![CDATA[Correr / Pausar]]></data>
+  <data name="en_gallery1navprev_text"><![CDATA[Anterior]]></data>
+  <data name="en_gallery1navnext_text"><![CDATA[Seguinte]]></data>
+  <data name="en_gallery1fullscreen_text"><![CDATA[Modo de ecrã inteiro]]></data>
+  <data name="en_gallery1close_text"><![CDATA[Fechar]]></data>
+  <data name="en_gallerypicture_title0"><![CDATA[]]></data>
+  <data name="en_gallerypicture_caption0"><![CDATA[]]></data>
+  <data name="en_gallery1picture_title1"><![CDATA[]]></data>
+  <data name="en_gallery1picture_caption1"><![CDATA[]]></data>
+  <data name="en_gallery2play_text"><![CDATA[Correr / Pausar]]></data>
+  <data name="en_gallery2navprev_text"><![CDATA[Anterior]]></data>
+  <data name="en_gallery2navnext_text"><![CDATA[Seguinte]]></data>
+  <data name="en_gallery2fullscreen_text"><![CDATA[Modo de ecrã inteiro]]></data>
+  <data name="en_gallery2close_text"><![CDATA[Fechar]]></data>
+  <data name="en_gallerypicture_title0"><![CDATA[]]></data>
+  <data name="en_gallerypicture_caption0"><![CDATA[]]></data>
+  <data name="en_gallery1picture_title1"><![CDATA[]]></data>
+  <data name="en_gallery1picture_caption1"><![CDATA[]]></data>
+  <data name="en_gallery2picture_title2"><![CDATA[]]></data>
+  <data name="en_gallery2picture_caption2"><![CDATA[]]></data>
+  <data name="en_gallery2picture_title3"><![CDATA[]]></data>
+  <data name="en_gallery2picture_caption3"><![CDATA[]]></data>
+  <data name="en_HomeLogopanoid"><![CDATA[]]></data>
+
+
+  <data name="en_vr_setup_hmd0"><![CDATA[SELECIONAR O SEU HMD]]></data>
+  <data name="en_vr_setup_advanced"><![CDATA[CONFIGURAÇÕES AVANÇADAS]]></data>
+  <data name="en_vr_setup_title"><![CDATA[CONFIGURAÇÕES WEB VR]]></data>
+  <data name="en_vr_setup_dvn1"><![CDATA[Dispositivo:]]></data>
+  <data name="en_vr_setup_siz1"><![CDATA[Tamanho do ecrã:]]></data>
+  <data name="en_vr_setup_ipd1"><![CDATA[IPD:]]></data>
+  <data name="en_vr_setup_hmd1"><![CDATA[HMD:]]></data>
+  <data name="en_vr_setup_hmd3"><![CDATA[Personalizar]]></data>
+  <data name="en_vr_setup_cal"><![CDATA[Calibrar giroscópio]]></data>
+  <data name="en_vr_setup_sav"><![CDATA[SALVAR]]></data>
+  <data name="en_vr_setup_rst"><![CDATA[APAGAR]]></data>
+  <data name="en_vr_setup_simple"><![CDATA[SIMPLES]]></data>
+  <data name="en_vr_setup_cls"><![CDATA[FECHAR]]></data>
+  <data name="en_vr_setup_m31"><![CDATA[CONFIGURAÇÕES HMD]]></data>
+  <data name="en_vr_setup_fov1"><![CDATA[FOV:]]></data>
+  <data name="en_vr_setup_dst1"><![CDATA[Distorção:]]></data>
+  <data name="en_vr_setup_d2tx"><![CDATA[Distorção 2:]]></data>
+  <data name="en_vr_setup_vig1"><![CDATA[Recorte:]]></data>
+  <data name="en_vr_setup_cac1"><![CDATA[Aberração cromática:]]></data>
+  <data name="en_vr_setup_olp1"><![CDATA[Sobreposição:]]></data>
+  <data name="en_vr_setup_m35"><![CDATA[VOLTAR]]></data>
+  <data name="en_vr_setup_cb1"><![CDATA[GIROSCÓPIO]]></data>
+  <data name="en_vr_setup_cb2"><![CDATA[Coloque o seu dispositivo numa superfície plana e [br]estável, clique para CALIBRAR[br] para corrigir o movimento anormal do giroscópio.]]></data>
+  <data name="en_vr_setup_cb3"><![CDATA[CALIBRAR]]></data>
+  <data name="en_vr_setup_cb4"><![CDATA[APAGAR]]></data>
+  <data name="en_vr_setup_cb5"><![CDATA[VOLTAR]]></data>
+  <data name="en_vr_setup_cb6"><![CDATA[Calibrando]]></data>
+  <data name="en_vr_setup_cb7"><![CDATA[Calibração com sucesso]]></data>
+  <data name="en_vr_setup_cb8"><![CDATA[Calibração sem sucesso]]></data>
+  <data name="en_vr_setup_unavailable"><![CDATA[Modo VR[br]não está disponivel no seu dispositivo ]]></data>
+
+
+
+
+
+  <data name="en_spotpoint39644_description"><![CDATA[<div><font face="verdana, sans-serif" size="1"><b>FORRO:</b></font></div><div><font face="verdana, sans-serif" size="1">Gesso corrido na laje</font><span style="font-family: verdana, sans-serif; font-size: x-small;"><b>.</b></span></div>]]></data>
+
+
+
+
+  <data name="en_spotpoint18057_description"><![CDATA[<p dir="ltr" style="color: rgb(0, 0, 0); font-style: normal; font-variant: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-family: verdana, sans-serif; font-size: x-small; font-weight: bold; line-height: 1.295; margin-top: 0pt; margin-bottom: 0pt; text-align: justify;"><span style="vertical-align: baseline; white-space: pre-wrap;">PONTO DE LUMINÁRIA DE SOBREPOR</span></p><ul style="color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-family: verdana, sans-serif; font-size: x-small;"><li><span style="line-height: 1.295;">Só instalar lâmpadas compatíveis com a tensão do projeto que é 220volts;</span></li><li><span style="line-height: 1.295;">Na instalação das luminárias utilizar somente as pontas dos fios branco e azul claro (retorno e neutro) que são deixadas para este fim;</span></li><li><span style="line-height: 1.295;">Para a fixação de objetos no forro de gesso (ex.: luminárias) atentar-se para a carga de uso máxima de 3kg. Usar quantidade e tipo de bucha e parafusos conforme superfície e carga.</span></li></ul><p dir="ltr" style="color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-family: verdana, sans-serif; font-size: x-small; line-height: 1.295; margin-top: 0pt; margin-bottom: 0pt; text-align: justify;"><span style="line-height: 1.295; white-space: pre-wrap;"></span><font face="verdana, sans-serif" size="1" style="line-height: normal; text-align: start;"><span style="line-height: 12.95px; white-space: pre-wrap;"><br></span></font></p><p dir="ltr" style="color: rgb(0, 0, 0); font-style: normal; font-variant: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-family: verdana, sans-serif; font-size: x-small; font-weight: bold; line-height: 1.295; margin-top: 0pt; margin-bottom: 0pt; text-align: justify;"><span style="line-height: normal; text-align: start;"><span id="docs-internal-guid-92fe86fe-c70e-354e-175d-5a6e4ff5b1e1" style="font-weight: normal;"></span></span><span style="line-height: normal; text-align: start;"></span><span style="line-height: normal; text-align: start;"></span></p><p dir="ltr" style="color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-family: verdana, sans-serif; font-size: x-small; line-height: 1.295; margin-top: 0pt; margin-bottom: 0pt; text-align: justify;"><span style="vertical-align: baseline; white-space: pre-wrap;"><b>Manual de Uso, Operação e Manutenção. Itens:</b></span></p><p dir="ltr" style="color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-family: verdana, sans-serif; font-size: x-small; line-height: 1.295; margin-top: 0pt; margin-bottom: 0pt; text-align: justify;"><span style="vertical-align: baseline; white-space: pre-wrap;">"2.4 Colocação de acessórios em paredes, pisos e tetos".</span></p><p dir="ltr" style="color: rgb(0, 0, 0); font-style: normal; font-variant: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-family: verdana, sans-serif; font-size: x-small; font-weight: bold; line-height: 1.295; margin-top: 0pt; margin-bottom: 0pt; text-align: justify;"></p><p dir="ltr" style="color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-family: verdana, sans-serif; font-size: x-small; line-height: 1.295; margin-top: 0pt; margin-bottom: 0pt; text-align: justify;"></p><p dir="ltr" style="color: rgb(0, 0, 0); font-style: normal; font-variant: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-family: verdana, sans-serif; font-size: x-small; font-weight: bold; line-height: 1.295; margin-top: 0pt; margin-bottom: 0pt; text-align: justify;"></p><p dir="ltr" style="color: rgb(0, 0, 0); font-style: normal; font-variant: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-family: verdana, sans-serif; font-size: x-small; font-weight: bold; line-height: 1.295; margin-top: 0pt; margin-bottom: 0pt; text-align: justify;"></p><p dir="ltr" style="color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-family: verdana, sans-serif; font-size: x-small; line-height: 1.295; margin-top: 0pt; margin-bottom: 0pt; text-align: justify;"><span style="vertical-align: baseline; white-space: pre-wrap;">"4.4.6 Instalações elétricas".</span></p>]]></data>
+  <data name="en_spotpoint18069_description"><![CDATA[<div><font face="verdana, sans-serif" size="1"><b>FORRO:</b></font></div><div><font face="verdana, sans-serif" size="1">Gesso corrido na laje</font><span style="font-family: verdana, sans-serif; font-size: x-small;"><b>.</b></span></div>]]></data>
+
+  <data name="en_spotpoint18088_description"><![CDATA[<div><font face="verdana, sans-serif" size="1"><b>FORRO:</b></font></div><div><font face="verdana, sans-serif" size="1">Gesso corrido na laje</font><span style="font-family: verdana, sans-serif; font-size: x-small;"><b>.</b></span></div>]]></data>
+
+
+  <data name="en_spotpoint18169_description"><![CDATA[<p dir="ltr" style="color: rgb(0, 0, 0); font-style: normal; font-variant: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-family: verdana, sans-serif; font-size: x-small; font-weight: bold; line-height: 1.295; margin-top: 0pt; margin-bottom: 0pt; text-align: justify;"><span style="vertical-align: baseline; white-space: pre-wrap;">PONTO DE LUMINÁRIA DE SOBREPOR</span></p><ul style="color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-family: verdana, sans-serif; font-size: x-small;"><li><span style="line-height: 1.295;">Só instalar lâmpadas compatíveis com a tensão do projeto que é 220volts;</span></li><li><span style="line-height: 1.295;">Na instalação das luminárias utilizar somente as pontas dos fios branco e azul claro (retorno e neutro) que são deixadas para este fim;</span></li><li><span style="line-height: 1.295;">Para a fixação de objetos no forro de gesso (ex.: luminárias) atentar-se para a carga de uso máxima de 3kg. Usar quantidade e tipo de bucha e parafusos conforme superfície e carga.</span></li></ul><p dir="ltr" style="color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-family: verdana, sans-serif; font-size: x-small; line-height: 1.295; margin-top: 0pt; margin-bottom: 0pt; text-align: justify;"><span style="line-height: 1.295; white-space: pre-wrap;"></span><font face="verdana, sans-serif" size="1" style="line-height: normal; text-align: start;"><span style="line-height: 12.95px; white-space: pre-wrap;"><br></span></font></p><p dir="ltr" style="color: rgb(0, 0, 0); font-style: normal; font-variant: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-family: verdana, sans-serif; font-size: x-small; font-weight: bold; line-height: 1.295; margin-top: 0pt; margin-bottom: 0pt; text-align: justify;"><span style="line-height: normal; text-align: start;"><span id="docs-internal-guid-92fe86fe-c70e-354e-175d-5a6e4ff5b1e1" style="font-weight: normal;"></span></span><span style="line-height: normal; text-align: start;"></span><span style="line-height: normal; text-align: start;"></span></p><p dir="ltr" style="color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-family: verdana, sans-serif; font-size: x-small; line-height: 1.295; margin-top: 0pt; margin-bottom: 0pt; text-align: justify;"><span style="vertical-align: baseline; white-space: pre-wrap;"><b>Manual de Uso, Operação e Manutenção. Itens:</b></span></p><p dir="ltr" style="color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-family: verdana, sans-serif; font-size: x-small; line-height: 1.295; margin-top: 0pt; margin-bottom: 0pt; text-align: justify;"><span style="vertical-align: baseline; white-space: pre-wrap;">"2.4 Colocação de acessórios em paredes, pisos e tetos".</span></p><p dir="ltr" style="color: rgb(0, 0, 0); font-style: normal; font-variant: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-family: verdana, sans-serif; font-size: x-small; font-weight: bold; line-height: 1.295; margin-top: 0pt; margin-bottom: 0pt; text-align: justify;"></p><p dir="ltr" style="color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-family: verdana, sans-serif; font-size: x-small; line-height: 1.295; margin-top: 0pt; margin-bottom: 0pt; text-align: justify;"></p><p dir="ltr" style="color: rgb(0, 0, 0); font-style: normal; font-variant: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-family: verdana, sans-serif; font-size: x-small; font-weight: bold; line-height: 1.295; margin-top: 0pt; margin-bottom: 0pt; text-align: justify;"></p><p dir="ltr" style="font-family: verdana, sans-serif; font-size: x-small; font-weight: bold; line-height: 1.295; margin-top: 0pt; margin-bottom: 0pt; text-align: justify;"></p><p dir="ltr" style="color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; font-family: verdana, sans-serif; font-size: x-small; line-height: 1.295; margin-top: 0pt; margin-bottom: 0pt; text-align: justify;"><span style="vertical-align: baseline; white-space: pre-wrap;">"4.4.6 Instalações elétricas".</span></p>]]></data>
+  <data name="en_spotpoint21731_description"><![CDATA[<div style="color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;"><font face="verdana, sans-serif" size="1"><b>FORRO:</b></font></div><p dir="ltr" style="font-family: verdana, sans-serif; font-size: x-small; font-weight: bold; line-height: 1.295; margin-top: 0pt; margin-bottom: 0pt; text-align: justify;"></p><div style="color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px;"><font face="verdana, sans-serif" size="1">Gesso corrido na laje</font><span style="font-family: verdana, sans-serif; font-size: x-small;"><b>.</b></span></div>]]></data>
+
+  <data name="en_spotpoint28460_description"><![CDATA[<div><font face="verdana, sans-serif" size="1"><b>FORRO:</b></font></div><div><font face="verdana, sans-serif" size="1">Gesso corrido na laje</font><span style="font-family: verdana, sans-serif; font-size: x-small;"><b>.</b></span></div>]]></data>
+
+  <data name="en_spotpoint23253_description"><![CDATA[<div><font face="verdana, sans-serif" size="1"><b>FORRO:</b></font></div><div><font face="verdana, sans-serif" size="1">Gesso corrido na laje</font><span style="font-family: verdana, sans-serif; font-size: x-small;"><b>.</b></span></div>]]></data>
+
+
+  <data name="en_spotpoint38568_description"><![CDATA[<div><font face="verdana, sans-serif" size="1"><b>FORRO:</b></font></div><div><font face="verdana, sans-serif" size="1">Gesso corrido na laje</font><span style="font-family: verdana, sans-serif; font-size: x-small;"><b>.</b></span></div>]]></data>
+
+  <data name="en_spotpoint18187_description"><![CDATA[<div><span style="font-family: verdana, sans-serif; font-size: x-small;"><b>TETO COM FORRO DE GESSO</b></span></div><div><font face="verdana, sans-serif" size="1"><div><ul><li>Para fixação de móveis, acessórios ou equipamentos, utilizar parafusos e buchas apropriadas e evitar impacto nos revestimentos que possam causar danos ou prejuízo ao desempenho do sistema.</li><li>Para a fixação de objetos no forro de gesso (ex.: luminárias, &nbsp;plantas...) atentar-se para a carga de uso máxima de 3kg.</li></ul></div><div><br></div><div><div style="font-family: 'Times New Roman'; font-size: medium;"><font face="verdana, sans-serif" size="1"><b>Manual de Uso, Operação e Manutenção. Item:</b></font></div><div style="font-family: 'Times New Roman'; font-size: medium;"><span style="font-family: verdana, sans-serif; font-size: x-small;">"4.2.6 Forro de gesso".</span></div></div></font></div>]]></data>
+  <data name="en_spotpoint26562_description"><![CDATA[<div><font face="verdana, sans-serif" size="1"><b>CHUVEIRO</b>:</font></div><div><span style="font-family: verdana, sans-serif; font-size: x-small;">Antes de comprar o chuveiro observe a potência prevista em projeto (4.400W) e se o equipamento é compatível com o disjuntor DR localizado no quadro elétrico.</span></div><div><font face="verdana, sans-serif" size="1"><br></font></div><div><font face="verdana, sans-serif" size="1"><b>Manual de Uso, Operação e Manutenção. Itens</b>:&nbsp;</font></div><div><font face="verdana, sans-serif" size="1">"4.4.6 Instalações elétricas"</font></div><div><font face="verdana, sans-serif" size="1">"2.3 Aquisição e instalação de equipamentos"</font></div>]]></data>
+
+</krpano>

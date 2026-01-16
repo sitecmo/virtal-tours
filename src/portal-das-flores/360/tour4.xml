@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- for xml compliance -->
+<krpano version="1.0.8.14">
+    <!-- actions to perform while loading -->
+    <events onxmlcomplete="onxmlcompleteaction();"/>
+    <action name="onxmlcompleteaction">
+		unselectmapspotsbutpassed();
+		selectmapspot(mapspot4,302);
+		firstloadcompleteaction();
+		if(plugin[data].soundOn==false,stoppanosounds());
+	</action>
+    <action name="playpanolocalsounds">
+		 set(hotspot[spot12].volume, 1.0);
+	</action>
+    <action name="stoppanolocalsounds">
+		 set(hotspot[spot12].volume, 0.0);
+	</action>
+    <action name="playpanosounds">
+		 playbackgroundsound(none);
+		 playpanolocalsounds();
+	</action>
+    <action name="stoppanosounds">
+		 stopbackgroundsound();
+		 stoppanolocalsounds();
+	</action>
+    <action name="closepanoobjects">stoppanolocalsounds();</action>
+    <!--************** Panorama *******************************************************************-->
+    <!-- @File="tour4.xml" @PanoName="Sacada" @FilePath="D:/CIDADE360/BEEF BISTRO/MOREIRA ORTENCE/SACADA.jpg" -->
+    <panoview h="-29.4" v="-0.67" fov="70"/>
+    <!-- view parameters -->
+    <view fisheye="0" limitview="range" hlookatmin="-180" hlookatmax="180" vlookatmin="-90" vlookatmax="90" fovmin="45" fovmax="90" fov="70" hlookat="-29.4" vlookat="-0.67"/>
+    <progress showload="none" showwait="none"/>
+    <autorotate horizon="-0.67" tofov="70" waittime="1" speed="5"/>
+    <!-- preview image -->
+    <preview url="%SWFPATH%/tourdata/tour4/preview.jpg" type="CUBESTRIP" striporder="FRBLUD" details="16"/>	
+		<image>
+			<cube url="%SWFPATH%/tourdata/tour4/pano_%s.jpg" />
+			<mobile>
+				<cube url="%SWFPATH%/tourdata/tour4/mobile_%s.jpg" />
+			</mobile>
+			<tablet>
+				<cube url="%SWFPATH%/tourdata/tour4/tablet_%s.jpg" />
+			</tablet>
+		</image>
+    <!--************** Hotspots and lensflares ****************************************************-->
+    <hotspot name="spot11" hview="-173.75" vview="-2.51" fovview="70" hcenter="58.7097" vcenter="27.1292" onclick="lookto(get(hcenter),get(vcenter),get(view.fovmin),smooth(400,20,100));mainloadpano(tour0.xml);lookat(get(panoview.h),get(panoview.v),get(panoview.fov));" url="%SWFPATH%/tourdata/graphics/spots/spot1.swf" alturl="%SWFPATH%/tourdata/graphics/spots/spot2.gif" onhover="showtext('Sala de Estar/Jantar');" ath="418.71" atv="27.1292"/>
+	
+	<hotspot 
+		 name="tv"
+         url="%SWFPATH%/imgtemplate/videoplayer.swf"
+         alturl="%SWFPATH%/imgtemplate/videoplayer.js"
+         videourl="%SWFPATH%/imgtemplate/video/video.flv"
+         altvideourl="%SWFPATH%/imgtemplate/video/video.m4v"
+         posterurl="%SWFPATH%/imgtemplate/video/tela.jpg"
+			ath="111.052" atv="12.783"
+	        zoom="false" distorted="true" details="8" flying="0"
+	        width="200" height="131"
+	        scale="1" scalechildren="false" rotate="0"
+	        rx="13.2387" ry="37.6329" rz="-0.534488"
+         volume="1.0"
+		 alpha="0.9"
+         directionalsound="false"
+         range="90.0"
+         rangefalloff="1.0"
+         outofrangevolume="0.0"
+         onvideoready=""
+         onvideopaused=""
+         onvideocomplete=""
+         onunsupported=""
+		 onhover="if(ispaused, showtext(clique para reproduzir), showtext(clique para pausar));"
+		 onclick="togglepause();"
+		 keep="false"
+		 loop="true"
+    />	
+
+    <action name="hidepanospotsaction">
+	set(hotspot[spot11].visible, false);
+	set(hotspot[spot12].visible, false);</action>
+    <action name="showpanospotsaction">
+	set(hotspot[spot11].visible, true);
+	set(hotspot[spot12].visible, true);</action>
+    <!-- close all hotspots -->
+</krpano>
